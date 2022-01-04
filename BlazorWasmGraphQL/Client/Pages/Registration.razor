@@ -1,0 +1,80 @@
+﻿@page "/register"
+@inherits RegistrationBase
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card mt-3 mb-3">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h2>User Registration</h2>
+                    <div class="d-flex align-items-center">
+                        <strong>Already Registered? </strong>
+                        <a href='login' class="nav-link">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <EditForm Model="@registration" OnValidSubmit="RegisterUser">
+                    <DataAnnotationsValidator />
+                    <CustomValidator @ref="registerValidator" />
+
+                    <div class="mb-3">
+                        <label class="control-label col-md-12">First name</label>
+                        <div class="col">
+                            <InputText class="form-control" @bind-Value="registration.FirstName" />
+                            <ValidationMessage For="@(() => registration.FirstName)" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="control-label col-md-12">Last name</label>
+                        <div class="col">
+                            <InputText class="form-control" @bind-Value="registration.LastName" />
+                            <ValidationMessage For="@(() => registration.LastName)" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">User name</label>
+                        <div class="col">
+                            <InputText class="form-control" @bind-Value="registration.Username" />
+                            <ValidationMessage For="@(() => registration.Username)" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password</label>
+                        <div class="col">
+                            <InputText type="password" class="form-control" @bind-Value="registration.Password" />
+                            <ValidationMessage For="@(() => registration.Password)" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ConfirmPassword" class="form-label">Confirm password</label>
+                        <div class="col">
+                            <InputText type="password" class="form-control" @bind-Value="registration.ConfirmPassword" />
+                            <ValidationMessage For="@(() => registration.ConfirmPassword)" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Gender" class="form-label">Gender</label>
+                        <div class="col">
+                            <InputSelect class="form-control" @bind-Value="registration.Gender">
+                                <option value="-- Select City --">-- Select Gender --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </InputSelect>
+                            <ValidationMessage For="@(() => registration.Gender)" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" align="right">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>

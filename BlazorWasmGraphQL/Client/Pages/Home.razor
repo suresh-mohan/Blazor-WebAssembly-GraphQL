@@ -1,0 +1,36 @@
+﻿@page "/"
+@page "/category/{GenreName}"
+@inherits HomeBase
+
+<div class="row">
+    <div class="col-md-3 col-sm-12">
+        <div class="row g-0">
+            <div class="filter-container">
+                <MovieGenre SelectedGenre="@GenreName"></MovieGenre>
+                <div class="col-md-2 my-2">
+                    <h4>Sort Movies</h4>
+                    <select @onchange="SortMovieData" class="form-select">
+                        <option value="title" selected>Title</option>
+                        <option value="rating">Rating</option>
+                        <option value="duration">Duration</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-3">
+        @if (lstMovie.Count == 0)
+        {
+            <p>No data to display</p>
+        }
+        else
+        {
+            <div class="d-flex flex-wrap">
+                @foreach (var movie in lstMovie)
+                {
+                    <MovieCard Movie="movie"></MovieCard>
+                }
+            </div>
+        }
+    </div>
+</div>

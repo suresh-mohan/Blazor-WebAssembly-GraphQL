@@ -1,0 +1,11 @@
+query FilterMovieList($sortInput:MovieSortInput!){
+  movieList(order:[$sortInput]){
+    movieId,
+    title,
+    posterPath,
+    genre,
+    rating,
+    language,
+    duration
+  }
+}

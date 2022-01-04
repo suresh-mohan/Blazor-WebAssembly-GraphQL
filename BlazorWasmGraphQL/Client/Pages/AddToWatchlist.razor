@@ -1,0 +1,6 @@
+﻿@inherits AddToWatchlistBase
+
+<button class="btn @(toggle ? "btn-danger" : "btn-success" )"
+        @onclick="ToggleWatchList">
+    <i class="fa @(toggle ? "fa-minus-circle" : "fa-plus-circle" )"></i> @buttonText
+</button>

@@ -1,0 +1,18 @@
+﻿@inherits MovieCardBase
+
+<div class="card movie-card">
+    <a href='/movies/details/@Movie.MovieId'>
+        <img class="card-img-top" src="@imagePreview" data-toggle="tooltip" title="@Movie.Title" alt="@Movie.Title" />
+    </a>
+    <div class="card-body">
+        <span class="card-rating">
+            <MovieRating Rating="@Movie.Rating"></MovieRating>
+        </span>
+        <a href='/movies/details/@Movie.MovieId'>
+            <h5 class="card-title">@Movie.Title</h5>
+        </a>
+        <p class="card-text">
+            @Movie.Genre
+        </p>
+    </div>
+</div>

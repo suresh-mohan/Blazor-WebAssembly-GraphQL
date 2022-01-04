@@ -1,0 +1,15 @@
+﻿@inherits LayoutComponentBase
+@using Blazored.Toast.Configuration
+
+<BlazoredToasts Position="ToastPosition.BottomCenter"
+                Timeout="3"
+                SuccessClass="success-toast-override" />
+
+<div class="page">
+    <div class="main">
+        <NavMenu />
+        <div class="container">
+            @Body
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+﻿.movie-rating {
+    background: #e0b600;
+    border: 3px solid #e0b600;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    z-index: 100;
+    min-width: 35px;
+    font-size: 14px;
+    border-radius: 50%;
+}

@@ -1,0 +1,50 @@
+﻿@page "/watchlist"
+@inherits WatchlistBase
+
+<h1 class="display-4">My Watchlist</h1>
+<hr />
+
+@if (watchlist.Count == 0)
+{
+    <p><em>No Data to show...</em></p>
+}
+else
+
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr class="row card-body p-1 text-center">
+                        <th class="col-md-2">Image</th>
+                        <th class="col-md-2">Title</th>
+                        <th class="col-md-2">Genre</th>
+                        <th class="col-md-2">Language</th>
+                        <th class="col">Action</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <table class="table align-middle table-borderless">
+                <tbody>
+                    @foreach (var movie in watchlist)
+                    {
+                        <tr class="row card-body watchlist-row p-1 mb-2 align-items-center text-center">
+                            <td class="col-md-2">
+                                <img data-toggle="tooltip" title="@movie.Title" alt="@movie.Title" src="/Poster/@movie.PosterPath">
+                            </td>
+                            <td class="col-md-2">
+                                <a class="nav-link" href='/movies/details/@movie.MovieId'>@movie.Title</a>
+                            </td>
+                            <td class="col-md-2">@movie.Genre</td>
+                            <td class="col-md-2">@movie.Language</td>
+                            <td class="col">
+                                <AddToWatchlist MovieID="@movie.MovieId" WatchListClick="WatchListClickHandler"></AddToWatchlist>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

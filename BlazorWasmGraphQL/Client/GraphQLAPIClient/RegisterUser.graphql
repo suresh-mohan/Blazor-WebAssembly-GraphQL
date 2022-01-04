@@ -1,0 +1,6 @@
+mutation RegisterUser($userData:UserRegistrationInput!){
+    userRegistration(registrationData:$userData){
+      isRegistrationSuccess,
+      errorMessage
+    }
+}

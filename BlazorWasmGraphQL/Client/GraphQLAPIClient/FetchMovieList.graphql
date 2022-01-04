@@ -1,0 +1,11 @@
+query FetchMovieList{
+  movieList{
+    movieId,
+    title,
+    posterPath,
+    genre,
+    rating,
+    language,
+    duration
+  }
+}

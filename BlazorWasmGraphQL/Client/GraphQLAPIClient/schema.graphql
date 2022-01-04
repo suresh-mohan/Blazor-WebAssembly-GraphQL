@@ -1,0 +1,113 @@
+﻿schema {
+  query: MovieQueryResolver
+  mutation: MovieMutation
+}
+
+enum ApplyPolicy {
+  BEFORE_RESOLVER
+  AFTER_RESOLVER
+}
+
+type MovieQueryResolver {
+  "Gets the list of genres."
+  genreList: [Genre!]!
+  "Gets the list of movies."
+  movieList(order: [MovieSortInput!]): [Movie!]!
+  "Gets the movie data based on the movieId."
+  movieById(movieId: Int!): Movie!
+}
+
+type MovieMutation {
+  "Add a new movie data."
+  addMovie(movie: MovieInput!): AddMoviePayload!
+  "Edit an existing movie data."
+  editMovie(movie: MovieInput!): AddMoviePayload!
+  "Delete a movie data."
+  deleteMovie(movieId: Int!): Int!
+  "Authenticate the user."
+  userLogin(userDetails: UserLoginInput!): AuthResponse!
+  "Register a new user."
+  userRegistration(registrationData: UserRegistrationInput!): RegistrationResponse!
+  "Get the user Watchlist."
+  watchlist(userId: Int!): [Movie!]!
+  "Toggle Watchlist item."
+  toggleWatchlist(userId: Int! movieId: Int!): [Movie!]!
+}
+
+input MovieSortInput {
+  movieId: SortEnumType
+  title: SortEnumType
+  overview: SortEnumType
+  genre: SortEnumType
+  language: SortEnumType
+  duration: SortEnumType
+  rating: SortEnumType
+  posterPath: SortEnumType
+}
+
+enum SortEnumType {
+  ASC
+  DESC
+}
+
+input MovieInput {
+  movieId: Int!
+  title: String!
+  overview: String!
+  genre: String!
+  language: String!
+  duration: Int!
+  rating: Decimal!
+  posterPath: String
+}
+
+type AddMoviePayload {
+  movie: Movie!
+}
+
+type Movie {
+  movieId: Int!
+  title: String!
+  overview: String!
+  genre: String!
+  language: String!
+  duration: Int!
+  rating: Decimal!
+  posterPath: String
+}
+
+type Genre {
+  genreId: Int!
+  genreName: String!
+}
+
+type AuthResponse {
+  errorMessage: String
+  token: String
+}
+
+input UserLoginInput {
+  userId: Int
+  username: String!
+  password: String!
+  userTypeName: String
+}
+
+type RegistrationResponse {
+  isRegistrationSuccess: Boolean!
+  errorMessage: String
+}
+
+input UserRegistrationInput {
+  firstName: String!
+  lastName: String!
+  username: String!
+  password: String!
+  confirmPassword: String!
+  gender: String!
+}
+
+"The built-in `Decimal` scalar type."
+scalar Decimal
+
+directive @authorize("The name of the authorization policy that determines access to the annotated resource." policy: String "Roles that are allowed to access the annotated resource." roles: [String!] "Defines when when the resolver shall be executed.By default the resolver is executed after the policy has determined that the current user is allowed to access the field." apply: ApplyPolicy! = BEFORE_RESOLVER) repeatable on SCHEMA | OBJECT | FIELD_DEFINITION

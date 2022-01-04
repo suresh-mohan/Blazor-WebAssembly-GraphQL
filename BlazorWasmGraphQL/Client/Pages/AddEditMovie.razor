@@ -1,0 +1,97 @@
+﻿@page "/admin/movies/new"
+@page "/admin/movies/edit/{MovieID:int}"
+@inherits AddEditMovieBase
+
+@using BlazorWasmGraphQL.Shared.Models;
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Policy = UserRoles.Admin)]
+
+<div class="row justify-content-center">
+    <div class="col my-3">
+
+        <h1 class="display-3">@Title Movie</h1>
+        <hr />
+
+        <EditForm Model="@movie" OnValidSubmit="SaveMovie">
+            <DataAnnotationsValidator />
+
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                    <div class="mb-3">
+                        <label for="Title" class="form-label">Title</label>
+                        <div class="col-md-6">
+                            <InputText class="form-control" @bind-Value="movie.Title" />
+                        </div>
+                        <ValidationMessage For="@(() => movie.Title)" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Genre" class="form-label">Genre</label>
+                        <div class="col-md-6">
+                            <InputSelect class="form-control" @bind-Value="movie.Genre">
+                                <option value="-- Select Genre --">-- Select Genre --</option>
+                                @if (lstGenre is not null)
+                                {
+                                    @foreach (var genre in lstGenre)
+                                    {
+                                        <option value="@genre.GenreName">@genre.GenreName</option>
+                                    }
+                                }
+                            </InputSelect>
+                        </div>
+                        <ValidationMessage For="@(() => movie.Genre)" />
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="Language" class="form-label">Language</label>
+                        <div class="col-md-6">
+                            <InputText class="form-control" @bind-Value="movie.Language" />
+                        </div>
+                        <ValidationMessage For="@(() => movie.Language)" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Duration" class="form-label">Duration</label>
+                        <div class="col-md-6">
+                            <InputNumber class="form-control" @bind-Value="movie.Duration" />
+                        </div>
+                        <ValidationMessage For="@(() => movie.Duration)" />
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="Rating" class="form-label">Rating</label>
+                        <div class="col-md-6">
+                            <InputNumber class="form-control" @bind-Value="movie.Rating" />
+                        </div>
+                        <ValidationMessage For="@(() => movie.Rating)" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Overview" class="form-label">Overview</label>
+                        <div class="col-md-6">
+                            <InputTextArea class="form-control" @bind-Value="movie.Overview" />
+                        </div>
+                        <ValidationMessage For="@(() => movie.Overview)" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <div class="image-container">
+                            <img class="preview-image" src=@imagePreview>
+                        </div>
+                        <InputFile OnChange="ViewImage"></InputFile>
+                        <p>@status</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Save</button>
+                <button class="btn btn-secondary" @onclick="NavigateToAdminPanel">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>

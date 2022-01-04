@@ -1,0 +1,19 @@
+﻿.list-group {
+    /*position: fixed;*/
+}
+
+.active-genre {
+    background-color: #fb641b !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .list-group {
+        position: relative;
+        width: 100%;
+    }
+}

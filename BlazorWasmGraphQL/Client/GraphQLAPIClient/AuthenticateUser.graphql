@@ -1,0 +1,6 @@
+mutation login($userData:UserLoginInput!){
+    userLogin(userDetails:$userData){
+      errorMessage,
+      token
+    }
+}

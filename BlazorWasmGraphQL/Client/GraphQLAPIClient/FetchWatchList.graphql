@@ -1,0 +1,11 @@
+mutation FetchWatchList($userId:Int!){
+watchlist(userId:$userId){
+    movieId,
+    title,
+    posterPath,
+    genre,
+    rating,
+    language,
+    duration
+  }
+}

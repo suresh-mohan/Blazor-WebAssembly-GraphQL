@@ -1,0 +1,12 @@
+query FetchMovieDetails($movieID:Int!){
+  movieById(movieId : $movieID){
+    movieId,
+    title,
+    posterPath,
+    genre,
+    rating,
+    language,
+    duration,
+    overview
+  }
+}

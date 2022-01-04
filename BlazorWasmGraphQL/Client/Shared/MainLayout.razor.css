@@ -1,0 +1,13 @@
+.container {
+    margin-top: 70px;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}

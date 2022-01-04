@@ -1,0 +1,86 @@
+﻿@page "/admin/movies"
+@inherits ManageMoviesBase
+
+<div class="row">
+    <div class="col" align="right">
+        <a href='/admin/movies/new' class="btn btn-primary" role="button"><i class="fas fa-film"></i> Add Movie</a>
+    </div>
+</div>
+
+<br />
+
+@if (lstMovie?.Count == 0)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table shadow table-striped align-middle table-bordered">
+        <thead class="table-success">
+            <tr class="text-center">
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Language</th>
+                <th>Duration</th>
+                <th>Rating</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (lstMovie is not null)
+            {
+                @foreach (var movie in lstMovie)
+                {
+                    <tr class="text-center">
+                        <td>@movie.Title</td>
+                        <td>@movie.Genre</td>
+                        <td>@movie.Language</td>
+                        <td>@movie.Duration min</td>
+                        <td>@movie.Rating</td>
+                        <td>
+                            <a href='/admin/movies/edit/@movie.MovieId' class="btn btn-outline-dark" role="button">Edit</a>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMovieModal" @onclick="(() => DeleteConfirm(movie.MovieId))">Delete</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="deleteMovieModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Delete Movie</h3>
+                </div>
+                <div class="modal-body">
+                    <h4>Do you want to delete this Movie ??</h4>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Title</td>
+                                <td>@movie?.Title</td>
+                            </tr>
+                            <tr>
+                                <td>Genre</td>
+                                <td>@movie?.Genre</td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>@movie?.Language</td>
+                            </tr>
+                            <tr>
+                                <td>Duration</td>
+                                <td>@movie?.Duration</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" @onclick="(() => DeleteMovie(movie.MovieId))" data-bs-dismiss="modal">Yes</button>
+                    <button class="btn btn-warning" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

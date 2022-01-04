@@ -1,0 +1,11 @@
+mutation ToggleWatchList($userId:Int!, $movieId: Int!){
+toggleWatchlist(userId:$userId, movieId:$movieId){
+    movieId,
+    title,
+    posterPath,
+    genre,
+    rating,
+    language,
+    duration
+  }
+}

@@ -1,0 +1,7 @@
+mutation EditMovieData($movieData:MovieInput!){
+  editMovie(movie:$movieData){
+  movie{
+      title
+    }
+  }
+}

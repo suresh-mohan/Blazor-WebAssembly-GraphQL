@@ -1,0 +1,7 @@
+mutation AddMovieData($movieData:MovieInput!){
+  addMovie(movie:$movieData){
+  movie{
+      title
+    }
+  }
+}

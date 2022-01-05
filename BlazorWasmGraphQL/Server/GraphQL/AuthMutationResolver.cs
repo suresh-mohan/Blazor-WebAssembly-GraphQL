@@ -80,7 +80,7 @@ namespace BlazorWasmGraphQL.Server.GraphQL
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
                 claims: userClaims,
-                expires: DateTime.Now.AddDays(1),
+                expires: DateTime.Now.AddHours(24),
                 signingCredentials: credentials
             );
 

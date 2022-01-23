@@ -825,197 +825,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetailsResult : global::System.IEquatable<FetchMovieDetailsResult>, IFetchMovieDetailsResult
-    {
-        public FetchMovieDetailsResult(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetails_MovieById movieById)
-        {
-            MovieById = movieById;
-        }
-
-        /// <summary>
-        /// Gets the movie data based on the movieId.
-        /// </summary>
-        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetails_MovieById MovieById { get; }
-
-        public virtual global::System.Boolean Equals(FetchMovieDetailsResult? other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            if (other.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return (MovieById.Equals(other.MovieById));
-        }
-
-        public override global::System.Boolean Equals(global::System.Object? obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return Equals((FetchMovieDetailsResult)obj);
-        }
-
-        public override global::System.Int32 GetHashCode()
-        {
-            unchecked
-            {
-                int hash = 5;
-                hash ^= 397 * MovieById.GetHashCode();
-                return hash;
-            }
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetails_MovieById_Movie : global::System.IEquatable<FetchMovieDetails_MovieById_Movie>, IFetchMovieDetails_MovieById_Movie
-    {
-        public FetchMovieDetails_MovieById_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration, global::System.String overview)
-        {
-            MovieId = movieId;
-            Title = title;
-            PosterPath = posterPath;
-            Genre = genre;
-            Rating = rating;
-            Language = language;
-            Duration = duration;
-            Overview = overview;
-        }
-
-        public global::System.Int32 MovieId { get; }
-
-        public global::System.String Title { get; }
-
-        public global::System.String? PosterPath { get; }
-
-        public global::System.String Genre { get; }
-
-        public global::System.Decimal Rating { get; }
-
-        public global::System.String Language { get; }
-
-        public global::System.Int32 Duration { get; }
-
-        public global::System.String Overview { get; }
-
-        public virtual global::System.Boolean Equals(FetchMovieDetails_MovieById_Movie? other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            if (other.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return (MovieId == other.MovieId) && Title.Equals(other.Title) && ((PosterPath is null && other.PosterPath is null) || PosterPath != null && PosterPath.Equals(other.PosterPath)) && Genre.Equals(other.Genre) && Rating == other.Rating && Language.Equals(other.Language) && Duration == other.Duration && Overview.Equals(other.Overview);
-        }
-
-        public override global::System.Boolean Equals(global::System.Object? obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return Equals((FetchMovieDetails_MovieById_Movie)obj);
-        }
-
-        public override global::System.Int32 GetHashCode()
-        {
-            unchecked
-            {
-                int hash = 5;
-                hash ^= 397 * MovieId.GetHashCode();
-                hash ^= 397 * Title.GetHashCode();
-                if (PosterPath != null)
-                {
-                    hash ^= 397 * PosterPath.GetHashCode();
-                }
-
-                hash ^= 397 * Genre.GetHashCode();
-                hash ^= 397 * Rating.GetHashCode();
-                hash ^= 397 * Language.GetHashCode();
-                hash ^= 397 * Duration.GetHashCode();
-                hash ^= 397 * Overview.GetHashCode();
-                return hash;
-            }
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieDetailsResult
-    {
-        /// <summary>
-        /// Gets the movie data based on the movieId.
-        /// </summary>
-        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetails_MovieById MovieById { get; }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieDetails_MovieById
-    {
-        public global::System.Int32 MovieId { get; }
-
-        public global::System.String Title { get; }
-
-        public global::System.String? PosterPath { get; }
-
-        public global::System.String Genre { get; }
-
-        public global::System.Decimal Rating { get; }
-
-        public global::System.String Language { get; }
-
-        public global::System.Int32 Duration { get; }
-
-        public global::System.String Overview { get; }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieDetails_MovieById_Movie : IFetchMovieDetails_MovieById
-    {
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class FetchMovieListResult : global::System.IEquatable<FetchMovieListResult>, IFetchMovieListResult
     {
         public FetchMovieListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieList_MovieList> movieList)
@@ -1390,6 +1199,201 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public interface IFetchWatchList_Watchlist_Movie : IFetchWatchList_Watchlist
+    {
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByIDResult : global::System.IEquatable<FilterMovieByIDResult>, IFilterMovieByIDResult
+    {
+        public FilterMovieByIDResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList> movieList)
+        {
+            MovieList = movieList;
+        }
+
+        /// <summary>
+        /// Gets the list of movies.
+        /// </summary>
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList> MovieList { get; }
+
+        public virtual global::System.Boolean Equals(FilterMovieByIDResult? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(MovieList, other.MovieList));
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((FilterMovieByIDResult)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                foreach (var MovieList_elm in MovieList)
+                {
+                    hash ^= 397 * MovieList_elm.GetHashCode();
+                }
+
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByID_MovieList_Movie : global::System.IEquatable<FilterMovieByID_MovieList_Movie>, IFilterMovieByID_MovieList_Movie
+    {
+        public FilterMovieByID_MovieList_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration, global::System.String overview)
+        {
+            MovieId = movieId;
+            Title = title;
+            PosterPath = posterPath;
+            Genre = genre;
+            Rating = rating;
+            Language = language;
+            Duration = duration;
+            Overview = overview;
+        }
+
+        public global::System.Int32 MovieId { get; }
+
+        public global::System.String Title { get; }
+
+        public global::System.String? PosterPath { get; }
+
+        public global::System.String Genre { get; }
+
+        public global::System.Decimal Rating { get; }
+
+        public global::System.String Language { get; }
+
+        public global::System.Int32 Duration { get; }
+
+        public global::System.String Overview { get; }
+
+        public virtual global::System.Boolean Equals(FilterMovieByID_MovieList_Movie? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (MovieId == other.MovieId) && Title.Equals(other.Title) && ((PosterPath is null && other.PosterPath is null) || PosterPath != null && PosterPath.Equals(other.PosterPath)) && Genre.Equals(other.Genre) && Rating == other.Rating && Language.Equals(other.Language) && Duration == other.Duration && Overview.Equals(other.Overview);
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((FilterMovieByID_MovieList_Movie)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * MovieId.GetHashCode();
+                hash ^= 397 * Title.GetHashCode();
+                if (PosterPath != null)
+                {
+                    hash ^= 397 * PosterPath.GetHashCode();
+                }
+
+                hash ^= 397 * Genre.GetHashCode();
+                hash ^= 397 * Rating.GetHashCode();
+                hash ^= 397 * Language.GetHashCode();
+                hash ^= 397 * Duration.GetHashCode();
+                hash ^= 397 * Overview.GetHashCode();
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface IFilterMovieByIDResult
+    {
+        /// <summary>
+        /// Gets the list of movies.
+        /// </summary>
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList> MovieList { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface IFilterMovieByID_MovieList
+    {
+        public global::System.Int32 MovieId { get; }
+
+        public global::System.String Title { get; }
+
+        public global::System.String? PosterPath { get; }
+
+        public global::System.String Genre { get; }
+
+        public global::System.Decimal Rating { get; }
+
+        public global::System.String Language { get; }
+
+        public global::System.Int32 Duration { get; }
+
+        public global::System.String Overview { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface IFilterMovieByID_MovieList_Movie : IFilterMovieByID_MovieList
     {
     }
 
@@ -2447,6 +2451,2086 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
 
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserLoginInputInfo.IsUserTypeNameSet => _set_userTypeName;
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class MovieFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
+    {
+        private global::StrawberryShake.Serialization.IInputValueFormatter _movieFilterInputFormatter = default !;
+        private global::StrawberryShake.Serialization.IInputValueFormatter _comparableInt32OperationFilterInputFormatter = default !;
+        private global::StrawberryShake.Serialization.IInputValueFormatter _stringOperationFilterInputFormatter = default !;
+        private global::StrawberryShake.Serialization.IInputValueFormatter _comparableDecimalOperationFilterInputFormatter = default !;
+        public global::System.String TypeName => "MovieFilterInput";
+        public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _movieFilterInputFormatter = serializerResolver.GetInputValueFormatter("MovieFilterInput");
+            _comparableInt32OperationFilterInputFormatter = serializerResolver.GetInputValueFormatter("ComparableInt32OperationFilterInput");
+            _stringOperationFilterInputFormatter = serializerResolver.GetInputValueFormatter("StringOperationFilterInput");
+            _comparableDecimalOperationFilterInputFormatter = serializerResolver.GetInputValueFormatter("ComparableDecimalOperationFilterInput");
+        }
+
+        public global::System.Object? Format(global::System.Object? runtimeValue)
+        {
+            if (runtimeValue is null)
+            {
+                return null;
+            }
+
+            var input = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput;
+            var inputInfo = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo;
+            if (input is null || inputInfo is null)
+            {
+                throw new global::System.ArgumentException(nameof(runtimeValue));
+            }
+
+            var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
+            if (inputInfo.IsAndSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("and", FormatAnd(input.And)));
+            }
+
+            if (inputInfo.IsOrSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("or", FormatOr(input.Or)));
+            }
+
+            if (inputInfo.IsMovieIdSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("movieId", FormatMovieId(input.MovieId)));
+            }
+
+            if (inputInfo.IsTitleSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("title", FormatTitle(input.Title)));
+            }
+
+            if (inputInfo.IsOverviewSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("overview", FormatOverview(input.Overview)));
+            }
+
+            if (inputInfo.IsGenreSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("genre", FormatGenre(input.Genre)));
+            }
+
+            if (inputInfo.IsLanguageSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("language", FormatLanguage(input.Language)));
+            }
+
+            if (inputInfo.IsDurationSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("duration", FormatDuration(input.Duration)));
+            }
+
+            if (inputInfo.IsRatingSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("rating", FormatRating(input.Rating)));
+            }
+
+            if (inputInfo.IsPosterPathSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("posterPath", FormatPosterPath(input.PosterPath)));
+            }
+
+            return fields;
+        }
+
+        private global::System.Object? FormatAnd(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    if (input_elm is null)
+                    {
+                        throw new global::System.ArgumentNullException(nameof(input_elm));
+                    }
+
+                    input_list.Add(_movieFilterInputFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatOr(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    if (input_elm is null)
+                    {
+                        throw new global::System.ArgumentNullException(nameof(input_elm));
+                    }
+
+                    input_list.Add(_movieFilterInputFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatMovieId(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _comparableInt32OperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatTitle(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringOperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatOverview(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringOperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatGenre(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringOperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatLanguage(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringOperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatDuration(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _comparableInt32OperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatRating(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableDecimalOperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _comparableDecimalOperationFilterInputFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatPosterPath(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringOperationFilterInputFormatter.Format(input);
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class MovieFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo, global::System.IEquatable<MovieFilterInput>
+    {
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((MovieFilterInput)obj);
+        }
+
+        public virtual global::System.Boolean Equals(MovieFilterInput? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(And, other.And)) && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(Or, other.Or) && ((MovieId is null && other.MovieId is null) || MovieId != null && MovieId.Equals(other.MovieId)) && ((Title is null && other.Title is null) || Title != null && Title.Equals(other.Title)) && ((Overview is null && other.Overview is null) || Overview != null && Overview.Equals(other.Overview)) && ((Genre is null && other.Genre is null) || Genre != null && Genre.Equals(other.Genre)) && ((Language is null && other.Language is null) || Language != null && Language.Equals(other.Language)) && ((Duration is null && other.Duration is null) || Duration != null && Duration.Equals(other.Duration)) && ((Rating is null && other.Rating is null) || Rating != null && Rating.Equals(other.Rating)) && ((PosterPath is null && other.PosterPath is null) || PosterPath != null && PosterPath.Equals(other.PosterPath));
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                if (And != null)
+                {
+                    foreach (var And_elm in And)
+                    {
+                        hash ^= 397 * And_elm.GetHashCode();
+                    }
+                }
+
+                if (Or != null)
+                {
+                    foreach (var Or_elm in Or)
+                    {
+                        hash ^= 397 * Or_elm.GetHashCode();
+                    }
+                }
+
+                if (MovieId != null)
+                {
+                    hash ^= 397 * MovieId.GetHashCode();
+                }
+
+                if (Title != null)
+                {
+                    hash ^= 397 * Title.GetHashCode();
+                }
+
+                if (Overview != null)
+                {
+                    hash ^= 397 * Overview.GetHashCode();
+                }
+
+                if (Genre != null)
+                {
+                    hash ^= 397 * Genre.GetHashCode();
+                }
+
+                if (Language != null)
+                {
+                    hash ^= 397 * Language.GetHashCode();
+                }
+
+                if (Duration != null)
+                {
+                    hash ^= 397 * Duration.GetHashCode();
+                }
+
+                if (Rating != null)
+                {
+                    hash ^= 397 * Rating.GetHashCode();
+                }
+
+                if (PosterPath != null)
+                {
+                    hash ^= 397 * PosterPath.GetHashCode();
+                }
+
+                return hash;
+            }
+        }
+
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput>? _value_and;
+        private global::System.Boolean _set_and;
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput>? _value_or;
+        private global::System.Boolean _set_or;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput? _value_movieId;
+        private global::System.Boolean _set_movieId;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? _value_title;
+        private global::System.Boolean _set_title;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? _value_overview;
+        private global::System.Boolean _set_overview;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? _value_genre;
+        private global::System.Boolean _set_genre;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? _value_language;
+        private global::System.Boolean _set_language;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput? _value_duration;
+        private global::System.Boolean _set_duration;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableDecimalOperationFilterInput? _value_rating;
+        private global::System.Boolean _set_rating;
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? _value_posterPath;
+        private global::System.Boolean _set_posterPath;
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput>? And
+        {
+            get => _value_and;
+            set
+            {
+                _set_and = true;
+                _value_and = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsAndSet => _set_and;
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput>? Or
+        {
+            get => _value_or;
+            set
+            {
+                _set_or = true;
+                _value_or = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsOrSet => _set_or;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput? MovieId
+        {
+            get => _value_movieId;
+            set
+            {
+                _set_movieId = true;
+                _value_movieId = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsMovieIdSet => _set_movieId;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? Title
+        {
+            get => _value_title;
+            set
+            {
+                _set_title = true;
+                _value_title = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsTitleSet => _set_title;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? Overview
+        {
+            get => _value_overview;
+            set
+            {
+                _set_overview = true;
+                _value_overview = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsOverviewSet => _set_overview;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? Genre
+        {
+            get => _value_genre;
+            set
+            {
+                _set_genre = true;
+                _value_genre = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsGenreSet => _set_genre;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? Language
+        {
+            get => _value_language;
+            set
+            {
+                _set_language = true;
+                _value_language = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsLanguageSet => _set_language;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput? Duration
+        {
+            get => _value_duration;
+            set
+            {
+                _set_duration = true;
+                _value_duration = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsDurationSet => _set_duration;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableDecimalOperationFilterInput? Rating
+        {
+            get => _value_rating;
+            set
+            {
+                _set_rating = true;
+                _value_rating = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsRatingSet => _set_rating;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput? PosterPath
+        {
+            get => _value_posterPath;
+            set
+            {
+                _set_posterPath = true;
+                _value_posterPath = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsPosterPathSet => _set_posterPath;
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class ComparableInt32OperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
+    {
+        private global::StrawberryShake.Serialization.IInputValueFormatter _intFormatter = default !;
+        public global::System.String TypeName => "ComparableInt32OperationFilterInput";
+        public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _intFormatter = serializerResolver.GetInputValueFormatter("Int");
+        }
+
+        public global::System.Object? Format(global::System.Object? runtimeValue)
+        {
+            if (runtimeValue is null)
+            {
+                return null;
+            }
+
+            var input = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInput;
+            var inputInfo = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo;
+            if (input is null || inputInfo is null)
+            {
+                throw new global::System.ArgumentException(nameof(runtimeValue));
+            }
+
+            var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
+            if (inputInfo.IsEqSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("eq", FormatEq(input.Eq)));
+            }
+
+            if (inputInfo.IsNeqSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("neq", FormatNeq(input.Neq)));
+            }
+
+            if (inputInfo.IsInSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("in", FormatIn(input.In)));
+            }
+
+            if (inputInfo.IsNinSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nin", FormatNin(input.Nin)));
+            }
+
+            if (inputInfo.IsGtSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("gt", FormatGt(input.Gt)));
+            }
+
+            if (inputInfo.IsNgtSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("ngt", FormatNgt(input.Ngt)));
+            }
+
+            if (inputInfo.IsGteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("gte", FormatGte(input.Gte)));
+            }
+
+            if (inputInfo.IsNgteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("ngte", FormatNgte(input.Ngte)));
+            }
+
+            if (inputInfo.IsLtSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("lt", FormatLt(input.Lt)));
+            }
+
+            if (inputInfo.IsNltSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nlt", FormatNlt(input.Nlt)));
+            }
+
+            if (inputInfo.IsLteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("lte", FormatLte(input.Lte)));
+            }
+
+            if (inputInfo.IsNlteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nlte", FormatNlte(input.Nlte)));
+            }
+
+            return fields;
+        }
+
+        private global::System.Object? FormatEq(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNeq(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatIn(global::System.Collections.Generic.IReadOnlyList<global::System.Int32>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    input_list.Add(_intFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatNin(global::System.Collections.Generic.IReadOnlyList<global::System.Int32>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    input_list.Add(_intFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatGt(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNgt(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatGte(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNgte(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatLt(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNlt(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatLte(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNlte(global::System.Int32? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _intFormatter.Format(input);
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class ComparableInt32OperationFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo, global::System.IEquatable<ComparableInt32OperationFilterInput>
+    {
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((ComparableInt32OperationFilterInput)obj);
+        }
+
+        public virtual global::System.Boolean Equals(ComparableInt32OperationFilterInput? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (Eq == other.Eq) && Neq == other.Neq && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(In, other.In) && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(Nin, other.Nin) && Gt == other.Gt && Ngt == other.Ngt && Gte == other.Gte && Ngte == other.Ngte && Lt == other.Lt && Nlt == other.Nlt && Lte == other.Lte && Nlte == other.Nlte;
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                if (Eq != null)
+                {
+                    hash ^= 397 * Eq.GetHashCode();
+                }
+
+                if (Neq != null)
+                {
+                    hash ^= 397 * Neq.GetHashCode();
+                }
+
+                if (In != null)
+                {
+                    foreach (var In_elm in In)
+                    {
+                        hash ^= 397 * In_elm.GetHashCode();
+                    }
+                }
+
+                if (Nin != null)
+                {
+                    foreach (var Nin_elm in Nin)
+                    {
+                        hash ^= 397 * Nin_elm.GetHashCode();
+                    }
+                }
+
+                if (Gt != null)
+                {
+                    hash ^= 397 * Gt.GetHashCode();
+                }
+
+                if (Ngt != null)
+                {
+                    hash ^= 397 * Ngt.GetHashCode();
+                }
+
+                if (Gte != null)
+                {
+                    hash ^= 397 * Gte.GetHashCode();
+                }
+
+                if (Ngte != null)
+                {
+                    hash ^= 397 * Ngte.GetHashCode();
+                }
+
+                if (Lt != null)
+                {
+                    hash ^= 397 * Lt.GetHashCode();
+                }
+
+                if (Nlt != null)
+                {
+                    hash ^= 397 * Nlt.GetHashCode();
+                }
+
+                if (Lte != null)
+                {
+                    hash ^= 397 * Lte.GetHashCode();
+                }
+
+                if (Nlte != null)
+                {
+                    hash ^= 397 * Nlte.GetHashCode();
+                }
+
+                return hash;
+            }
+        }
+
+        private global::System.Int32? _value_eq;
+        private global::System.Boolean _set_eq;
+        private global::System.Int32? _value_neq;
+        private global::System.Boolean _set_neq;
+        private global::System.Collections.Generic.IReadOnlyList<global::System.Int32>? _value_in;
+        private global::System.Boolean _set_in;
+        private global::System.Collections.Generic.IReadOnlyList<global::System.Int32>? _value_nin;
+        private global::System.Boolean _set_nin;
+        private global::System.Int32? _value_gt;
+        private global::System.Boolean _set_gt;
+        private global::System.Int32? _value_ngt;
+        private global::System.Boolean _set_ngt;
+        private global::System.Int32? _value_gte;
+        private global::System.Boolean _set_gte;
+        private global::System.Int32? _value_ngte;
+        private global::System.Boolean _set_ngte;
+        private global::System.Int32? _value_lt;
+        private global::System.Boolean _set_lt;
+        private global::System.Int32? _value_nlt;
+        private global::System.Boolean _set_nlt;
+        private global::System.Int32? _value_lte;
+        private global::System.Boolean _set_lte;
+        private global::System.Int32? _value_nlte;
+        private global::System.Boolean _set_nlte;
+        public global::System.Int32? Eq
+        {
+            get => _value_eq;
+            set
+            {
+                _set_eq = true;
+                _value_eq = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsEqSet => _set_eq;
+        public global::System.Int32? Neq
+        {
+            get => _value_neq;
+            set
+            {
+                _set_neq = true;
+                _value_neq = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNeqSet => _set_neq;
+        public global::System.Collections.Generic.IReadOnlyList<global::System.Int32>? In
+        {
+            get => _value_in;
+            set
+            {
+                _set_in = true;
+                _value_in = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsInSet => _set_in;
+        public global::System.Collections.Generic.IReadOnlyList<global::System.Int32>? Nin
+        {
+            get => _value_nin;
+            set
+            {
+                _set_nin = true;
+                _value_nin = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNinSet => _set_nin;
+        public global::System.Int32? Gt
+        {
+            get => _value_gt;
+            set
+            {
+                _set_gt = true;
+                _value_gt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsGtSet => _set_gt;
+        public global::System.Int32? Ngt
+        {
+            get => _value_ngt;
+            set
+            {
+                _set_ngt = true;
+                _value_ngt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNgtSet => _set_ngt;
+        public global::System.Int32? Gte
+        {
+            get => _value_gte;
+            set
+            {
+                _set_gte = true;
+                _value_gte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsGteSet => _set_gte;
+        public global::System.Int32? Ngte
+        {
+            get => _value_ngte;
+            set
+            {
+                _set_ngte = true;
+                _value_ngte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNgteSet => _set_ngte;
+        public global::System.Int32? Lt
+        {
+            get => _value_lt;
+            set
+            {
+                _set_lt = true;
+                _value_lt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsLtSet => _set_lt;
+        public global::System.Int32? Nlt
+        {
+            get => _value_nlt;
+            set
+            {
+                _set_nlt = true;
+                _value_nlt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNltSet => _set_nlt;
+        public global::System.Int32? Lte
+        {
+            get => _value_lte;
+            set
+            {
+                _set_lte = true;
+                _value_lte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsLteSet => _set_lte;
+        public global::System.Int32? Nlte
+        {
+            get => _value_nlte;
+            set
+            {
+                _set_nlte = true;
+                _value_nlte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNlteSet => _set_nlte;
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class StringOperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
+    {
+        private global::StrawberryShake.Serialization.IInputValueFormatter _stringOperationFilterInputFormatter = default !;
+        private global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter = default !;
+        public global::System.String TypeName => "StringOperationFilterInput";
+        public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _stringOperationFilterInputFormatter = serializerResolver.GetInputValueFormatter("StringOperationFilterInput");
+            _stringFormatter = serializerResolver.GetInputValueFormatter("String");
+        }
+
+        public global::System.Object? Format(global::System.Object? runtimeValue)
+        {
+            if (runtimeValue is null)
+            {
+                return null;
+            }
+
+            var input = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput;
+            var inputInfo = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo;
+            if (input is null || inputInfo is null)
+            {
+                throw new global::System.ArgumentException(nameof(runtimeValue));
+            }
+
+            var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
+            if (inputInfo.IsAndSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("and", FormatAnd(input.And)));
+            }
+
+            if (inputInfo.IsOrSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("or", FormatOr(input.Or)));
+            }
+
+            if (inputInfo.IsEqSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("eq", FormatEq(input.Eq)));
+            }
+
+            if (inputInfo.IsNeqSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("neq", FormatNeq(input.Neq)));
+            }
+
+            if (inputInfo.IsContainsSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("contains", FormatContains(input.Contains)));
+            }
+
+            if (inputInfo.IsNcontainsSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("ncontains", FormatNcontains(input.Ncontains)));
+            }
+
+            if (inputInfo.IsInSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("in", FormatIn(input.In)));
+            }
+
+            if (inputInfo.IsNinSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nin", FormatNin(input.Nin)));
+            }
+
+            if (inputInfo.IsStartsWithSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("startsWith", FormatStartsWith(input.StartsWith)));
+            }
+
+            if (inputInfo.IsNstartsWithSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nstartsWith", FormatNstartsWith(input.NstartsWith)));
+            }
+
+            if (inputInfo.IsEndsWithSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("endsWith", FormatEndsWith(input.EndsWith)));
+            }
+
+            if (inputInfo.IsNendsWithSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nendsWith", FormatNendsWith(input.NendsWith)));
+            }
+
+            return fields;
+        }
+
+        private global::System.Object? FormatAnd(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    if (input_elm is null)
+                    {
+                        throw new global::System.ArgumentNullException(nameof(input_elm));
+                    }
+
+                    input_list.Add(_stringOperationFilterInputFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatOr(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    if (input_elm is null)
+                    {
+                        throw new global::System.ArgumentNullException(nameof(input_elm));
+                    }
+
+                    input_list.Add(_stringOperationFilterInputFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatEq(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNeq(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatContains(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNcontains(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatIn(global::System.Collections.Generic.IReadOnlyList<global::System.String?>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    if (input_elm is null)
+                    {
+                        input_list.Add(input_elm);
+                    }
+                    else
+                    {
+                        input_list.Add(_stringFormatter.Format(input_elm));
+                    }
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatNin(global::System.Collections.Generic.IReadOnlyList<global::System.String?>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    if (input_elm is null)
+                    {
+                        input_list.Add(input_elm);
+                    }
+                    else
+                    {
+                        input_list.Add(_stringFormatter.Format(input_elm));
+                    }
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatStartsWith(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNstartsWith(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatEndsWith(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNendsWith(global::System.String? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _stringFormatter.Format(input);
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class StringOperationFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo, global::System.IEquatable<StringOperationFilterInput>
+    {
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((StringOperationFilterInput)obj);
+        }
+
+        public virtual global::System.Boolean Equals(StringOperationFilterInput? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(And, other.And)) && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(Or, other.Or) && ((Eq is null && other.Eq is null) || Eq != null && Eq.Equals(other.Eq)) && ((Neq is null && other.Neq is null) || Neq != null && Neq.Equals(other.Neq)) && ((Contains is null && other.Contains is null) || Contains != null && Contains.Equals(other.Contains)) && ((Ncontains is null && other.Ncontains is null) || Ncontains != null && Ncontains.Equals(other.Ncontains)) && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(In, other.In) && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(Nin, other.Nin) && ((StartsWith is null && other.StartsWith is null) || StartsWith != null && StartsWith.Equals(other.StartsWith)) && ((NstartsWith is null && other.NstartsWith is null) || NstartsWith != null && NstartsWith.Equals(other.NstartsWith)) && ((EndsWith is null && other.EndsWith is null) || EndsWith != null && EndsWith.Equals(other.EndsWith)) && ((NendsWith is null && other.NendsWith is null) || NendsWith != null && NendsWith.Equals(other.NendsWith));
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                if (And != null)
+                {
+                    foreach (var And_elm in And)
+                    {
+                        hash ^= 397 * And_elm.GetHashCode();
+                    }
+                }
+
+                if (Or != null)
+                {
+                    foreach (var Or_elm in Or)
+                    {
+                        hash ^= 397 * Or_elm.GetHashCode();
+                    }
+                }
+
+                if (Eq != null)
+                {
+                    hash ^= 397 * Eq.GetHashCode();
+                }
+
+                if (Neq != null)
+                {
+                    hash ^= 397 * Neq.GetHashCode();
+                }
+
+                if (Contains != null)
+                {
+                    hash ^= 397 * Contains.GetHashCode();
+                }
+
+                if (Ncontains != null)
+                {
+                    hash ^= 397 * Ncontains.GetHashCode();
+                }
+
+                if (In != null)
+                {
+                    foreach (var In_elm in In)
+                    {
+                        if (In_elm != null)
+                        {
+                            hash ^= 397 * In_elm.GetHashCode();
+                        }
+                    }
+                }
+
+                if (Nin != null)
+                {
+                    foreach (var Nin_elm in Nin)
+                    {
+                        if (Nin_elm != null)
+                        {
+                            hash ^= 397 * Nin_elm.GetHashCode();
+                        }
+                    }
+                }
+
+                if (StartsWith != null)
+                {
+                    hash ^= 397 * StartsWith.GetHashCode();
+                }
+
+                if (NstartsWith != null)
+                {
+                    hash ^= 397 * NstartsWith.GetHashCode();
+                }
+
+                if (EndsWith != null)
+                {
+                    hash ^= 397 * EndsWith.GetHashCode();
+                }
+
+                if (NendsWith != null)
+                {
+                    hash ^= 397 * NendsWith.GetHashCode();
+                }
+
+                return hash;
+            }
+        }
+
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput>? _value_and;
+        private global::System.Boolean _set_and;
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput>? _value_or;
+        private global::System.Boolean _set_or;
+        private global::System.String? _value_eq;
+        private global::System.Boolean _set_eq;
+        private global::System.String? _value_neq;
+        private global::System.Boolean _set_neq;
+        private global::System.String? _value_contains;
+        private global::System.Boolean _set_contains;
+        private global::System.String? _value_ncontains;
+        private global::System.Boolean _set_ncontains;
+        private global::System.Collections.Generic.IReadOnlyList<global::System.String?>? _value_in;
+        private global::System.Boolean _set_in;
+        private global::System.Collections.Generic.IReadOnlyList<global::System.String?>? _value_nin;
+        private global::System.Boolean _set_nin;
+        private global::System.String? _value_startsWith;
+        private global::System.Boolean _set_startsWith;
+        private global::System.String? _value_nstartsWith;
+        private global::System.Boolean _set_nstartsWith;
+        private global::System.String? _value_endsWith;
+        private global::System.Boolean _set_endsWith;
+        private global::System.String? _value_nendsWith;
+        private global::System.Boolean _set_nendsWith;
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput>? And
+        {
+            get => _value_and;
+            set
+            {
+                _set_and = true;
+                _value_and = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsAndSet => _set_and;
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInput>? Or
+        {
+            get => _value_or;
+            set
+            {
+                _set_or = true;
+                _value_or = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsOrSet => _set_or;
+        public global::System.String? Eq
+        {
+            get => _value_eq;
+            set
+            {
+                _set_eq = true;
+                _value_eq = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsEqSet => _set_eq;
+        public global::System.String? Neq
+        {
+            get => _value_neq;
+            set
+            {
+                _set_neq = true;
+                _value_neq = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsNeqSet => _set_neq;
+        public global::System.String? Contains
+        {
+            get => _value_contains;
+            set
+            {
+                _set_contains = true;
+                _value_contains = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsContainsSet => _set_contains;
+        public global::System.String? Ncontains
+        {
+            get => _value_ncontains;
+            set
+            {
+                _set_ncontains = true;
+                _value_ncontains = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsNcontainsSet => _set_ncontains;
+        public global::System.Collections.Generic.IReadOnlyList<global::System.String?>? In
+        {
+            get => _value_in;
+            set
+            {
+                _set_in = true;
+                _value_in = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsInSet => _set_in;
+        public global::System.Collections.Generic.IReadOnlyList<global::System.String?>? Nin
+        {
+            get => _value_nin;
+            set
+            {
+                _set_nin = true;
+                _value_nin = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsNinSet => _set_nin;
+        public global::System.String? StartsWith
+        {
+            get => _value_startsWith;
+            set
+            {
+                _set_startsWith = true;
+                _value_startsWith = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsStartsWithSet => _set_startsWith;
+        public global::System.String? NstartsWith
+        {
+            get => _value_nstartsWith;
+            set
+            {
+                _set_nstartsWith = true;
+                _value_nstartsWith = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsNstartsWithSet => _set_nstartsWith;
+        public global::System.String? EndsWith
+        {
+            get => _value_endsWith;
+            set
+            {
+                _set_endsWith = true;
+                _value_endsWith = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsEndsWithSet => _set_endsWith;
+        public global::System.String? NendsWith
+        {
+            get => _value_nendsWith;
+            set
+            {
+                _set_nendsWith = true;
+                _value_nendsWith = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsNendsWithSet => _set_nendsWith;
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class ComparableDecimalOperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
+    {
+        private global::StrawberryShake.Serialization.IInputValueFormatter _decimalFormatter = default !;
+        public global::System.String TypeName => "ComparableDecimalOperationFilterInput";
+        public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _decimalFormatter = serializerResolver.GetInputValueFormatter("Decimal");
+        }
+
+        public global::System.Object? Format(global::System.Object? runtimeValue)
+        {
+            if (runtimeValue is null)
+            {
+                return null;
+            }
+
+            var input = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableDecimalOperationFilterInput;
+            var inputInfo = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo;
+            if (input is null || inputInfo is null)
+            {
+                throw new global::System.ArgumentException(nameof(runtimeValue));
+            }
+
+            var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
+            if (inputInfo.IsEqSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("eq", FormatEq(input.Eq)));
+            }
+
+            if (inputInfo.IsNeqSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("neq", FormatNeq(input.Neq)));
+            }
+
+            if (inputInfo.IsInSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("in", FormatIn(input.In)));
+            }
+
+            if (inputInfo.IsNinSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nin", FormatNin(input.Nin)));
+            }
+
+            if (inputInfo.IsGtSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("gt", FormatGt(input.Gt)));
+            }
+
+            if (inputInfo.IsNgtSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("ngt", FormatNgt(input.Ngt)));
+            }
+
+            if (inputInfo.IsGteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("gte", FormatGte(input.Gte)));
+            }
+
+            if (inputInfo.IsNgteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("ngte", FormatNgte(input.Ngte)));
+            }
+
+            if (inputInfo.IsLtSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("lt", FormatLt(input.Lt)));
+            }
+
+            if (inputInfo.IsNltSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nlt", FormatNlt(input.Nlt)));
+            }
+
+            if (inputInfo.IsLteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("lte", FormatLte(input.Lte)));
+            }
+
+            if (inputInfo.IsNlteSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("nlte", FormatNlte(input.Nlte)));
+            }
+
+            return fields;
+        }
+
+        private global::System.Object? FormatEq(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNeq(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatIn(global::System.Collections.Generic.IReadOnlyList<global::System.Decimal>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    input_list.Add(_decimalFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatNin(global::System.Collections.Generic.IReadOnlyList<global::System.Decimal>? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                var input_list = new global::System.Collections.Generic.List<global::System.Object?>();
+                foreach (var input_elm in input)
+                {
+                    input_list.Add(_decimalFormatter.Format(input_elm));
+                }
+
+                return input_list;
+            }
+        }
+
+        private global::System.Object? FormatGt(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNgt(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatGte(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNgte(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatLt(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNlt(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatLte(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+
+        private global::System.Object? FormatNlte(global::System.Decimal? input)
+        {
+            if (input is null)
+            {
+                return input;
+            }
+            else
+            {
+                return _decimalFormatter.Format(input);
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class ComparableDecimalOperationFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo, global::System.IEquatable<ComparableDecimalOperationFilterInput>
+    {
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((ComparableDecimalOperationFilterInput)obj);
+        }
+
+        public virtual global::System.Boolean Equals(ComparableDecimalOperationFilterInput? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (Eq == other.Eq) && Neq == other.Neq && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(In, other.In) && global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(Nin, other.Nin) && Gt == other.Gt && Ngt == other.Ngt && Gte == other.Gte && Ngte == other.Ngte && Lt == other.Lt && Nlt == other.Nlt && Lte == other.Lte && Nlte == other.Nlte;
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                if (Eq != null)
+                {
+                    hash ^= 397 * Eq.GetHashCode();
+                }
+
+                if (Neq != null)
+                {
+                    hash ^= 397 * Neq.GetHashCode();
+                }
+
+                if (In != null)
+                {
+                    foreach (var In_elm in In)
+                    {
+                        hash ^= 397 * In_elm.GetHashCode();
+                    }
+                }
+
+                if (Nin != null)
+                {
+                    foreach (var Nin_elm in Nin)
+                    {
+                        hash ^= 397 * Nin_elm.GetHashCode();
+                    }
+                }
+
+                if (Gt != null)
+                {
+                    hash ^= 397 * Gt.GetHashCode();
+                }
+
+                if (Ngt != null)
+                {
+                    hash ^= 397 * Ngt.GetHashCode();
+                }
+
+                if (Gte != null)
+                {
+                    hash ^= 397 * Gte.GetHashCode();
+                }
+
+                if (Ngte != null)
+                {
+                    hash ^= 397 * Ngte.GetHashCode();
+                }
+
+                if (Lt != null)
+                {
+                    hash ^= 397 * Lt.GetHashCode();
+                }
+
+                if (Nlt != null)
+                {
+                    hash ^= 397 * Nlt.GetHashCode();
+                }
+
+                if (Lte != null)
+                {
+                    hash ^= 397 * Lte.GetHashCode();
+                }
+
+                if (Nlte != null)
+                {
+                    hash ^= 397 * Nlte.GetHashCode();
+                }
+
+                return hash;
+            }
+        }
+
+        private global::System.Decimal? _value_eq;
+        private global::System.Boolean _set_eq;
+        private global::System.Decimal? _value_neq;
+        private global::System.Boolean _set_neq;
+        private global::System.Collections.Generic.IReadOnlyList<global::System.Decimal>? _value_in;
+        private global::System.Boolean _set_in;
+        private global::System.Collections.Generic.IReadOnlyList<global::System.Decimal>? _value_nin;
+        private global::System.Boolean _set_nin;
+        private global::System.Decimal? _value_gt;
+        private global::System.Boolean _set_gt;
+        private global::System.Decimal? _value_ngt;
+        private global::System.Boolean _set_ngt;
+        private global::System.Decimal? _value_gte;
+        private global::System.Boolean _set_gte;
+        private global::System.Decimal? _value_ngte;
+        private global::System.Boolean _set_ngte;
+        private global::System.Decimal? _value_lt;
+        private global::System.Boolean _set_lt;
+        private global::System.Decimal? _value_nlt;
+        private global::System.Boolean _set_nlt;
+        private global::System.Decimal? _value_lte;
+        private global::System.Boolean _set_lte;
+        private global::System.Decimal? _value_nlte;
+        private global::System.Boolean _set_nlte;
+        public global::System.Decimal? Eq
+        {
+            get => _value_eq;
+            set
+            {
+                _set_eq = true;
+                _value_eq = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsEqSet => _set_eq;
+        public global::System.Decimal? Neq
+        {
+            get => _value_neq;
+            set
+            {
+                _set_neq = true;
+                _value_neq = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNeqSet => _set_neq;
+        public global::System.Collections.Generic.IReadOnlyList<global::System.Decimal>? In
+        {
+            get => _value_in;
+            set
+            {
+                _set_in = true;
+                _value_in = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsInSet => _set_in;
+        public global::System.Collections.Generic.IReadOnlyList<global::System.Decimal>? Nin
+        {
+            get => _value_nin;
+            set
+            {
+                _set_nin = true;
+                _value_nin = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNinSet => _set_nin;
+        public global::System.Decimal? Gt
+        {
+            get => _value_gt;
+            set
+            {
+                _set_gt = true;
+                _value_gt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsGtSet => _set_gt;
+        public global::System.Decimal? Ngt
+        {
+            get => _value_ngt;
+            set
+            {
+                _set_ngt = true;
+                _value_ngt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNgtSet => _set_ngt;
+        public global::System.Decimal? Gte
+        {
+            get => _value_gte;
+            set
+            {
+                _set_gte = true;
+                _value_gte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsGteSet => _set_gte;
+        public global::System.Decimal? Ngte
+        {
+            get => _value_ngte;
+            set
+            {
+                _set_ngte = true;
+                _value_ngte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNgteSet => _set_ngte;
+        public global::System.Decimal? Lt
+        {
+            get => _value_lt;
+            set
+            {
+                _set_lt = true;
+                _value_lt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsLtSet => _set_lt;
+        public global::System.Decimal? Nlt
+        {
+            get => _value_nlt;
+            set
+            {
+                _set_nlt = true;
+                _value_nlt = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNltSet => _set_nlt;
+        public global::System.Decimal? Lte
+        {
+            get => _value_lte;
+            set
+            {
+                _set_lte = true;
+                _value_lte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsLteSet => _set_lte;
+        public global::System.Decimal? Nlte
+        {
+            get => _value_nlte;
+            set
+            {
+                _set_nlte = true;
+                _value_nlte = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNlteSet => _set_nlte;
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
@@ -3661,135 +5745,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     }
 
     /// <summary>
-    /// Represents the operation service of the FetchMovieDetails GraphQL operation
-    /// <code>
-    /// query FetchMovieDetails($movieID: Int!) {
-    ///   movieById(movieId: $movieID) {
-    ///     __typename
-    ///     movieId
-    ///     title
-    ///     posterPath
-    ///     genre
-    ///     rating
-    ///     language
-    ///     duration
-    ///     overview
-    ///   }
-    /// }
-    /// </code>
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetailsQueryDocument : global::StrawberryShake.IDocument
-    {
-        private FetchMovieDetailsQueryDocument()
-        {
-        }
-
-        public static FetchMovieDetailsQueryDocument Instance { get; } = new FetchMovieDetailsQueryDocument();
-        public global::StrawberryShake.OperationKind Kind => global::StrawberryShake.OperationKind.Query;
-        public global::System.ReadOnlySpan<global::System.Byte> Body => new global::System.Byte[]{0x71, 0x75, 0x65, 0x72, 0x79, 0x20, 0x46, 0x65, 0x74, 0x63, 0x68, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x44, 0x65, 0x74, 0x61, 0x69, 0x6c, 0x73, 0x28, 0x24, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x44, 0x3a, 0x20, 0x49, 0x6e, 0x74, 0x21, 0x29, 0x20, 0x7b, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x42, 0x79, 0x49, 0x64, 0x28, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x64, 0x3a, 0x20, 0x24, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x44, 0x29, 0x20, 0x7b, 0x20, 0x5f, 0x5f, 0x74, 0x79, 0x70, 0x65, 0x6e, 0x61, 0x6d, 0x65, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x64, 0x20, 0x74, 0x69, 0x74, 0x6c, 0x65, 0x20, 0x70, 0x6f, 0x73, 0x74, 0x65, 0x72, 0x50, 0x61, 0x74, 0x68, 0x20, 0x67, 0x65, 0x6e, 0x72, 0x65, 0x20, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x20, 0x6c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x20, 0x64, 0x75, 0x72, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x20, 0x6f, 0x76, 0x65, 0x72, 0x76, 0x69, 0x65, 0x77, 0x20, 0x7d, 0x20, 0x7d};
-        public global::StrawberryShake.DocumentHash Hash { get; } = new global::StrawberryShake.DocumentHash("md5Hash", "9b268cb4e4eb8b01a77272425a11fb0e");
-        public override global::System.String ToString()
-        {
-#if NETSTANDARD2_0
-        return global::System.Text.Encoding.UTF8.GetString(Body.ToArray());
-#else
-            return global::System.Text.Encoding.UTF8.GetString(Body);
-#endif
-        }
-    }
-
-    /// <summary>
-    /// Represents the operation service of the FetchMovieDetails GraphQL operation
-    /// <code>
-    /// query FetchMovieDetails($movieID: Int!) {
-    ///   movieById(movieId: $movieID) {
-    ///     __typename
-    ///     movieId
-    ///     title
-    ///     posterPath
-    ///     genre
-    ///     rating
-    ///     language
-    ///     duration
-    ///     overview
-    ///   }
-    /// }
-    /// </code>
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetailsQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery
-    {
-        private readonly global::StrawberryShake.IOperationExecutor<IFetchMovieDetailsResult> _operationExecutor;
-        private readonly global::StrawberryShake.Serialization.IInputValueFormatter _intFormatter;
-        public FetchMovieDetailsQuery(global::StrawberryShake.IOperationExecutor<IFetchMovieDetailsResult> operationExecutor, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
-        {
-            _operationExecutor = operationExecutor ?? throw new global::System.ArgumentNullException(nameof(operationExecutor));
-            _intFormatter = serializerResolver.GetInputValueFormatter("Int");
-        }
-
-        global::System.Type global::StrawberryShake.IOperationRequestFactory.ResultType => typeof(IFetchMovieDetailsResult);
-        public async global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFetchMovieDetailsResult>> ExecuteAsync(global::System.Int32 movieID, global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            var request = CreateRequest(movieID);
-            return await _operationExecutor.ExecuteAsync(request, cancellationToken).ConfigureAwait(false);
-        }
-
-        public global::System.IObservable<global::StrawberryShake.IOperationResult<IFetchMovieDetailsResult>> Watch(global::System.Int32 movieID, global::StrawberryShake.ExecutionStrategy? strategy = null)
-        {
-            var request = CreateRequest(movieID);
-            return _operationExecutor.Watch(request, strategy);
-        }
-
-        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Int32 movieID)
-        {
-            var variables = new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>();
-            variables.Add("movieID", FormatMovieID(movieID));
-            return CreateRequest(variables);
-        }
-
-        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
-        {
-            return new global::StrawberryShake.OperationRequest(id: FetchMovieDetailsQueryDocument.Instance.Hash.Value, name: "FetchMovieDetails", document: FetchMovieDetailsQueryDocument.Instance, strategy: global::StrawberryShake.RequestStrategy.Default, variables: variables);
-        }
-
-        private global::System.Object? FormatMovieID(global::System.Int32 value)
-        {
-            return _intFormatter.Format(value);
-        }
-
-        global::StrawberryShake.OperationRequest global::StrawberryShake.IOperationRequestFactory.Create(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
-        {
-            return CreateRequest(variables!);
-        }
-    }
-
-    /// <summary>
-    /// Represents the operation service of the FetchMovieDetails GraphQL operation
-    /// <code>
-    /// query FetchMovieDetails($movieID: Int!) {
-    ///   movieById(movieId: $movieID) {
-    ///     __typename
-    ///     movieId
-    ///     title
-    ///     posterPath
-    ///     genre
-    ///     rating
-    ///     language
-    ///     duration
-    ///     overview
-    ///   }
-    /// }
-    /// </code>
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieDetailsQuery : global::StrawberryShake.IOperationRequestFactory
-    {
-        global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFetchMovieDetailsResult>> ExecuteAsync(global::System.Int32 movieID, global::System.Threading.CancellationToken cancellationToken = default);
-        global::System.IObservable<global::StrawberryShake.IOperationResult<IFetchMovieDetailsResult>> Watch(global::System.Int32 movieID, global::StrawberryShake.ExecutionStrategy? strategy = null);
-    }
-
-    /// <summary>
     /// Represents the operation service of the FetchMovieList GraphQL operation
     /// <code>
     /// query FetchMovieList {
@@ -4030,6 +5985,142 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFetchWatchListResult>> ExecuteAsync(global::System.Int32 userId, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IFetchWatchListResult>> Watch(global::System.Int32 userId, global::StrawberryShake.ExecutionStrategy? strategy = null);
+    }
+
+    /// <summary>
+    /// Represents the operation service of the FilterMovieByID GraphQL operation
+    /// <code>
+    /// query FilterMovieByID($filterInput: MovieFilterInput) {
+    ///   movieList(where: $filterInput) {
+    ///     __typename
+    ///     movieId
+    ///     title
+    ///     posterPath
+    ///     genre
+    ///     rating
+    ///     language
+    ///     duration
+    ///     overview
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByIDQueryDocument : global::StrawberryShake.IDocument
+    {
+        private FilterMovieByIDQueryDocument()
+        {
+        }
+
+        public static FilterMovieByIDQueryDocument Instance { get; } = new FilterMovieByIDQueryDocument();
+        public global::StrawberryShake.OperationKind Kind => global::StrawberryShake.OperationKind.Query;
+        public global::System.ReadOnlySpan<global::System.Byte> Body => new global::System.Byte[]{0x71, 0x75, 0x65, 0x72, 0x79, 0x20, 0x46, 0x69, 0x6c, 0x74, 0x65, 0x72, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x42, 0x79, 0x49, 0x44, 0x28, 0x24, 0x66, 0x69, 0x6c, 0x74, 0x65, 0x72, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x46, 0x69, 0x6c, 0x74, 0x65, 0x72, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x29, 0x20, 0x7b, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x4c, 0x69, 0x73, 0x74, 0x28, 0x77, 0x68, 0x65, 0x72, 0x65, 0x3a, 0x20, 0x24, 0x66, 0x69, 0x6c, 0x74, 0x65, 0x72, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x29, 0x20, 0x7b, 0x20, 0x5f, 0x5f, 0x74, 0x79, 0x70, 0x65, 0x6e, 0x61, 0x6d, 0x65, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x64, 0x20, 0x74, 0x69, 0x74, 0x6c, 0x65, 0x20, 0x70, 0x6f, 0x73, 0x74, 0x65, 0x72, 0x50, 0x61, 0x74, 0x68, 0x20, 0x67, 0x65, 0x6e, 0x72, 0x65, 0x20, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x20, 0x6c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x20, 0x64, 0x75, 0x72, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x20, 0x6f, 0x76, 0x65, 0x72, 0x76, 0x69, 0x65, 0x77, 0x20, 0x7d, 0x20, 0x7d};
+        public global::StrawberryShake.DocumentHash Hash { get; } = new global::StrawberryShake.DocumentHash("md5Hash", "b351793c4b1ee74e95dfed50318583c1");
+        public override global::System.String ToString()
+        {
+#if NETSTANDARD2_0
+        return global::System.Text.Encoding.UTF8.GetString(Body.ToArray());
+#else
+            return global::System.Text.Encoding.UTF8.GetString(Body);
+#endif
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the FilterMovieByID GraphQL operation
+    /// <code>
+    /// query FilterMovieByID($filterInput: MovieFilterInput) {
+    ///   movieList(where: $filterInput) {
+    ///     __typename
+    ///     movieId
+    ///     title
+    ///     posterPath
+    ///     genre
+    ///     rating
+    ///     language
+    ///     duration
+    ///     overview
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByIDQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery
+    {
+        private readonly global::StrawberryShake.IOperationExecutor<IFilterMovieByIDResult> _operationExecutor;
+        private readonly global::StrawberryShake.Serialization.IInputValueFormatter _movieFilterInputFormatter;
+        public FilterMovieByIDQuery(global::StrawberryShake.IOperationExecutor<IFilterMovieByIDResult> operationExecutor, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _operationExecutor = operationExecutor ?? throw new global::System.ArgumentNullException(nameof(operationExecutor));
+            _movieFilterInputFormatter = serializerResolver.GetInputValueFormatter("MovieFilterInput");
+        }
+
+        global::System.Type global::StrawberryShake.IOperationRequestFactory.ResultType => typeof(IFilterMovieByIDResult);
+        public async global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFilterMovieByIDResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput, global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var request = CreateRequest(filterInput);
+            return await _operationExecutor.ExecuteAsync(request, cancellationToken).ConfigureAwait(false);
+        }
+
+        public global::System.IObservable<global::StrawberryShake.IOperationResult<IFilterMovieByIDResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput, global::StrawberryShake.ExecutionStrategy? strategy = null)
+        {
+            var request = CreateRequest(filterInput);
+            return _operationExecutor.Watch(request, strategy);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput)
+        {
+            var variables = new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>();
+            variables.Add("filterInput", FormatFilterInput(filterInput));
+            return CreateRequest(variables);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return new global::StrawberryShake.OperationRequest(id: FilterMovieByIDQueryDocument.Instance.Hash.Value, name: "FilterMovieByID", document: FilterMovieByIDQueryDocument.Instance, strategy: global::StrawberryShake.RequestStrategy.Default, variables: variables);
+        }
+
+        private global::System.Object? FormatFilterInput(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? value)
+        {
+            if (value is null)
+            {
+                return value;
+            }
+            else
+            {
+                return _movieFilterInputFormatter.Format(value);
+            }
+        }
+
+        global::StrawberryShake.OperationRequest global::StrawberryShake.IOperationRequestFactory.Create(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return CreateRequest(variables!);
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the FilterMovieByID GraphQL operation
+    /// <code>
+    /// query FilterMovieByID($filterInput: MovieFilterInput) {
+    ///   movieList(where: $filterInput) {
+    ///     __typename
+    ///     movieId
+    ///     title
+    ///     posterPath
+    ///     genre
+    ///     rating
+    ///     language
+    ///     duration
+    ///     overview
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface IFilterMovieByIDQuery : global::StrawberryShake.IOperationRequestFactory
+    {
+        global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFilterMovieByIDResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput, global::System.Threading.CancellationToken cancellationToken = default);
+        global::System.IObservable<global::StrawberryShake.IOperationResult<IFilterMovieByIDResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput, global::StrawberryShake.ExecutionStrategy? strategy = null);
     }
 
     /// <summary>
@@ -4422,22 +6513,22 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation _deleteMovieData;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation _editMovieData;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery _fetchGenreList;
-        private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery _fetchMovieDetails;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery _fetchMovieList;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation _fetchWatchList;
+        private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery _filterMovieByID;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery _filterMovieList;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation _registerUser;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation _toggleWatchList;
-        public MovieClient(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation addMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginMutation login, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation deleteMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation editMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery fetchGenreList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery fetchMovieDetails, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery fetchMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation fetchWatchList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery filterMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation registerUser, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation toggleWatchList)
+        public MovieClient(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation addMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginMutation login, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation deleteMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation editMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery fetchGenreList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery fetchMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation fetchWatchList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery filterMovieByID, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery filterMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation registerUser, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation toggleWatchList)
         {
             _addMovieData = addMovieData ?? throw new global::System.ArgumentNullException(nameof(addMovieData));
             _login = login ?? throw new global::System.ArgumentNullException(nameof(login));
             _deleteMovieData = deleteMovieData ?? throw new global::System.ArgumentNullException(nameof(deleteMovieData));
             _editMovieData = editMovieData ?? throw new global::System.ArgumentNullException(nameof(editMovieData));
             _fetchGenreList = fetchGenreList ?? throw new global::System.ArgumentNullException(nameof(fetchGenreList));
-            _fetchMovieDetails = fetchMovieDetails ?? throw new global::System.ArgumentNullException(nameof(fetchMovieDetails));
             _fetchMovieList = fetchMovieList ?? throw new global::System.ArgumentNullException(nameof(fetchMovieList));
             _fetchWatchList = fetchWatchList ?? throw new global::System.ArgumentNullException(nameof(fetchWatchList));
+            _filterMovieByID = filterMovieByID ?? throw new global::System.ArgumentNullException(nameof(filterMovieByID));
             _filterMovieList = filterMovieList ?? throw new global::System.ArgumentNullException(nameof(filterMovieList));
             _registerUser = registerUser ?? throw new global::System.ArgumentNullException(nameof(registerUser));
             _toggleWatchList = toggleWatchList ?? throw new global::System.ArgumentNullException(nameof(toggleWatchList));
@@ -4449,9 +6540,9 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation DeleteMovieData => _deleteMovieData;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation EditMovieData => _editMovieData;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery FetchGenreList => _fetchGenreList;
-        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery FetchMovieDetails => _fetchMovieDetails;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery FetchMovieList => _fetchMovieList;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation FetchWatchList => _fetchWatchList;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery FilterMovieByID => _filterMovieByID;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery FilterMovieList => _filterMovieList;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation RegisterUser => _registerUser;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation ToggleWatchList => _toggleWatchList;
@@ -4473,11 +6564,11 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery FetchGenreList { get; }
 
-        global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery FetchMovieDetails { get; }
-
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery FetchMovieList { get; }
 
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation FetchWatchList { get; }
+
+        global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery FilterMovieByID { get; }
 
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery FilterMovieList { get; }
 
@@ -4876,77 +6967,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetailsResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieDetailsResult>
-    {
-        private readonly global::StrawberryShake.IEntityStore _entityStore;
-        public FetchMovieDetailsResultFactory(global::StrawberryShake.IEntityStore entityStore)
-        {
-            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
-        }
-
-        global::System.Type global::StrawberryShake.IOperationResultDataFactory.ResultType => typeof(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult);
-        public FetchMovieDetailsResult Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot = null)
-        {
-            if (snapshot is null)
-            {
-                snapshot = _entityStore.CurrentSnapshot;
-            }
-
-            if (dataInfo is FetchMovieDetailsResultInfo info)
-            {
-                return new FetchMovieDetailsResult(MapNonNullableIFetchMovieDetails_MovieById(info.MovieById, snapshot));
-            }
-
-            throw new global::System.ArgumentException("FetchMovieDetailsResultInfo expected.");
-        }
-
-        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetails_MovieById MapNonNullableIFetchMovieDetails_MovieById(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData data, global::StrawberryShake.IEntityStoreSnapshot snapshot)
-        {
-            IFetchMovieDetails_MovieById returnValue = default !;
-            if (data.__typename.Equals("Movie", global::System.StringComparison.Ordinal))
-            {
-                returnValue = new FetchMovieDetails_MovieById_Movie(data.MovieId ?? throw new global::System.ArgumentNullException(), data.Title ?? throw new global::System.ArgumentNullException(), data.PosterPath, data.Genre ?? throw new global::System.ArgumentNullException(), data.Rating ?? throw new global::System.ArgumentNullException(), data.Language ?? throw new global::System.ArgumentNullException(), data.Duration ?? throw new global::System.ArgumentNullException(), data.Overview ?? throw new global::System.ArgumentNullException());
-            }
-            else
-            {
-                throw new global::System.NotSupportedException();
-            }
-
-            return returnValue;
-        }
-
-        global::System.Object global::StrawberryShake.IOperationResultDataFactory.Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot)
-        {
-            return Create(dataInfo, snapshot);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetailsResultInfo : global::StrawberryShake.IOperationResultDataInfo
-    {
-        private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
-        private readonly global::System.UInt64 _version;
-        public FetchMovieDetailsResultInfo(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData movieById, global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> entityIds, global::System.UInt64 version)
-        {
-            MovieById = movieById;
-            _entityIds = entityIds ?? throw new global::System.ArgumentNullException(nameof(entityIds));
-            _version = version;
-        }
-
-        /// <summary>
-        /// Gets the movie data based on the movieId.
-        /// </summary>
-        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData MovieById { get; }
-
-        public global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> EntityIds => _entityIds;
-        public global::System.UInt64 Version => _version;
-        public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
-        {
-            return new FetchMovieDetailsResultInfo(MovieById, _entityIds, version);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class FetchMovieListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -5117,6 +7137,93 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
         {
             return new FetchWatchListResultInfo(Watchlist, _entityIds, version);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByIDResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDResult>
+    {
+        private readonly global::StrawberryShake.IEntityStore _entityStore;
+        public FilterMovieByIDResultFactory(global::StrawberryShake.IEntityStore entityStore)
+        {
+            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
+        }
+
+        global::System.Type global::StrawberryShake.IOperationResultDataFactory.ResultType => typeof(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult);
+        public FilterMovieByIDResult Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot = null)
+        {
+            if (snapshot is null)
+            {
+                snapshot = _entityStore.CurrentSnapshot;
+            }
+
+            if (dataInfo is FilterMovieByIDResultInfo info)
+            {
+                return new FilterMovieByIDResult(MapNonNullableIFilterMovieByID_MovieListNonNullableArray(info.MovieList, snapshot));
+            }
+
+            throw new global::System.ArgumentException("FilterMovieByIDResultInfo expected.");
+        }
+
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList> MapNonNullableIFilterMovieByID_MovieListNonNullableArray(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData>? list, global::StrawberryShake.IEntityStoreSnapshot snapshot)
+        {
+            if (list is null)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var movies = new global::System.Collections.Generic.List<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList>();
+            foreach (global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData child in list)
+            {
+                movies.Add(MapNonNullableIFilterMovieByID_MovieList(child, snapshot));
+            }
+
+            return movies;
+        }
+
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList MapNonNullableIFilterMovieByID_MovieList(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData data, global::StrawberryShake.IEntityStoreSnapshot snapshot)
+        {
+            IFilterMovieByID_MovieList returnValue = default !;
+            if (data.__typename.Equals("Movie", global::System.StringComparison.Ordinal))
+            {
+                returnValue = new FilterMovieByID_MovieList_Movie(data.MovieId ?? throw new global::System.ArgumentNullException(), data.Title ?? throw new global::System.ArgumentNullException(), data.PosterPath, data.Genre ?? throw new global::System.ArgumentNullException(), data.Rating ?? throw new global::System.ArgumentNullException(), data.Language ?? throw new global::System.ArgumentNullException(), data.Duration ?? throw new global::System.ArgumentNullException(), data.Overview ?? throw new global::System.ArgumentNullException());
+            }
+            else
+            {
+                throw new global::System.NotSupportedException();
+            }
+
+            return returnValue;
+        }
+
+        global::System.Object global::StrawberryShake.IOperationResultDataFactory.Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot)
+        {
+            return Create(dataInfo, snapshot);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByIDResultInfo : global::StrawberryShake.IOperationResultDataInfo
+    {
+        private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
+        private readonly global::System.UInt64 _version;
+        public FilterMovieByIDResultInfo(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> movieList, global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> entityIds, global::System.UInt64 version)
+        {
+            MovieList = movieList;
+            _entityIds = entityIds ?? throw new global::System.ArgumentNullException(nameof(entityIds));
+            _version = version;
+        }
+
+        /// <summary>
+        /// Gets the list of movies.
+        /// </summary>
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> MovieList { get; }
+
+        public global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> EntityIds => _entityIds;
+        public global::System.UInt64 Version => _version;
+        public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
+        {
+            return new FilterMovieByIDResultInfo(MovieList, _entityIds, version);
         }
     }
 
@@ -5395,6 +7502,114 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsPasswordSet { get; }
 
         global::System.Boolean IsUserTypeNameSet { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    internal interface IMovieFilterInputInfo
+    {
+        global::System.Boolean IsAndSet { get; }
+
+        global::System.Boolean IsOrSet { get; }
+
+        global::System.Boolean IsMovieIdSet { get; }
+
+        global::System.Boolean IsTitleSet { get; }
+
+        global::System.Boolean IsOverviewSet { get; }
+
+        global::System.Boolean IsGenreSet { get; }
+
+        global::System.Boolean IsLanguageSet { get; }
+
+        global::System.Boolean IsDurationSet { get; }
+
+        global::System.Boolean IsRatingSet { get; }
+
+        global::System.Boolean IsPosterPathSet { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    internal interface IComparableInt32OperationFilterInputInfo
+    {
+        global::System.Boolean IsEqSet { get; }
+
+        global::System.Boolean IsNeqSet { get; }
+
+        global::System.Boolean IsInSet { get; }
+
+        global::System.Boolean IsNinSet { get; }
+
+        global::System.Boolean IsGtSet { get; }
+
+        global::System.Boolean IsNgtSet { get; }
+
+        global::System.Boolean IsGteSet { get; }
+
+        global::System.Boolean IsNgteSet { get; }
+
+        global::System.Boolean IsLtSet { get; }
+
+        global::System.Boolean IsNltSet { get; }
+
+        global::System.Boolean IsLteSet { get; }
+
+        global::System.Boolean IsNlteSet { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    internal interface IStringOperationFilterInputInfo
+    {
+        global::System.Boolean IsAndSet { get; }
+
+        global::System.Boolean IsOrSet { get; }
+
+        global::System.Boolean IsEqSet { get; }
+
+        global::System.Boolean IsNeqSet { get; }
+
+        global::System.Boolean IsContainsSet { get; }
+
+        global::System.Boolean IsNcontainsSet { get; }
+
+        global::System.Boolean IsInSet { get; }
+
+        global::System.Boolean IsNinSet { get; }
+
+        global::System.Boolean IsStartsWithSet { get; }
+
+        global::System.Boolean IsNstartsWithSet { get; }
+
+        global::System.Boolean IsEndsWithSet { get; }
+
+        global::System.Boolean IsNendsWithSet { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    internal interface IComparableDecimalOperationFilterInputInfo
+    {
+        global::System.Boolean IsEqSet { get; }
+
+        global::System.Boolean IsNeqSet { get; }
+
+        global::System.Boolean IsInSet { get; }
+
+        global::System.Boolean IsNinSet { get; }
+
+        global::System.Boolean IsGtSet { get; }
+
+        global::System.Boolean IsNgtSet { get; }
+
+        global::System.Boolean IsGteSet { get; }
+
+        global::System.Boolean IsNgteSet { get; }
+
+        global::System.Boolean IsLtSet { get; }
+
+        global::System.Boolean IsNltSet { get; }
+
+        global::System.Boolean IsLteSet { get; }
+
+        global::System.Boolean IsNlteSet { get; }
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
@@ -5928,128 +8143,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FetchMovieDetailsBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>
-    {
-        private readonly global::StrawberryShake.IEntityStore _entityStore;
-        private readonly global::StrawberryShake.IEntityIdSerializer _idSerializer;
-        private readonly global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult> _resultDataFactory;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Int32, global::System.Int32> _intParser;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Decimal, global::System.Decimal> _decimalParser;
-        public FetchMovieDetailsBuilder(global::StrawberryShake.IEntityStore entityStore, global::StrawberryShake.IEntityIdSerializer idSerializer, global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
-        {
-            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
-            _idSerializer = idSerializer ?? throw new global::System.ArgumentNullException(nameof(idSerializer));
-            _resultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
-            _intParser = serializerResolver.GetLeafValueParser<global::System.Int32, global::System.Int32>("Int") ?? throw new global::System.ArgumentException("No serializer for type `Int` found.");
-            _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
-            _decimalParser = serializerResolver.GetLeafValueParser<global::System.Decimal, global::System.Decimal>("Decimal") ?? throw new global::System.ArgumentException("No serializer for type `Decimal` found.");
-        }
-
-        public global::StrawberryShake.IOperationResult<IFetchMovieDetailsResult> Build(global::StrawberryShake.Response<global::System.Text.Json.JsonDocument> response)
-        {
-            (IFetchMovieDetailsResult Result, FetchMovieDetailsResultInfo Info)? data = null;
-            global::System.Collections.Generic.IReadOnlyList<global::StrawberryShake.IClientError>? errors = null;
-            if (response.Exception is null)
-            {
-                try
-                {
-                    if (response.Body != null)
-                    {
-                        if (response.Body.RootElement.TryGetProperty("data", out global::System.Text.Json.JsonElement dataElement) && dataElement.ValueKind == global::System.Text.Json.JsonValueKind.Object)
-                        {
-                            data = BuildData(dataElement);
-                        }
-
-                        if (response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
-                        {
-                            errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
-                        }
-                    }
-                }
-                catch (global::System.Exception ex)
-                {
-                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(ex.Message, exception: ex, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
-                }
-            }
-            else
-            {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
-            }
-
-            return new global::StrawberryShake.OperationResult<IFetchMovieDetailsResult>(data?.Result, data?.Info, _resultDataFactory, errors);
-        }
-
-        private (IFetchMovieDetailsResult, FetchMovieDetailsResultInfo) BuildData(global::System.Text.Json.JsonElement obj)
-        {
-            var entityIds = new global::System.Collections.Generic.HashSet<global::StrawberryShake.EntityId>();
-            global::StrawberryShake.IEntityStoreSnapshot snapshot = default !;
-            _entityStore.Update(session =>
-            {
-                snapshot = session.CurrentSnapshot;
-            });
-            var resultInfo = new FetchMovieDetailsResultInfo(DeserializeNonNullableIFetchMovieDetails_MovieById(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieById")), entityIds, snapshot.Version);
-            return (_resultDataFactory.Create(resultInfo), resultInfo);
-        }
-
-        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData DeserializeNonNullableIFetchMovieDetails_MovieById(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            var typename = obj.Value.GetProperty("__typename").GetString();
-            if (typename?.Equals("Movie", global::System.StringComparison.Ordinal) ?? false)
-            {
-                return new global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData(typename, movieId: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieId")), title: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "title")), posterPath: DeserializeString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "posterPath")), genre: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "genre")), rating: DeserializeNonNullableDecimal(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "rating")), language: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "language")), duration: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "duration")), overview: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "overview")));
-            }
-
-            throw new global::System.NotSupportedException();
-        }
-
-        private global::System.Int32 DeserializeNonNullableInt32(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            return _intParser.Parse(obj.Value.GetInt32()!);
-        }
-
-        private global::System.String DeserializeNonNullableString(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            return _stringParser.Parse(obj.Value.GetString()!);
-        }
-
-        private global::System.String? DeserializeString(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                return null;
-            }
-
-            return _stringParser.Parse(obj.Value.GetString()!);
-        }
-
-        private global::System.Decimal DeserializeNonNullableDecimal(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            return _decimalParser.Parse(obj.Value.GetDecimal()!);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class FetchMovieListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -6279,6 +8372,144 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             if (typename?.Equals("Movie", global::System.StringComparison.Ordinal) ?? false)
             {
                 return new global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData(typename, movieId: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieId")), title: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "title")), posterPath: DeserializeString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "posterPath")), genre: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "genre")), rating: DeserializeNonNullableDecimal(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "rating")), language: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "language")), duration: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "duration")));
+            }
+
+            throw new global::System.NotSupportedException();
+        }
+
+        private global::System.Int32 DeserializeNonNullableInt32(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _intParser.Parse(obj.Value.GetInt32()!);
+        }
+
+        private global::System.String DeserializeNonNullableString(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _stringParser.Parse(obj.Value.GetString()!);
+        }
+
+        private global::System.String? DeserializeString(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                return null;
+            }
+
+            return _stringParser.Parse(obj.Value.GetString()!);
+        }
+
+        private global::System.Decimal DeserializeNonNullableDecimal(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _decimalParser.Parse(obj.Value.GetDecimal()!);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class FilterMovieByIDBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>
+    {
+        private readonly global::StrawberryShake.IEntityStore _entityStore;
+        private readonly global::StrawberryShake.IEntityIdSerializer _idSerializer;
+        private readonly global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult> _resultDataFactory;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Int32, global::System.Int32> _intParser;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Decimal, global::System.Decimal> _decimalParser;
+        public FilterMovieByIDBuilder(global::StrawberryShake.IEntityStore entityStore, global::StrawberryShake.IEntityIdSerializer idSerializer, global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
+            _idSerializer = idSerializer ?? throw new global::System.ArgumentNullException(nameof(idSerializer));
+            _resultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
+            _intParser = serializerResolver.GetLeafValueParser<global::System.Int32, global::System.Int32>("Int") ?? throw new global::System.ArgumentException("No serializer for type `Int` found.");
+            _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
+            _decimalParser = serializerResolver.GetLeafValueParser<global::System.Decimal, global::System.Decimal>("Decimal") ?? throw new global::System.ArgumentException("No serializer for type `Decimal` found.");
+        }
+
+        public global::StrawberryShake.IOperationResult<IFilterMovieByIDResult> Build(global::StrawberryShake.Response<global::System.Text.Json.JsonDocument> response)
+        {
+            (IFilterMovieByIDResult Result, FilterMovieByIDResultInfo Info)? data = null;
+            global::System.Collections.Generic.IReadOnlyList<global::StrawberryShake.IClientError>? errors = null;
+            if (response.Exception is null)
+            {
+                try
+                {
+                    if (response.Body != null)
+                    {
+                        if (response.Body.RootElement.TryGetProperty("data", out global::System.Text.Json.JsonElement dataElement) && dataElement.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                        {
+                            data = BuildData(dataElement);
+                        }
+
+                        if (response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                        {
+                            errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                        }
+                    }
+                }
+                catch (global::System.Exception ex)
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(ex.Message, exception: ex, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
+            }
+            else
+            {
+                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+            }
+
+            return new global::StrawberryShake.OperationResult<IFilterMovieByIDResult>(data?.Result, data?.Info, _resultDataFactory, errors);
+        }
+
+        private (IFilterMovieByIDResult, FilterMovieByIDResultInfo) BuildData(global::System.Text.Json.JsonElement obj)
+        {
+            var entityIds = new global::System.Collections.Generic.HashSet<global::StrawberryShake.EntityId>();
+            global::StrawberryShake.IEntityStoreSnapshot snapshot = default !;
+            _entityStore.Update(session =>
+            {
+                snapshot = session.CurrentSnapshot;
+            });
+            var resultInfo = new FilterMovieByIDResultInfo(DeserializeNonNullableIFilterMovieByID_MovieListNonNullableArray(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieList")), entityIds, snapshot.Version);
+            return (_resultDataFactory.Create(resultInfo), resultInfo);
+        }
+
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> DeserializeNonNullableIFilterMovieByID_MovieListNonNullableArray(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var movies = new global::System.Collections.Generic.List<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData>();
+            foreach (global::System.Text.Json.JsonElement child in obj.Value.EnumerateArray())
+            {
+                movies.Add(DeserializeNonNullableIFilterMovieByID_MovieList(child));
+            }
+
+            return movies;
+        }
+
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData DeserializeNonNullableIFilterMovieByID_MovieList(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var typename = obj.Value.GetProperty("__typename").GetString();
+            if (typename?.Equals("Movie", global::System.StringComparison.Ordinal) ?? false)
+            {
+                return new global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData(typename, movieId: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieId")), title: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "title")), posterPath: DeserializeString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "posterPath")), genre: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "genre")), rating: DeserializeNonNullableDecimal(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "rating")), language: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "language")), duration: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "duration")), overview: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "overview")));
             }
 
             throw new global::System.NotSupportedException();
@@ -6852,9 +9083,9 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.DeleteMovieDataMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.EditMovieDataMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchGenreListQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieDetailsQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieListQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchWatchListMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieListQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.RegisterUserMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ToggleWatchListMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
@@ -6891,6 +9122,10 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::StrawberryShake.Serialization.JsonSerializer>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserLoginInputInputValueFormatter>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInputInputValueFormatter>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInputInputValueFormatter>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInputInputValueFormatter>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableDecimalOperationFilterInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializerResolver>(services, sp => new global::StrawberryShake.Serialization.SerializerResolver(global::System.Linq.Enumerable.Concat(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::System.Collections.Generic.IEnumerable<global::StrawberryShake.Serialization.ISerializer>>(parentServices), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::System.Collections.Generic.IEnumerable<global::StrawberryShake.Serialization.ISerializer>>(sp))));
@@ -6929,13 +9164,6 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchGenreListQuery>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchGenreListQuery>(sp));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FetchMovieDetailsResultFactory>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>>(sp));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery>(sp));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FetchMovieDetailsBuilder>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieDetailsQuery>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieDetailsQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieDetailsQuery>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FetchMovieListResultFactory>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListResult>>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery>(sp));
@@ -6950,6 +9178,13 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchWatchListMutation>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchWatchListMutation>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FilterMovieByIDResultFactory>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FilterMovieByIDBuilder>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDQuery>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDQuery>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FilterMovieListResultFactory>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery>(sp));

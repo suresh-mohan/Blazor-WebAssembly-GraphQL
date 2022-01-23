@@ -57,9 +57,10 @@ builder.Services.AddGraphQLServer()
     .AddAuthorization()
     //.AddDefaultTransactionScopeHandler()
     .AddQueryType<MovieQueryResolver>()
-    .AddMutationType<MovieMutation>()
+    .AddMutationType<MovieMutationResolver>()
     .AddTypeExtension<AuthMutationResolver>()
     .AddTypeExtension<WatchlistMutationResolver>()
+    .AddFiltering()
     .AddSorting();
 
 var app = builder.Build();

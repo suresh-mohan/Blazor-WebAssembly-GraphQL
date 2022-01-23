@@ -7,7 +7,7 @@ namespace BlazorWasmGraphQL.Server.GraphQL
     {
         readonly IMovie _movieService;
 
-        public MovieQueryResolver([Service] IMovie movieService)
+        public MovieQueryResolver(IMovie movieService)
         {
             _movieService = movieService;
         }
@@ -20,16 +20,11 @@ namespace BlazorWasmGraphQL.Server.GraphQL
 
         [GraphQLDescription("Gets the list of movies.")]
         [UseSorting]
+        [UseFiltering]
         public async Task<IQueryable<Movie>> GetMovieList()
         {
             List<Movie> availableMovies = await _movieService.GetAllMovies();
             return availableMovies.AsQueryable();
-        }
-
-        [GraphQLDescription("Gets the movie data based on the movieId.")]
-        public async Task<Movie> GetMovieById(int movieId)
-        {
-            return await _movieService.GetMovieData(movieId);
         }
     }
 }

@@ -39,8 +39,17 @@ namespace BlazorWasmGraphQL.Client.Pages
             {
                 Title = "Edit";
 
-                var response = await MovieClient.FetchMovieDetails.ExecuteAsync(MovieID);
-                var movieData = response?.Data?.MovieById;
+                MovieFilterInput movieFilterInput = new()
+                {
+                    MovieId = new()
+                    {
+                        Eq = MovieID
+                    }
+                };
+
+                var response = await MovieClient.FilterMovieByID.ExecuteAsync(movieFilterInput);
+                var movieData = response?.Data?.MovieList[0];
+
                 if (movieData is not null)
                 {
                     movie.MovieId = movieData.MovieId;

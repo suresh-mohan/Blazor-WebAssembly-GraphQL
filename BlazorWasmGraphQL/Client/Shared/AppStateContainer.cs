@@ -30,8 +30,6 @@ namespace BlazorWasmGraphQL.Client.Shared
                     GenreName = x.GenreName,
                 }).ToList();
             }
-
-            //NotifyAppStateChanged();
         }
 
         public async Task GetUserWatchlist(int userId)

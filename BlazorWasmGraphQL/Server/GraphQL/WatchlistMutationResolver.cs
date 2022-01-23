@@ -4,7 +4,7 @@ using HotChocolate.AspNetCore.Authorization;
 
 namespace BlazorWasmGraphQL.Server.GraphQL
 {
-    [ExtendObjectType(typeof(MovieMutation))]
+    [ExtendObjectType(typeof(MovieMutationResolver))]
     public class WatchlistMutationResolver
     {
         readonly IWatchlist _watchlistService;

@@ -1,6 +1,6 @@
 ﻿schema {
   query: MovieQueryResolver
-  mutation: MovieMutation
+  mutation: MovieMutationResolver
 }
 
 enum ApplyPolicy {
@@ -12,12 +12,10 @@ type MovieQueryResolver {
   "Gets the list of genres."
   genreList: [Genre!]!
   "Gets the list of movies."
-  movieList(order: [MovieSortInput!]): [Movie!]!
-  "Gets the movie data based on the movieId."
-  movieById(movieId: Int!): Movie!
+  movieList(order: [MovieSortInput!] where: MovieFilterInput): [Movie!]!
 }
 
-type MovieMutation {
+type MovieMutationResolver {
   "Add a new movie data."
   addMovie(movie: MovieInput!): AddMoviePayload!
   "Edit an existing movie data."
@@ -45,9 +43,67 @@ input MovieSortInput {
   posterPath: SortEnumType
 }
 
+input MovieFilterInput {
+  and: [MovieFilterInput!]
+  or: [MovieFilterInput!]
+  movieId: ComparableInt32OperationFilterInput
+  title: StringOperationFilterInput
+  overview: StringOperationFilterInput
+  genre: StringOperationFilterInput
+  language: StringOperationFilterInput
+  duration: ComparableInt32OperationFilterInput
+  rating: ComparableDecimalOperationFilterInput
+  posterPath: StringOperationFilterInput
+}
+
 enum SortEnumType {
   ASC
   DESC
+}
+
+input ComparableInt32OperationFilterInput {
+  eq: Int
+  neq: Int
+  in: [Int!]
+  nin: [Int!]
+  gt: Int
+  ngt: Int
+  gte: Int
+  ngte: Int
+  lt: Int
+  nlt: Int
+  lte: Int
+  nlte: Int
+}
+
+input StringOperationFilterInput {
+  and: [StringOperationFilterInput!]
+  or: [StringOperationFilterInput!]
+  eq: String
+  neq: String
+  contains: String
+  ncontains: String
+  in: [String]
+  nin: [String]
+  startsWith: String
+  nstartsWith: String
+  endsWith: String
+  nendsWith: String
+}
+
+input ComparableDecimalOperationFilterInput {
+  eq: Decimal
+  neq: Decimal
+  in: [Decimal!]
+  nin: [Decimal!]
+  gt: Decimal
+  ngt: Decimal
+  gte: Decimal
+  ngte: Decimal
+  lt: Decimal
+  nlt: Decimal
+  lte: Decimal
+  nlte: Decimal
 }
 
 input MovieInput {

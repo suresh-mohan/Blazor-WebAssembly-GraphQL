@@ -18,11 +18,19 @@ namespace BlazorWasmGraphQL.Client.Pages
 
         protected override async Task OnParametersSetAsync()
         {
-            var response = await MovieClient.FetchMovieDetails.ExecuteAsync(MovieID);
+            MovieFilterInput movieFilterInput = new()
+            {
+                MovieId = new()
+                {
+                    Eq = MovieID
+                }
+            };
+
+            var response = await MovieClient.FilterMovieByID.ExecuteAsync(movieFilterInput);
 
             if (response.Data is not null)
             {
-                var movieData = response.Data.MovieById;
+                var movieData = response.Data.MovieList[0];
 
                 movie.MovieId = movieData.MovieId;
                 movie.Title = movieData.Title;

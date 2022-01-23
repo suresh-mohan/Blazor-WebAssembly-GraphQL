@@ -9,7 +9,7 @@ using System.Text;
 
 namespace BlazorWasmGraphQL.Server.GraphQL
 {
-    [ExtendObjectType(typeof(MovieMutation))]
+    [ExtendObjectType(typeof(MovieMutationResolver))]
     public class AuthMutationResolver
     {
         readonly IUser _userService;

@@ -5,7 +5,7 @@ using HotChocolate.AspNetCore.Authorization;
 
 namespace BlazorWasmGraphQL.Server.GraphQL
 {
-    public class MovieMutation
+    public class MovieMutationResolver
     {
         public record AddMoviePayload(Movie movie);
 
@@ -14,7 +14,7 @@ namespace BlazorWasmGraphQL.Server.GraphQL
         readonly IConfiguration _config;
         readonly string posterFolderPath = string.Empty;
 
-        public MovieMutation(IConfiguration config, [Service] IMovie movieService, IWebHostEnvironment hostingEnvironment)
+        public MovieMutationResolver(IConfiguration config, IMovie movieService, IWebHostEnvironment hostingEnvironment)
         {
             _config = config;
             _movieService = movieService;

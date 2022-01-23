@@ -75,7 +75,7 @@ namespace BlazorWasmGraphQL.Server.DataAccess
 
         public async Task<List<Genre>> GetGenre()
         {
-            return await _dbContext.Genres.ToListAsync();
+            return await _dbContext.Genres.AsNoTracking().ToListAsync();
         }
 
         public async Task<List<Movie>> GetMoviesAvailableInWatchlist(string watchlistID)

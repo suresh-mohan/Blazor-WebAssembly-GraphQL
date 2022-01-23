@@ -1,5 +1,5 @@
-query FetchMovieDetails($movieID:Int!){
-  movieById(movieId : $movieID){
+query FilterMovieByID($filterInput:MovieFilterInput){
+  movieList(where:$filterInput){
     movieId,
     title,
     posterPath,

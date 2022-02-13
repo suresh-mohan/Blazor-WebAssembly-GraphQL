@@ -1,14 +1,16 @@
 ﻿@inherits MovieGenreBase
 
 <div class="list-group mb-3 col-md-2">
-    <a @onclick="(() => SelectGenre(string.Empty))"
-       class="list-group-item list-group-item-action @(string.IsNullOrEmpty(SelectedGenre) ? "active-genre" : "")">
+    <a @onclick="(() => SelectGenre(string.Empty))" 
+        class="list-group-item list-group-item-action
+        @(string.IsNullOrEmpty(SelectedGenre) ? "active-genre" : "")">
         All Genre
     </a>
     @foreach (var genre in lstGenre)
     {
-        <a @onclick="(() => SelectGenre(genre.GenreName))"
-           class="list-group-item list-group-item-action @(SelectedGenre==genre.GenreName ? "active-genre" : "" )">
+        <a @onclick="(() => SelectGenre(genre.GenreName))" 
+            class="list-group-item list-group-item-action
+            @(SelectedGenre==genre.GenreName ? "active-genre" : "" )">
             @genre.GenreName
         </a>
     }

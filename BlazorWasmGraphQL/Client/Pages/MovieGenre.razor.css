@@ -1,15 +1,10 @@
-﻿.list-group {
-    /*position: fixed;*/
-}
-
-.active-genre {
-    background-color: #fb641b !important;
+﻿.active-genre {
+    background-color: #fb641b;
 }
 
 a {
     cursor: pointer;
 }
-
 
 @media only screen and (max-width: 768px) {
     .list-group {

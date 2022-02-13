@@ -29,7 +29,7 @@ namespace BlazorWasmGraphQL.Client.Pages
 
         async Task GetMovieList(MovieSortInput sortInput)
         {
-            var results = await MovieClient.FilterMovieList.ExecuteAsync(sortInput);
+            var results = await MovieClient.SortMovieList.ExecuteAsync(sortInput);
 
             if (results.Data is not null)
             {

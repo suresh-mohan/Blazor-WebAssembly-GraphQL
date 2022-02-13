@@ -27,5 +27,15 @@ namespace BlazorWasmGraphQL.Shared.Dto
 
         [Required]
         public string Gender { get; set; }
+
+        public UserRegistration()
+        {
+            FirstName = string.Empty;
+            LastName = string.Empty;
+            Gender = string.Empty;
+            Username = string.Empty;
+            Password = string.Empty;
+            ConfirmPassword = string.Empty;
+        }
     }
 }

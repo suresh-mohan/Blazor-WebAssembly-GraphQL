@@ -1398,195 +1398,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieListResult : global::System.IEquatable<FilterMovieListResult>, IFilterMovieListResult
-    {
-        public FilterMovieListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieList_MovieList> movieList)
-        {
-            MovieList = movieList;
-        }
-
-        /// <summary>
-        /// Gets the list of movies.
-        /// </summary>
-        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieList_MovieList> MovieList { get; }
-
-        public virtual global::System.Boolean Equals(FilterMovieListResult? other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            if (other.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return (global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(MovieList, other.MovieList));
-        }
-
-        public override global::System.Boolean Equals(global::System.Object? obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return Equals((FilterMovieListResult)obj);
-        }
-
-        public override global::System.Int32 GetHashCode()
-        {
-            unchecked
-            {
-                int hash = 5;
-                foreach (var MovieList_elm in MovieList)
-                {
-                    hash ^= 397 * MovieList_elm.GetHashCode();
-                }
-
-                return hash;
-            }
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieList_MovieList_Movie : global::System.IEquatable<FilterMovieList_MovieList_Movie>, IFilterMovieList_MovieList_Movie
-    {
-        public FilterMovieList_MovieList_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration)
-        {
-            MovieId = movieId;
-            Title = title;
-            PosterPath = posterPath;
-            Genre = genre;
-            Rating = rating;
-            Language = language;
-            Duration = duration;
-        }
-
-        public global::System.Int32 MovieId { get; }
-
-        public global::System.String Title { get; }
-
-        public global::System.String? PosterPath { get; }
-
-        public global::System.String Genre { get; }
-
-        public global::System.Decimal Rating { get; }
-
-        public global::System.String Language { get; }
-
-        public global::System.Int32 Duration { get; }
-
-        public virtual global::System.Boolean Equals(FilterMovieList_MovieList_Movie? other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            if (other.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return (MovieId == other.MovieId) && Title.Equals(other.Title) && ((PosterPath is null && other.PosterPath is null) || PosterPath != null && PosterPath.Equals(other.PosterPath)) && Genre.Equals(other.Genre) && Rating == other.Rating && Language.Equals(other.Language) && Duration == other.Duration;
-        }
-
-        public override global::System.Boolean Equals(global::System.Object? obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return Equals((FilterMovieList_MovieList_Movie)obj);
-        }
-
-        public override global::System.Int32 GetHashCode()
-        {
-            unchecked
-            {
-                int hash = 5;
-                hash ^= 397 * MovieId.GetHashCode();
-                hash ^= 397 * Title.GetHashCode();
-                if (PosterPath != null)
-                {
-                    hash ^= 397 * PosterPath.GetHashCode();
-                }
-
-                hash ^= 397 * Genre.GetHashCode();
-                hash ^= 397 * Rating.GetHashCode();
-                hash ^= 397 * Language.GetHashCode();
-                hash ^= 397 * Duration.GetHashCode();
-                return hash;
-            }
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieListResult
-    {
-        /// <summary>
-        /// Gets the list of movies.
-        /// </summary>
-        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieList_MovieList> MovieList { get; }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieList_MovieList
-    {
-        public global::System.Int32 MovieId { get; }
-
-        public global::System.String Title { get; }
-
-        public global::System.String? PosterPath { get; }
-
-        public global::System.String Genre { get; }
-
-        public global::System.Decimal Rating { get; }
-
-        public global::System.String Language { get; }
-
-        public global::System.Int32 Duration { get; }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieList_MovieList_Movie : IFilterMovieList_MovieList
-    {
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class RegisterUserResult : global::System.IEquatable<RegisterUserResult>, IRegisterUserResult
     {
         public RegisterUserResult(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUser_UserRegistration userRegistration)
@@ -1738,6 +1549,195 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public interface IRegisterUser_UserRegistration_RegistrationResponse : IRegisterUser_UserRegistration
+    {
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieListResult : global::System.IEquatable<SortMovieListResult>, ISortMovieListResult
+    {
+        public SortMovieListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList> movieList)
+        {
+            MovieList = movieList;
+        }
+
+        /// <summary>
+        /// Gets the list of movies.
+        /// </summary>
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList> MovieList { get; }
+
+        public virtual global::System.Boolean Equals(SortMovieListResult? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (global::StrawberryShake.Helper.ComparisonHelper.SequenceEqual(MovieList, other.MovieList));
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((SortMovieListResult)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                foreach (var MovieList_elm in MovieList)
+                {
+                    hash ^= 397 * MovieList_elm.GetHashCode();
+                }
+
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieList_MovieList_Movie : global::System.IEquatable<SortMovieList_MovieList_Movie>, ISortMovieList_MovieList_Movie
+    {
+        public SortMovieList_MovieList_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration)
+        {
+            MovieId = movieId;
+            Title = title;
+            PosterPath = posterPath;
+            Genre = genre;
+            Rating = rating;
+            Language = language;
+            Duration = duration;
+        }
+
+        public global::System.Int32 MovieId { get; }
+
+        public global::System.String Title { get; }
+
+        public global::System.String? PosterPath { get; }
+
+        public global::System.String Genre { get; }
+
+        public global::System.Decimal Rating { get; }
+
+        public global::System.String Language { get; }
+
+        public global::System.Int32 Duration { get; }
+
+        public virtual global::System.Boolean Equals(SortMovieList_MovieList_Movie? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (MovieId == other.MovieId) && Title.Equals(other.Title) && ((PosterPath is null && other.PosterPath is null) || PosterPath != null && PosterPath.Equals(other.PosterPath)) && Genre.Equals(other.Genre) && Rating == other.Rating && Language.Equals(other.Language) && Duration == other.Duration;
+        }
+
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((SortMovieList_MovieList_Movie)obj);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * MovieId.GetHashCode();
+                hash ^= 397 * Title.GetHashCode();
+                if (PosterPath != null)
+                {
+                    hash ^= 397 * PosterPath.GetHashCode();
+                }
+
+                hash ^= 397 * Genre.GetHashCode();
+                hash ^= 397 * Rating.GetHashCode();
+                hash ^= 397 * Language.GetHashCode();
+                hash ^= 397 * Duration.GetHashCode();
+                return hash;
+            }
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface ISortMovieListResult
+    {
+        /// <summary>
+        /// Gets the list of movies.
+        /// </summary>
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList> MovieList { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface ISortMovieList_MovieList
+    {
+        public global::System.Int32 MovieId { get; }
+
+        public global::System.String Title { get; }
+
+        public global::System.String? PosterPath { get; }
+
+        public global::System.String Genre { get; }
+
+        public global::System.Decimal Rating { get; }
+
+        public global::System.String Language { get; }
+
+        public global::System.Int32 Duration { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface ISortMovieList_MovieList_Movie : ISortMovieList_MovieList
     {
     }
 
@@ -4534,6 +4534,263 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class UserRegistrationInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
+    {
+        private global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter = default !;
+        public global::System.String TypeName => "UserRegistrationInput";
+        public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _stringFormatter = serializerResolver.GetInputValueFormatter("String");
+        }
+
+        public global::System.Object? Format(global::System.Object? runtimeValue)
+        {
+            if (runtimeValue is null)
+            {
+                return null;
+            }
+
+            var input = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInput;
+            var inputInfo = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo;
+            if (input is null || inputInfo is null)
+            {
+                throw new global::System.ArgumentException(nameof(runtimeValue));
+            }
+
+            var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
+            if (inputInfo.IsFirstNameSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("firstName", FormatFirstName(input.FirstName)));
+            }
+
+            if (inputInfo.IsLastNameSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("lastName", FormatLastName(input.LastName)));
+            }
+
+            if (inputInfo.IsUsernameSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("username", FormatUsername(input.Username)));
+            }
+
+            if (inputInfo.IsPasswordSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("password", FormatPassword(input.Password)));
+            }
+
+            if (inputInfo.IsConfirmPasswordSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("confirmPassword", FormatConfirmPassword(input.ConfirmPassword)));
+            }
+
+            if (inputInfo.IsGenderSet)
+            {
+                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("gender", FormatGender(input.Gender)));
+            }
+
+            return fields;
+        }
+
+        private global::System.Object? FormatFirstName(global::System.String input)
+        {
+            if (input is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(input));
+            }
+
+            return _stringFormatter.Format(input);
+        }
+
+        private global::System.Object? FormatLastName(global::System.String input)
+        {
+            if (input is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(input));
+            }
+
+            return _stringFormatter.Format(input);
+        }
+
+        private global::System.Object? FormatUsername(global::System.String input)
+        {
+            if (input is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(input));
+            }
+
+            return _stringFormatter.Format(input);
+        }
+
+        private global::System.Object? FormatPassword(global::System.String input)
+        {
+            if (input is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(input));
+            }
+
+            return _stringFormatter.Format(input);
+        }
+
+        private global::System.Object? FormatConfirmPassword(global::System.String input)
+        {
+            if (input is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(input));
+            }
+
+            return _stringFormatter.Format(input);
+        }
+
+        private global::System.Object? FormatGender(global::System.String input)
+        {
+            if (input is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(input));
+            }
+
+            return _stringFormatter.Format(input);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class UserRegistrationInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo, global::System.IEquatable<UserRegistrationInput>
+    {
+        public override global::System.Boolean Equals(global::System.Object? obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return Equals((UserRegistrationInput)obj);
+        }
+
+        public virtual global::System.Boolean Equals(UserRegistrationInput? other)
+        {
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (other.GetType() != GetType())
+            {
+                return false;
+            }
+
+            return (FirstName.Equals(other.FirstName)) && LastName.Equals(other.LastName) && Username.Equals(other.Username) && Password.Equals(other.Password) && ConfirmPassword.Equals(other.ConfirmPassword) && Gender.Equals(other.Gender);
+        }
+
+        public override global::System.Int32 GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 5;
+                hash ^= 397 * FirstName.GetHashCode();
+                hash ^= 397 * LastName.GetHashCode();
+                hash ^= 397 * Username.GetHashCode();
+                hash ^= 397 * Password.GetHashCode();
+                hash ^= 397 * ConfirmPassword.GetHashCode();
+                hash ^= 397 * Gender.GetHashCode();
+                return hash;
+            }
+        }
+
+        private global::System.String _value_firstName = default !;
+        private global::System.Boolean _set_firstName;
+        private global::System.String _value_lastName = default !;
+        private global::System.Boolean _set_lastName;
+        private global::System.String _value_username = default !;
+        private global::System.Boolean _set_username;
+        private global::System.String _value_password = default !;
+        private global::System.Boolean _set_password;
+        private global::System.String _value_confirmPassword = default !;
+        private global::System.Boolean _set_confirmPassword;
+        private global::System.String _value_gender = default !;
+        private global::System.Boolean _set_gender;
+        public global::System.String FirstName
+        {
+            get => _value_firstName;
+            set
+            {
+                _set_firstName = true;
+                _value_firstName = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsFirstNameSet => _set_firstName;
+        public global::System.String LastName
+        {
+            get => _value_lastName;
+            set
+            {
+                _set_lastName = true;
+                _value_lastName = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsLastNameSet => _set_lastName;
+        public global::System.String Username
+        {
+            get => _value_username;
+            set
+            {
+                _set_username = true;
+                _value_username = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsUsernameSet => _set_username;
+        public global::System.String Password
+        {
+            get => _value_password;
+            set
+            {
+                _set_password = true;
+                _value_password = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsPasswordSet => _set_password;
+        public global::System.String ConfirmPassword
+        {
+            get => _value_confirmPassword;
+            set
+            {
+                _set_confirmPassword = true;
+                _value_confirmPassword = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsConfirmPasswordSet => _set_confirmPassword;
+        public global::System.String Gender
+        {
+            get => _value_gender;
+            set
+            {
+                _set_gender = true;
+                _value_gender = value;
+            }
+        }
+
+        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsGenderSet => _set_gender;
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class MovieSortInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _sortEnumTypeFormatter = default !;
@@ -4894,263 +5151,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
 
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieSortInputInfo.IsPosterPathSet => _set_posterPath;
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class UserRegistrationInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
-    {
-        private global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter = default !;
-        public global::System.String TypeName => "UserRegistrationInput";
-        public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
-        {
-            _stringFormatter = serializerResolver.GetInputValueFormatter("String");
-        }
-
-        public global::System.Object? Format(global::System.Object? runtimeValue)
-        {
-            if (runtimeValue is null)
-            {
-                return null;
-            }
-
-            var input = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInput;
-            var inputInfo = runtimeValue as global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo;
-            if (input is null || inputInfo is null)
-            {
-                throw new global::System.ArgumentException(nameof(runtimeValue));
-            }
-
-            var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
-            if (inputInfo.IsFirstNameSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("firstName", FormatFirstName(input.FirstName)));
-            }
-
-            if (inputInfo.IsLastNameSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("lastName", FormatLastName(input.LastName)));
-            }
-
-            if (inputInfo.IsUsernameSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("username", FormatUsername(input.Username)));
-            }
-
-            if (inputInfo.IsPasswordSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("password", FormatPassword(input.Password)));
-            }
-
-            if (inputInfo.IsConfirmPasswordSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("confirmPassword", FormatConfirmPassword(input.ConfirmPassword)));
-            }
-
-            if (inputInfo.IsGenderSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("gender", FormatGender(input.Gender)));
-            }
-
-            return fields;
-        }
-
-        private global::System.Object? FormatFirstName(global::System.String input)
-        {
-            if (input is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(input));
-            }
-
-            return _stringFormatter.Format(input);
-        }
-
-        private global::System.Object? FormatLastName(global::System.String input)
-        {
-            if (input is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(input));
-            }
-
-            return _stringFormatter.Format(input);
-        }
-
-        private global::System.Object? FormatUsername(global::System.String input)
-        {
-            if (input is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(input));
-            }
-
-            return _stringFormatter.Format(input);
-        }
-
-        private global::System.Object? FormatPassword(global::System.String input)
-        {
-            if (input is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(input));
-            }
-
-            return _stringFormatter.Format(input);
-        }
-
-        private global::System.Object? FormatConfirmPassword(global::System.String input)
-        {
-            if (input is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(input));
-            }
-
-            return _stringFormatter.Format(input);
-        }
-
-        private global::System.Object? FormatGender(global::System.String input)
-        {
-            if (input is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(input));
-            }
-
-            return _stringFormatter.Format(input);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class UserRegistrationInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo, global::System.IEquatable<UserRegistrationInput>
-    {
-        public override global::System.Boolean Equals(global::System.Object? obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return Equals((UserRegistrationInput)obj);
-        }
-
-        public virtual global::System.Boolean Equals(UserRegistrationInput? other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            if (other.GetType() != GetType())
-            {
-                return false;
-            }
-
-            return (FirstName.Equals(other.FirstName)) && LastName.Equals(other.LastName) && Username.Equals(other.Username) && Password.Equals(other.Password) && ConfirmPassword.Equals(other.ConfirmPassword) && Gender.Equals(other.Gender);
-        }
-
-        public override global::System.Int32 GetHashCode()
-        {
-            unchecked
-            {
-                int hash = 5;
-                hash ^= 397 * FirstName.GetHashCode();
-                hash ^= 397 * LastName.GetHashCode();
-                hash ^= 397 * Username.GetHashCode();
-                hash ^= 397 * Password.GetHashCode();
-                hash ^= 397 * ConfirmPassword.GetHashCode();
-                hash ^= 397 * Gender.GetHashCode();
-                return hash;
-            }
-        }
-
-        private global::System.String _value_firstName = default !;
-        private global::System.Boolean _set_firstName;
-        private global::System.String _value_lastName = default !;
-        private global::System.Boolean _set_lastName;
-        private global::System.String _value_username = default !;
-        private global::System.Boolean _set_username;
-        private global::System.String _value_password = default !;
-        private global::System.Boolean _set_password;
-        private global::System.String _value_confirmPassword = default !;
-        private global::System.Boolean _set_confirmPassword;
-        private global::System.String _value_gender = default !;
-        private global::System.Boolean _set_gender;
-        public global::System.String FirstName
-        {
-            get => _value_firstName;
-            set
-            {
-                _set_firstName = true;
-                _value_firstName = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsFirstNameSet => _set_firstName;
-        public global::System.String LastName
-        {
-            get => _value_lastName;
-            set
-            {
-                _set_lastName = true;
-                _value_lastName = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsLastNameSet => _set_lastName;
-        public global::System.String Username
-        {
-            get => _value_username;
-            set
-            {
-                _set_username = true;
-                _value_username = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsUsernameSet => _set_username;
-        public global::System.String Password
-        {
-            get => _value_password;
-            set
-            {
-                _set_password = true;
-                _value_password = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsPasswordSet => _set_password;
-        public global::System.String ConfirmPassword
-        {
-            get => _value_confirmPassword;
-            set
-            {
-                _set_confirmPassword = true;
-                _value_confirmPassword = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsConfirmPasswordSet => _set_confirmPassword;
-        public global::System.String Gender
-        {
-            get => _value_gender;
-            set
-            {
-                _set_gender = true;
-                _value_gender = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsGenderSet => _set_gender;
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
@@ -6124,137 +6124,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     }
 
     /// <summary>
-    /// Represents the operation service of the FilterMovieList GraphQL operation
-    /// <code>
-    /// query FilterMovieList($sortInput: MovieSortInput!) {
-    ///   movieList(order: [ $sortInput ]) {
-    ///     __typename
-    ///     movieId
-    ///     title
-    ///     posterPath
-    ///     genre
-    ///     rating
-    ///     language
-    ///     duration
-    ///   }
-    /// }
-    /// </code>
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieListQueryDocument : global::StrawberryShake.IDocument
-    {
-        private FilterMovieListQueryDocument()
-        {
-        }
-
-        public static FilterMovieListQueryDocument Instance { get; } = new FilterMovieListQueryDocument();
-        public global::StrawberryShake.OperationKind Kind => global::StrawberryShake.OperationKind.Query;
-        public global::System.ReadOnlySpan<global::System.Byte> Body => new global::System.Byte[]{0x71, 0x75, 0x65, 0x72, 0x79, 0x20, 0x46, 0x69, 0x6c, 0x74, 0x65, 0x72, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x4c, 0x69, 0x73, 0x74, 0x28, 0x24, 0x73, 0x6f, 0x72, 0x74, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x53, 0x6f, 0x72, 0x74, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x21, 0x29, 0x20, 0x7b, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x4c, 0x69, 0x73, 0x74, 0x28, 0x6f, 0x72, 0x64, 0x65, 0x72, 0x3a, 0x20, 0x5b, 0x20, 0x24, 0x73, 0x6f, 0x72, 0x74, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x20, 0x5d, 0x29, 0x20, 0x7b, 0x20, 0x5f, 0x5f, 0x74, 0x79, 0x70, 0x65, 0x6e, 0x61, 0x6d, 0x65, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x64, 0x20, 0x74, 0x69, 0x74, 0x6c, 0x65, 0x20, 0x70, 0x6f, 0x73, 0x74, 0x65, 0x72, 0x50, 0x61, 0x74, 0x68, 0x20, 0x67, 0x65, 0x6e, 0x72, 0x65, 0x20, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x20, 0x6c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x20, 0x64, 0x75, 0x72, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x20, 0x7d, 0x20, 0x7d};
-        public global::StrawberryShake.DocumentHash Hash { get; } = new global::StrawberryShake.DocumentHash("md5Hash", "ece87f9a0b85067499000d2002378819");
-        public override global::System.String ToString()
-        {
-#if NETSTANDARD2_0
-        return global::System.Text.Encoding.UTF8.GetString(Body.ToArray());
-#else
-            return global::System.Text.Encoding.UTF8.GetString(Body);
-#endif
-        }
-    }
-
-    /// <summary>
-    /// Represents the operation service of the FilterMovieList GraphQL operation
-    /// <code>
-    /// query FilterMovieList($sortInput: MovieSortInput!) {
-    ///   movieList(order: [ $sortInput ]) {
-    ///     __typename
-    ///     movieId
-    ///     title
-    ///     posterPath
-    ///     genre
-    ///     rating
-    ///     language
-    ///     duration
-    ///   }
-    /// }
-    /// </code>
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieListQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery
-    {
-        private readonly global::StrawberryShake.IOperationExecutor<IFilterMovieListResult> _operationExecutor;
-        private readonly global::StrawberryShake.Serialization.IInputValueFormatter _movieSortInputFormatter;
-        public FilterMovieListQuery(global::StrawberryShake.IOperationExecutor<IFilterMovieListResult> operationExecutor, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
-        {
-            _operationExecutor = operationExecutor ?? throw new global::System.ArgumentNullException(nameof(operationExecutor));
-            _movieSortInputFormatter = serializerResolver.GetInputValueFormatter("MovieSortInput");
-        }
-
-        global::System.Type global::StrawberryShake.IOperationRequestFactory.ResultType => typeof(IFilterMovieListResult);
-        public async global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFilterMovieListResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            var request = CreateRequest(sortInput);
-            return await _operationExecutor.ExecuteAsync(request, cancellationToken).ConfigureAwait(false);
-        }
-
-        public global::System.IObservable<global::StrawberryShake.IOperationResult<IFilterMovieListResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::StrawberryShake.ExecutionStrategy? strategy = null)
-        {
-            var request = CreateRequest(sortInput);
-            return _operationExecutor.Watch(request, strategy);
-        }
-
-        private global::StrawberryShake.OperationRequest CreateRequest(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput)
-        {
-            var variables = new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>();
-            variables.Add("sortInput", FormatSortInput(sortInput));
-            return CreateRequest(variables);
-        }
-
-        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
-        {
-            return new global::StrawberryShake.OperationRequest(id: FilterMovieListQueryDocument.Instance.Hash.Value, name: "FilterMovieList", document: FilterMovieListQueryDocument.Instance, strategy: global::StrawberryShake.RequestStrategy.Default, variables: variables);
-        }
-
-        private global::System.Object? FormatSortInput(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput value)
-        {
-            if (value is null)
-            {
-                throw new global::System.ArgumentNullException(nameof(value));
-            }
-
-            return _movieSortInputFormatter.Format(value);
-        }
-
-        global::StrawberryShake.OperationRequest global::StrawberryShake.IOperationRequestFactory.Create(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
-        {
-            return CreateRequest(variables!);
-        }
-    }
-
-    /// <summary>
-    /// Represents the operation service of the FilterMovieList GraphQL operation
-    /// <code>
-    /// query FilterMovieList($sortInput: MovieSortInput!) {
-    ///   movieList(order: [ $sortInput ]) {
-    ///     __typename
-    ///     movieId
-    ///     title
-    ///     posterPath
-    ///     genre
-    ///     rating
-    ///     language
-    ///     duration
-    ///   }
-    /// }
-    /// </code>
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieListQuery : global::StrawberryShake.IOperationRequestFactory
-    {
-        global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFilterMovieListResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::System.Threading.CancellationToken cancellationToken = default);
-        global::System.IObservable<global::StrawberryShake.IOperationResult<IFilterMovieListResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::StrawberryShake.ExecutionStrategy? strategy = null);
-    }
-
-    /// <summary>
     /// Represents the operation service of the RegisterUser GraphQL operation
     /// <code>
     /// mutation RegisterUser($userData: UserRegistrationInput!) {
@@ -6368,6 +6237,137 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IRegisterUserResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInput userData, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IRegisterUserResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInput userData, global::StrawberryShake.ExecutionStrategy? strategy = null);
+    }
+
+    /// <summary>
+    /// Represents the operation service of the SortMovieList GraphQL operation
+    /// <code>
+    /// query SortMovieList($sortInput: MovieSortInput!) {
+    ///   movieList(order: [ $sortInput ]) {
+    ///     __typename
+    ///     movieId
+    ///     title
+    ///     posterPath
+    ///     genre
+    ///     rating
+    ///     language
+    ///     duration
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieListQueryDocument : global::StrawberryShake.IDocument
+    {
+        private SortMovieListQueryDocument()
+        {
+        }
+
+        public static SortMovieListQueryDocument Instance { get; } = new SortMovieListQueryDocument();
+        public global::StrawberryShake.OperationKind Kind => global::StrawberryShake.OperationKind.Query;
+        public global::System.ReadOnlySpan<global::System.Byte> Body => new global::System.Byte[]{0x71, 0x75, 0x65, 0x72, 0x79, 0x20, 0x53, 0x6f, 0x72, 0x74, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x4c, 0x69, 0x73, 0x74, 0x28, 0x24, 0x73, 0x6f, 0x72, 0x74, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x76, 0x69, 0x65, 0x53, 0x6f, 0x72, 0x74, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x21, 0x29, 0x20, 0x7b, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x4c, 0x69, 0x73, 0x74, 0x28, 0x6f, 0x72, 0x64, 0x65, 0x72, 0x3a, 0x20, 0x5b, 0x20, 0x24, 0x73, 0x6f, 0x72, 0x74, 0x49, 0x6e, 0x70, 0x75, 0x74, 0x20, 0x5d, 0x29, 0x20, 0x7b, 0x20, 0x5f, 0x5f, 0x74, 0x79, 0x70, 0x65, 0x6e, 0x61, 0x6d, 0x65, 0x20, 0x6d, 0x6f, 0x76, 0x69, 0x65, 0x49, 0x64, 0x20, 0x74, 0x69, 0x74, 0x6c, 0x65, 0x20, 0x70, 0x6f, 0x73, 0x74, 0x65, 0x72, 0x50, 0x61, 0x74, 0x68, 0x20, 0x67, 0x65, 0x6e, 0x72, 0x65, 0x20, 0x72, 0x61, 0x74, 0x69, 0x6e, 0x67, 0x20, 0x6c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x20, 0x64, 0x75, 0x72, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x20, 0x7d, 0x20, 0x7d};
+        public global::StrawberryShake.DocumentHash Hash { get; } = new global::StrawberryShake.DocumentHash("md5Hash", "92ca538f5094221a5bc01f79d04004e4");
+        public override global::System.String ToString()
+        {
+#if NETSTANDARD2_0
+        return global::System.Text.Encoding.UTF8.GetString(Body.ToArray());
+#else
+            return global::System.Text.Encoding.UTF8.GetString(Body);
+#endif
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the SortMovieList GraphQL operation
+    /// <code>
+    /// query SortMovieList($sortInput: MovieSortInput!) {
+    ///   movieList(order: [ $sortInput ]) {
+    ///     __typename
+    ///     movieId
+    ///     title
+    ///     posterPath
+    ///     genre
+    ///     rating
+    ///     language
+    ///     duration
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieListQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery
+    {
+        private readonly global::StrawberryShake.IOperationExecutor<ISortMovieListResult> _operationExecutor;
+        private readonly global::StrawberryShake.Serialization.IInputValueFormatter _movieSortInputFormatter;
+        public SortMovieListQuery(global::StrawberryShake.IOperationExecutor<ISortMovieListResult> operationExecutor, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _operationExecutor = operationExecutor ?? throw new global::System.ArgumentNullException(nameof(operationExecutor));
+            _movieSortInputFormatter = serializerResolver.GetInputValueFormatter("MovieSortInput");
+        }
+
+        global::System.Type global::StrawberryShake.IOperationRequestFactory.ResultType => typeof(ISortMovieListResult);
+        public async global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ISortMovieListResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var request = CreateRequest(sortInput);
+            return await _operationExecutor.ExecuteAsync(request, cancellationToken).ConfigureAwait(false);
+        }
+
+        public global::System.IObservable<global::StrawberryShake.IOperationResult<ISortMovieListResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::StrawberryShake.ExecutionStrategy? strategy = null)
+        {
+            var request = CreateRequest(sortInput);
+            return _operationExecutor.Watch(request, strategy);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput)
+        {
+            var variables = new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>();
+            variables.Add("sortInput", FormatSortInput(sortInput));
+            return CreateRequest(variables);
+        }
+
+        private global::StrawberryShake.OperationRequest CreateRequest(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return new global::StrawberryShake.OperationRequest(id: SortMovieListQueryDocument.Instance.Hash.Value, name: "SortMovieList", document: SortMovieListQueryDocument.Instance, strategy: global::StrawberryShake.RequestStrategy.Default, variables: variables);
+        }
+
+        private global::System.Object? FormatSortInput(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput value)
+        {
+            if (value is null)
+            {
+                throw new global::System.ArgumentNullException(nameof(value));
+            }
+
+            return _movieSortInputFormatter.Format(value);
+        }
+
+        global::StrawberryShake.OperationRequest global::StrawberryShake.IOperationRequestFactory.Create(global::System.Collections.Generic.IReadOnlyDictionary<global::System.String, global::System.Object?>? variables)
+        {
+            return CreateRequest(variables!);
+        }
+    }
+
+    /// <summary>
+    /// Represents the operation service of the SortMovieList GraphQL operation
+    /// <code>
+    /// query SortMovieList($sortInput: MovieSortInput!) {
+    ///   movieList(order: [ $sortInput ]) {
+    ///     __typename
+    ///     movieId
+    ///     title
+    ///     posterPath
+    ///     genre
+    ///     rating
+    ///     language
+    ///     duration
+    ///   }
+    /// }
+    /// </code>
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public interface ISortMovieListQuery : global::StrawberryShake.IOperationRequestFactory
+    {
+        global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ISortMovieListResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::System.Threading.CancellationToken cancellationToken = default);
+        global::System.IObservable<global::StrawberryShake.IOperationResult<ISortMovieListResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::StrawberryShake.ExecutionStrategy? strategy = null);
     }
 
     /// <summary>
@@ -6516,10 +6516,10 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery _fetchMovieList;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation _fetchWatchList;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery _filterMovieByID;
-        private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery _filterMovieList;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation _registerUser;
+        private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery _sortMovieList;
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation _toggleWatchList;
-        public MovieClient(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation addMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginMutation login, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation deleteMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation editMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery fetchGenreList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery fetchMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation fetchWatchList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery filterMovieByID, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery filterMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation registerUser, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation toggleWatchList)
+        public MovieClient(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation addMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginMutation login, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation deleteMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation editMovieData, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery fetchGenreList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery fetchMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation fetchWatchList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery filterMovieByID, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation registerUser, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery sortMovieList, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation toggleWatchList)
         {
             _addMovieData = addMovieData ?? throw new global::System.ArgumentNullException(nameof(addMovieData));
             _login = login ?? throw new global::System.ArgumentNullException(nameof(login));
@@ -6529,8 +6529,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
             _fetchMovieList = fetchMovieList ?? throw new global::System.ArgumentNullException(nameof(fetchMovieList));
             _fetchWatchList = fetchWatchList ?? throw new global::System.ArgumentNullException(nameof(fetchWatchList));
             _filterMovieByID = filterMovieByID ?? throw new global::System.ArgumentNullException(nameof(filterMovieByID));
-            _filterMovieList = filterMovieList ?? throw new global::System.ArgumentNullException(nameof(filterMovieList));
             _registerUser = registerUser ?? throw new global::System.ArgumentNullException(nameof(registerUser));
+            _sortMovieList = sortMovieList ?? throw new global::System.ArgumentNullException(nameof(sortMovieList));
             _toggleWatchList = toggleWatchList ?? throw new global::System.ArgumentNullException(nameof(toggleWatchList));
         }
 
@@ -6543,8 +6543,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery FetchMovieList => _fetchMovieList;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation FetchWatchList => _fetchWatchList;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery FilterMovieByID => _filterMovieByID;
-        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery FilterMovieList => _filterMovieList;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation RegisterUser => _registerUser;
+        public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery SortMovieList => _sortMovieList;
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation ToggleWatchList => _toggleWatchList;
     }
 
@@ -6570,9 +6570,9 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery FilterMovieByID { get; }
 
-        global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery FilterMovieList { get; }
-
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation RegisterUser { get; }
+
+        global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery SortMovieList { get; }
 
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation ToggleWatchList { get; }
     }
@@ -7228,93 +7228,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieListResult>
-    {
-        private readonly global::StrawberryShake.IEntityStore _entityStore;
-        public FilterMovieListResultFactory(global::StrawberryShake.IEntityStore entityStore)
-        {
-            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
-        }
-
-        global::System.Type global::StrawberryShake.IOperationResultDataFactory.ResultType => typeof(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult);
-        public FilterMovieListResult Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot = null)
-        {
-            if (snapshot is null)
-            {
-                snapshot = _entityStore.CurrentSnapshot;
-            }
-
-            if (dataInfo is FilterMovieListResultInfo info)
-            {
-                return new FilterMovieListResult(MapNonNullableIFilterMovieList_MovieListNonNullableArray(info.MovieList, snapshot));
-            }
-
-            throw new global::System.ArgumentException("FilterMovieListResultInfo expected.");
-        }
-
-        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieList_MovieList> MapNonNullableIFilterMovieList_MovieListNonNullableArray(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData>? list, global::StrawberryShake.IEntityStoreSnapshot snapshot)
-        {
-            if (list is null)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            var movies = new global::System.Collections.Generic.List<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieList_MovieList>();
-            foreach (global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData child in list)
-            {
-                movies.Add(MapNonNullableIFilterMovieList_MovieList(child, snapshot));
-            }
-
-            return movies;
-        }
-
-        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieList_MovieList MapNonNullableIFilterMovieList_MovieList(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData data, global::StrawberryShake.IEntityStoreSnapshot snapshot)
-        {
-            IFilterMovieList_MovieList returnValue = default !;
-            if (data.__typename.Equals("Movie", global::System.StringComparison.Ordinal))
-            {
-                returnValue = new FilterMovieList_MovieList_Movie(data.MovieId ?? throw new global::System.ArgumentNullException(), data.Title ?? throw new global::System.ArgumentNullException(), data.PosterPath, data.Genre ?? throw new global::System.ArgumentNullException(), data.Rating ?? throw new global::System.ArgumentNullException(), data.Language ?? throw new global::System.ArgumentNullException(), data.Duration ?? throw new global::System.ArgumentNullException());
-            }
-            else
-            {
-                throw new global::System.NotSupportedException();
-            }
-
-            return returnValue;
-        }
-
-        global::System.Object global::StrawberryShake.IOperationResultDataFactory.Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot)
-        {
-            return Create(dataInfo, snapshot);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieListResultInfo : global::StrawberryShake.IOperationResultDataInfo
-    {
-        private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
-        private readonly global::System.UInt64 _version;
-        public FilterMovieListResultInfo(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> movieList, global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> entityIds, global::System.UInt64 version)
-        {
-            MovieList = movieList;
-            _entityIds = entityIds ?? throw new global::System.ArgumentNullException(nameof(entityIds));
-            _version = version;
-        }
-
-        /// <summary>
-        /// Gets the list of movies.
-        /// </summary>
-        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> MovieList { get; }
-
-        public global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> EntityIds => _entityIds;
-        public global::System.UInt64 Version => _version;
-        public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
-        {
-            return new FilterMovieListResultInfo(MovieList, _entityIds, version);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class RegisterUserResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.RegisterUserResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7382,6 +7295,93 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
         {
             return new RegisterUserResultInfo(UserRegistration, _entityIds, version);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortMovieListResult>
+    {
+        private readonly global::StrawberryShake.IEntityStore _entityStore;
+        public SortMovieListResultFactory(global::StrawberryShake.IEntityStore entityStore)
+        {
+            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
+        }
+
+        global::System.Type global::StrawberryShake.IOperationResultDataFactory.ResultType => typeof(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult);
+        public SortMovieListResult Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot = null)
+        {
+            if (snapshot is null)
+            {
+                snapshot = _entityStore.CurrentSnapshot;
+            }
+
+            if (dataInfo is SortMovieListResultInfo info)
+            {
+                return new SortMovieListResult(MapNonNullableISortMovieList_MovieListNonNullableArray(info.MovieList, snapshot));
+            }
+
+            throw new global::System.ArgumentException("SortMovieListResultInfo expected.");
+        }
+
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList> MapNonNullableISortMovieList_MovieListNonNullableArray(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData>? list, global::StrawberryShake.IEntityStoreSnapshot snapshot)
+        {
+            if (list is null)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var movies = new global::System.Collections.Generic.List<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList>();
+            foreach (global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData child in list)
+            {
+                movies.Add(MapNonNullableISortMovieList_MovieList(child, snapshot));
+            }
+
+            return movies;
+        }
+
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList MapNonNullableISortMovieList_MovieList(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData data, global::StrawberryShake.IEntityStoreSnapshot snapshot)
+        {
+            ISortMovieList_MovieList returnValue = default !;
+            if (data.__typename.Equals("Movie", global::System.StringComparison.Ordinal))
+            {
+                returnValue = new SortMovieList_MovieList_Movie(data.MovieId ?? throw new global::System.ArgumentNullException(), data.Title ?? throw new global::System.ArgumentNullException(), data.PosterPath, data.Genre ?? throw new global::System.ArgumentNullException(), data.Rating ?? throw new global::System.ArgumentNullException(), data.Language ?? throw new global::System.ArgumentNullException(), data.Duration ?? throw new global::System.ArgumentNullException());
+            }
+            else
+            {
+                throw new global::System.NotSupportedException();
+            }
+
+            return returnValue;
+        }
+
+        global::System.Object global::StrawberryShake.IOperationResultDataFactory.Create(global::StrawberryShake.IOperationResultDataInfo dataInfo, global::StrawberryShake.IEntityStoreSnapshot? snapshot)
+        {
+            return Create(dataInfo, snapshot);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieListResultInfo : global::StrawberryShake.IOperationResultDataInfo
+    {
+        private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
+        private readonly global::System.UInt64 _version;
+        public SortMovieListResultInfo(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> movieList, global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> entityIds, global::System.UInt64 version)
+        {
+            MovieList = movieList;
+            _entityIds = entityIds ?? throw new global::System.ArgumentNullException(nameof(entityIds));
+            _version = version;
+        }
+
+        /// <summary>
+        /// Gets the list of movies.
+        /// </summary>
+        public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> MovieList { get; }
+
+        public global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> EntityIds => _entityIds;
+        public global::System.UInt64 Version => _version;
+        public global::StrawberryShake.IOperationResultDataInfo WithVersion(global::System.UInt64 version)
+        {
+            return new SortMovieListResultInfo(MovieList, _entityIds, version);
         }
     }
 
@@ -7613,6 +7613,22 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    internal interface IUserRegistrationInputInfo
+    {
+        global::System.Boolean IsFirstNameSet { get; }
+
+        global::System.Boolean IsLastNameSet { get; }
+
+        global::System.Boolean IsUsernameSet { get; }
+
+        global::System.Boolean IsPasswordSet { get; }
+
+        global::System.Boolean IsConfirmPasswordSet { get; }
+
+        global::System.Boolean IsGenderSet { get; }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     internal interface IMovieSortInputInfo
     {
         global::System.Boolean IsMovieIdSet { get; }
@@ -7630,22 +7646,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsRatingSet { get; }
 
         global::System.Boolean IsPosterPathSet { get; }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    internal interface IUserRegistrationInputInfo
-    {
-        global::System.Boolean IsFirstNameSet { get; }
-
-        global::System.Boolean IsLastNameSet { get; }
-
-        global::System.Boolean IsUsernameSet { get; }
-
-        global::System.Boolean IsPasswordSet { get; }
-
-        global::System.Boolean IsConfirmPasswordSet { get; }
-
-        global::System.Boolean IsGenderSet { get; }
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
@@ -8557,146 +8557,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public partial class FilterMovieListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>
-    {
-        private readonly global::StrawberryShake.IEntityStore _entityStore;
-        private readonly global::StrawberryShake.IEntityIdSerializer _idSerializer;
-        private readonly global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult> _resultDataFactory;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortEnumType> _sortEnumTypeParser;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Int32, global::System.Int32> _intParser;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Decimal, global::System.Decimal> _decimalParser;
-        public FilterMovieListBuilder(global::StrawberryShake.IEntityStore entityStore, global::StrawberryShake.IEntityIdSerializer idSerializer, global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
-        {
-            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
-            _idSerializer = idSerializer ?? throw new global::System.ArgumentNullException(nameof(idSerializer));
-            _resultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
-            _sortEnumTypeParser = serializerResolver.GetLeafValueParser<global::System.String, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortEnumType>("SortEnumType") ?? throw new global::System.ArgumentException("No serializer for type `SortEnumType` found.");
-            _intParser = serializerResolver.GetLeafValueParser<global::System.Int32, global::System.Int32>("Int") ?? throw new global::System.ArgumentException("No serializer for type `Int` found.");
-            _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
-            _decimalParser = serializerResolver.GetLeafValueParser<global::System.Decimal, global::System.Decimal>("Decimal") ?? throw new global::System.ArgumentException("No serializer for type `Decimal` found.");
-        }
-
-        public global::StrawberryShake.IOperationResult<IFilterMovieListResult> Build(global::StrawberryShake.Response<global::System.Text.Json.JsonDocument> response)
-        {
-            (IFilterMovieListResult Result, FilterMovieListResultInfo Info)? data = null;
-            global::System.Collections.Generic.IReadOnlyList<global::StrawberryShake.IClientError>? errors = null;
-            if (response.Exception is null)
-            {
-                try
-                {
-                    if (response.Body != null)
-                    {
-                        if (response.Body.RootElement.TryGetProperty("data", out global::System.Text.Json.JsonElement dataElement) && dataElement.ValueKind == global::System.Text.Json.JsonValueKind.Object)
-                        {
-                            data = BuildData(dataElement);
-                        }
-
-                        if (response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
-                        {
-                            errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
-                        }
-                    }
-                }
-                catch (global::System.Exception ex)
-                {
-                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(ex.Message, exception: ex, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
-                }
-            }
-            else
-            {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
-            }
-
-            return new global::StrawberryShake.OperationResult<IFilterMovieListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
-        }
-
-        private (IFilterMovieListResult, FilterMovieListResultInfo) BuildData(global::System.Text.Json.JsonElement obj)
-        {
-            var entityIds = new global::System.Collections.Generic.HashSet<global::StrawberryShake.EntityId>();
-            global::StrawberryShake.IEntityStoreSnapshot snapshot = default !;
-            _entityStore.Update(session =>
-            {
-                snapshot = session.CurrentSnapshot;
-            });
-            var resultInfo = new FilterMovieListResultInfo(DeserializeNonNullableIFilterMovieList_MovieListNonNullableArray(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieList")), entityIds, snapshot.Version);
-            return (_resultDataFactory.Create(resultInfo), resultInfo);
-        }
-
-        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> DeserializeNonNullableIFilterMovieList_MovieListNonNullableArray(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            var movies = new global::System.Collections.Generic.List<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData>();
-            foreach (global::System.Text.Json.JsonElement child in obj.Value.EnumerateArray())
-            {
-                movies.Add(DeserializeNonNullableIFilterMovieList_MovieList(child));
-            }
-
-            return movies;
-        }
-
-        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData DeserializeNonNullableIFilterMovieList_MovieList(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            var typename = obj.Value.GetProperty("__typename").GetString();
-            if (typename?.Equals("Movie", global::System.StringComparison.Ordinal) ?? false)
-            {
-                return new global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData(typename, movieId: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieId")), title: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "title")), posterPath: DeserializeString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "posterPath")), genre: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "genre")), rating: DeserializeNonNullableDecimal(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "rating")), language: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "language")), duration: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "duration")));
-            }
-
-            throw new global::System.NotSupportedException();
-        }
-
-        private global::System.Int32 DeserializeNonNullableInt32(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            return _intParser.Parse(obj.Value.GetInt32()!);
-        }
-
-        private global::System.String DeserializeNonNullableString(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            return _stringParser.Parse(obj.Value.GetString()!);
-        }
-
-        private global::System.String? DeserializeString(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                return null;
-            }
-
-            return _stringParser.Parse(obj.Value.GetString()!);
-        }
-
-        private global::System.Decimal DeserializeNonNullableDecimal(global::System.Text.Json.JsonElement? obj)
-        {
-            if (!obj.HasValue)
-            {
-                throw new global::System.ArgumentNullException();
-            }
-
-            return _decimalParser.Parse(obj.Value.GetDecimal()!);
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
     public partial class RegisterUserBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8793,6 +8653,146 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
 
             return _stringParser.Parse(obj.Value.GetString()!);
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    public partial class SortMovieListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>
+    {
+        private readonly global::StrawberryShake.IEntityStore _entityStore;
+        private readonly global::StrawberryShake.IEntityIdSerializer _idSerializer;
+        private readonly global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult> _resultDataFactory;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortEnumType> _sortEnumTypeParser;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Int32, global::System.Int32> _intParser;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
+        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Decimal, global::System.Decimal> _decimalParser;
+        public SortMovieListBuilder(global::StrawberryShake.IEntityStore entityStore, global::StrawberryShake.IEntityIdSerializer idSerializer, global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
+        {
+            _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
+            _idSerializer = idSerializer ?? throw new global::System.ArgumentNullException(nameof(idSerializer));
+            _resultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
+            _sortEnumTypeParser = serializerResolver.GetLeafValueParser<global::System.String, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortEnumType>("SortEnumType") ?? throw new global::System.ArgumentException("No serializer for type `SortEnumType` found.");
+            _intParser = serializerResolver.GetLeafValueParser<global::System.Int32, global::System.Int32>("Int") ?? throw new global::System.ArgumentException("No serializer for type `Int` found.");
+            _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
+            _decimalParser = serializerResolver.GetLeafValueParser<global::System.Decimal, global::System.Decimal>("Decimal") ?? throw new global::System.ArgumentException("No serializer for type `Decimal` found.");
+        }
+
+        public global::StrawberryShake.IOperationResult<ISortMovieListResult> Build(global::StrawberryShake.Response<global::System.Text.Json.JsonDocument> response)
+        {
+            (ISortMovieListResult Result, SortMovieListResultInfo Info)? data = null;
+            global::System.Collections.Generic.IReadOnlyList<global::StrawberryShake.IClientError>? errors = null;
+            if (response.Exception is null)
+            {
+                try
+                {
+                    if (response.Body != null)
+                    {
+                        if (response.Body.RootElement.TryGetProperty("data", out global::System.Text.Json.JsonElement dataElement) && dataElement.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                        {
+                            data = BuildData(dataElement);
+                        }
+
+                        if (response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                        {
+                            errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                        }
+                    }
+                }
+                catch (global::System.Exception ex)
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(ex.Message, exception: ex, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
+            }
+            else
+            {
+                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+            }
+
+            return new global::StrawberryShake.OperationResult<ISortMovieListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
+        }
+
+        private (ISortMovieListResult, SortMovieListResultInfo) BuildData(global::System.Text.Json.JsonElement obj)
+        {
+            var entityIds = new global::System.Collections.Generic.HashSet<global::StrawberryShake.EntityId>();
+            global::StrawberryShake.IEntityStoreSnapshot snapshot = default !;
+            _entityStore.Update(session =>
+            {
+                snapshot = session.CurrentSnapshot;
+            });
+            var resultInfo = new SortMovieListResultInfo(DeserializeNonNullableISortMovieList_MovieListNonNullableArray(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieList")), entityIds, snapshot.Version);
+            return (_resultDataFactory.Create(resultInfo), resultInfo);
+        }
+
+        private global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData> DeserializeNonNullableISortMovieList_MovieListNonNullableArray(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var movies = new global::System.Collections.Generic.List<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData>();
+            foreach (global::System.Text.Json.JsonElement child in obj.Value.EnumerateArray())
+            {
+                movies.Add(DeserializeNonNullableISortMovieList_MovieList(child));
+            }
+
+            return movies;
+        }
+
+        private global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData DeserializeNonNullableISortMovieList_MovieList(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            var typename = obj.Value.GetProperty("__typename").GetString();
+            if (typename?.Equals("Movie", global::System.StringComparison.Ordinal) ?? false)
+            {
+                return new global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData(typename, movieId: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "movieId")), title: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "title")), posterPath: DeserializeString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "posterPath")), genre: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "genre")), rating: DeserializeNonNullableDecimal(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "rating")), language: DeserializeNonNullableString(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "language")), duration: DeserializeNonNullableInt32(global::StrawberryShake.Json.JsonElementExtensions.GetPropertyOrNull(obj, "duration")));
+            }
+
+            throw new global::System.NotSupportedException();
+        }
+
+        private global::System.Int32 DeserializeNonNullableInt32(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _intParser.Parse(obj.Value.GetInt32()!);
+        }
+
+        private global::System.String DeserializeNonNullableString(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _stringParser.Parse(obj.Value.GetString()!);
+        }
+
+        private global::System.String? DeserializeString(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                return null;
+            }
+
+            return _stringParser.Parse(obj.Value.GetString()!);
+        }
+
+        private global::System.Decimal DeserializeNonNullableDecimal(global::System.Text.Json.JsonElement? obj)
+        {
+            if (!obj.HasValue)
+            {
+                throw new global::System.ArgumentNullException();
+            }
+
+            return _decimalParser.Parse(obj.Value.GetDecimal()!);
         }
     }
 
@@ -9086,8 +9086,8 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieListQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchWatchListMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieListQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.RegisterUserMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortMovieListQuery>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ToggleWatchListMutation>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieClient>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IMovieClient>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<ClientServiceProvider>(sp)));
@@ -9126,8 +9126,8 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableInt32OperationFilterInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.StringOperationFilterInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ComparableDecimalOperationFilterInputInputValueFormatter>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInputInputValueFormatter>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializer, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInputInputValueFormatter>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.Serialization.ISerializerResolver>(services, sp => new global::StrawberryShake.Serialization.SerializerResolver(global::System.Linq.Enumerable.Concat(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::System.Collections.Generic.IEnumerable<global::StrawberryShake.Serialization.ISerializer>>(parentServices), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::System.Collections.Generic.IEnumerable<global::StrawberryShake.Serialization.ISerializer>>(sp))));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.AddMovieDataResultFactory>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataResult>>(sp));
@@ -9185,13 +9185,6 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDQuery>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDQuery>(sp));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FilterMovieListResultFactory>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>>(sp));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery>(sp));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.FilterMovieListBuilder>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieListQuery>(services);
-            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieListQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieListQuery>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.RegisterUserResultFactory>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation>(sp));
@@ -9199,6 +9192,13 @@ namespace Microsoft.Extensions.DependencyInjection
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.RegisterUserMutation>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.RegisterUserMutation>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.SortMovieListResultFactory>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery>(sp));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.SortMovieListBuilder>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationExecutor<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>>(services, sp => new global::StrawberryShake.OperationExecutor<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>(global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.Transport.Http.IHttpConnection>(sp), () => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>>(sp), global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationStore>(sp), strategy));
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortMovieListQuery>(services);
+            global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortMovieListQuery>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListResult>, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.ToggleWatchListResultFactory>(services);
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationResultDataFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListResult>>(sp));
             global::Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<global::StrawberryShake.IOperationRequestFactory>(services, sp => global::Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation>(sp));

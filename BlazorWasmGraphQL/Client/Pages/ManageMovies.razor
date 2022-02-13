@@ -3,7 +3,10 @@
 
 <div class="row">
     <div class="col" align="right">
-        <a href='/admin/movies/new' class="btn btn-primary" role="button"><i class="fas fa-film"></i> Add Movie</a>
+        <a href='/admin/movies/new'
+           class="btn btn-primary" role="button">
+            <i class="fas fa-film"></i> Add Movie
+        </a>
     </div>
 </div>
 
@@ -21,7 +24,7 @@ else
                 <th>Title</th>
                 <th>Genre</th>
                 <th>Language</th>
-                <th>Duration</th>
+                <th>Duration (mins.)</th>
                 <th>Rating</th>
                 <th>Actions</th>
             </tr>
@@ -35,11 +38,15 @@ else
                         <td>@movie.Title</td>
                         <td>@movie.Genre</td>
                         <td>@movie.Language</td>
-                        <td>@movie.Duration min</td>
+                        <td>@movie.Duration</td>
                         <td>@movie.Rating</td>
                         <td>
-                            <a href='/admin/movies/edit/@movie.MovieId' class="btn btn-outline-dark" role="button">Edit</a>
-                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMovieModal" @onclick="(() => DeleteConfirm(movie.MovieId))">Delete</button>
+                            <a href='/admin/movies/edit/@movie.MovieId' class="btn btn-outline-dark" role="button">
+                                Edit
+                            </a>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMovieModal" @onclick="(() => DeleteConfirm(movie.MovieId))">
+                                Delete
+                            </button>
                         </td>
                     </tr>
                 }
@@ -77,7 +84,11 @@ else
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-danger" @onclick="(() => DeleteMovie(movie.MovieId))" data-bs-dismiss="modal">Yes</button>
+                    <button class="btn btn-danger"
+                        @onclick="(() => DeleteMovie(movie.MovieId))"
+                        data-bs-dismiss="modal">
+                        Yes
+                    </button>
                     <button class="btn btn-warning" data-bs-dismiss="modal">No</button>
                 </div>
             </div>

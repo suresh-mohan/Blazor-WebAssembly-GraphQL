@@ -10,8 +10,6 @@ namespace BlazorWasmGraphQL.Server.Interfaces
 
         Task<List<Movie>> GetAllMovies();
 
-        Task<Movie> GetMovieData(int movieId);
-
         Task UpdateMovie(Movie movie);
 
         Task<string> DeleteMovie(int movieId);

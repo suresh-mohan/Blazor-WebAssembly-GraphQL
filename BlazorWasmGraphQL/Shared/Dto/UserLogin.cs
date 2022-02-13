@@ -7,11 +7,17 @@ namespace BlazorWasmGraphQL.Shared.Dto
         public int? UserId { get; set; }
 
         [Required]
-        public string Username { get; set; } = string.Empty;
+        public string Username { get; set; }
 
         [Required]
-        public string Password { get; set; } = string.Empty;
+        public string Password { get; set; }
 
         public string? UserTypeName { get; set; }
+
+        public UserLogin()
+        {
+            Username = string.Empty;
+            Password = string.Empty;
+        }
     }
 }

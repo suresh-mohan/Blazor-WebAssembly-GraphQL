@@ -1,4 +1,4 @@
-query FilterMovieList($sortInput:MovieSortInput!){
+query SortMovieList($sortInput:MovieSortInput!){
   movieList(order:[$sortInput]){
     movieId,
     title,

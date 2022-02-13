@@ -51,8 +51,7 @@ namespace BlazorWasmGraphQL.Server.DataAccess
         {
             return await _dbContext.Movies.AsNoTracking().ToListAsync();
         }
-
-        public async Task<Movie> GetMovieData(int movieId)
+        async Task<Movie> GetMovieData(int movieId)
         {
             try
             {

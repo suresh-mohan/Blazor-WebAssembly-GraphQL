@@ -14,8 +14,6 @@ namespace BlazorWasmGraphQL.Client.Shared
         [Inject]
         ILocalStorageService LocalStorageService { get; set; } = default!;
 
-        protected bool show = false;
-
         protected async Task LogoutUser()
         {
             await LocalStorageService.RemoveItemAsync(AuthToken.TokenIdentifier);

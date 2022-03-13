@@ -63,7 +63,7 @@ namespace BlazorWasmGraphQL.Client.Pages
 
                     if (authResponse.ErrorMessage is not null)
                     {
-                        customValidator.DisplayErrors("UserId", authResponse.ErrorMessage);
+                        customValidator.DisplayErrors(nameof(login.Username), authResponse.ErrorMessage);
                         throw new HttpRequestException($"User validation failed. Status Code: 401 Unauthorized");
                     }
                     else

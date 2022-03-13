@@ -143,10 +143,8 @@ type AuthResponse {
 }
 
 input UserLoginInput {
-  userId: Int
   username: String!
   password: String!
-  userTypeName: String
 }
 
 type RegistrationResponse {

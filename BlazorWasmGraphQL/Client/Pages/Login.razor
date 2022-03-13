@@ -17,7 +17,6 @@
                 <EditForm Model="@login" OnValidSubmit="AuthenticateUser">
                     <DataAnnotationsValidator />
                     <CustomValidator @ref="customValidator" />
-                    <ValidationMessage For="@(() => login.UserId)" />
 
                     <div class="mb-3">
                         <label for="Username" class="form-label">Username</label>

@@ -21,14 +21,15 @@ namespace BlazorWasmGraphQL.Server.GraphQL
             _userService = userService;
         }
 
+
         [GraphQLDescription("Authenticate the user.")]
         public AuthResponse UserLogin(UserLogin userDetails)
         {
-            UserLogin user = _userService.AuthenticateUser(userDetails);
+            AuthenticatedUser authenticatedUser = _userService.AuthenticateUser(userDetails);
 
-            if (!string.IsNullOrEmpty(user.Username))
+            if (!string.IsNullOrEmpty(authenticatedUser.Username))
             {
-                string tokenString = GenerateJWT(user);
+                string tokenString = GenerateJWT(authenticatedUser);
 
                 return new AuthResponse { Token = tokenString };
             }
@@ -64,7 +65,7 @@ namespace BlazorWasmGraphQL.Server.GraphQL
             }
         }
 
-        string GenerateJWT(UserLogin userInfo)
+        string GenerateJWT(AuthenticatedUser userInfo)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:SecretKey"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);

@@ -14,40 +14,25 @@ namespace BlazorWasmGraphQL.Server.DataAccess
             _dbContext = dbContext.CreateDbContext();
         }
 
-        public UserLogin AuthenticateUser(UserLogin loginCredentials)
+        public AuthenticatedUser AuthenticateUser(UserLogin loginCredentials)
         {
-            UserLogin user = new();
+            AuthenticatedUser authenticatedUser = new();
+
             var userDetails = _dbContext.UserMasters
-                .FirstOrDefault(u => u.Username == loginCredentials.Username && u.Password == loginCredentials.Password);
+                .FirstOrDefault(u =>
+                u.Username == loginCredentials.Username &&
+                u.Password == loginCredentials.Password);
 
             if (userDetails != null)
             {
-                user = new UserLogin
+                authenticatedUser = new AuthenticatedUser
                 {
                     Username = userDetails.Username,
                     UserId = userDetails.UserId,
                     UserTypeName = userDetails.UserTypeName
                 };
             }
-            return user;
-        }
-
-        public UserLogin GetCurrentUser(string username)
-        {
-            UserLogin user = new();
-            var userDetails = _dbContext.UserMasters.FirstOrDefault(u => u.Username == username);
-
-            if (userDetails != null)
-            {
-                user = new UserLogin
-                {
-                    Username = userDetails.Username,
-                    UserId = userDetails.UserId,
-                    UserTypeName = userDetails.UserTypeName
-                };
-            }
-
-            return user;
+            return authenticatedUser;
         }
 
         public async Task<bool> isUserExists(int userId)
@@ -66,7 +51,7 @@ namespace BlazorWasmGraphQL.Server.DataAccess
 
         public async Task<bool> RegisterUser(UserMaster userData)
         {
-            bool isUserNameAvailable = CheckUserAvailabity(userData.Username);
+            bool isUserNameAvailable = CheckUserNameAvailability(userData.Username);
 
             try
             {
@@ -87,7 +72,7 @@ namespace BlazorWasmGraphQL.Server.DataAccess
             }
         }
 
-        bool CheckUserAvailabity(string userName)
+        bool CheckUserNameAvailability(string userName)
         {
             string? user = _dbContext.UserMasters.FirstOrDefault(x => x.Username == userName)?.ToString();
 

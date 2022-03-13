@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace BlazorWasmGraphQL.Server.Models
+﻿namespace BlazorWasmGraphQL.Server.Models
 {
     public partial class UserMaster
     {

@@ -14,13 +14,12 @@
             <Authorized>
                 <a class="nav-link" href="watchlist">Watchlist</a>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false" @onclick="e => show=!show">
+                    <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         @context.User.Identity.Name
                     </a>
-                    <div class="dropdown-menu-end dropdown-menu @(show? "show" :"")">
-                        <a class="dropdown-item" @onclick="LogoutUser">Logout</a>
-                    </div>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" @onclick="LogoutUser">Logout</a></li>
+                    </ul>
                 </div>
             </Authorized>
             <NotAuthorized>

@@ -5,9 +5,10 @@ namespace BlazorWasmGraphQL.Server.Interfaces
 {
     public interface IUser
     {
-        UserLogin AuthenticateUser(UserLogin loginCredentials);
-        UserLogin GetCurrentUser(string username);
+        AuthenticatedUser AuthenticateUser(UserLogin loginCredentials);
+
         Task<bool> RegisterUser(UserMaster user);
+
         Task<bool> isUserExists(int userId);
     }
 }

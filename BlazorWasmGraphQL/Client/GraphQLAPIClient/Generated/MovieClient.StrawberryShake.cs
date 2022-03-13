@@ -3,7 +3,7 @@
 
 namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieDataResult : global::System.IEquatable<AddMovieDataResult>, IAddMovieDataResult
     {
         public AddMovieDataResult(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieData_AddMovie addMovie)
@@ -67,7 +67,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieData_AddMovie_AddMoviePayload : global::System.IEquatable<AddMovieData_AddMovie_AddMoviePayload>, IAddMovieData_AddMovie_AddMoviePayload
     {
         public AddMovieData_AddMovie_AddMoviePayload(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieData_AddMovie_Movie movie)
@@ -128,7 +128,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieData_AddMovie_Movie_Movie : global::System.IEquatable<AddMovieData_AddMovie_Movie_Movie>, IAddMovieData_AddMovie_Movie_Movie
     {
         public AddMovieData_AddMovie_Movie_Movie(global::System.String title)
@@ -189,8 +189,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IAddMovieDataResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IAddMovieDataResult
     {
         /// <summary>
         /// Add a new movie data.
@@ -198,29 +198,29 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieData_AddMovie AddMovie { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IAddMovieData_AddMovie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IAddMovieData_AddMovie
     {
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieData_AddMovie_Movie Movie { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IAddMovieData_AddMovie_AddMoviePayload : IAddMovieData_AddMovie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IAddMovieData_AddMovie_AddMoviePayload : IAddMovieData_AddMovie
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IAddMovieData_AddMovie_Movie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IAddMovieData_AddMovie_Movie
     {
         public global::System.String Title { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IAddMovieData_AddMovie_Movie_Movie : IAddMovieData_AddMovie_Movie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IAddMovieData_AddMovie_Movie_Movie : IAddMovieData_AddMovie_Movie
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class LoginResult : global::System.IEquatable<LoginResult>, ILoginResult
     {
         public LoginResult(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILogin_UserLogin userLogin)
@@ -284,7 +284,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class Login_UserLogin_AuthResponse : global::System.IEquatable<Login_UserLogin_AuthResponse>, ILogin_UserLogin_AuthResponse
     {
         public Login_UserLogin_AuthResponse(global::System.String? errorMessage, global::System.String? token)
@@ -357,8 +357,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ILoginResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ILoginResult
     {
         /// <summary>
         /// Authenticate the user.
@@ -366,20 +366,20 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILogin_UserLogin UserLogin { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ILogin_UserLogin
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ILogin_UserLogin
     {
         public global::System.String? ErrorMessage { get; }
 
         public global::System.String? Token { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ILogin_UserLogin_AuthResponse : ILogin_UserLogin
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ILogin_UserLogin_AuthResponse : ILogin_UserLogin
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class DeleteMovieDataResult : global::System.IEquatable<DeleteMovieDataResult>, IDeleteMovieDataResult
     {
         public DeleteMovieDataResult(global::System.Int32 deleteMovie)
@@ -443,8 +443,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IDeleteMovieDataResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IDeleteMovieDataResult
     {
         /// <summary>
         /// Delete a movie data.
@@ -452,7 +452,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Int32 DeleteMovie { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieDataResult : global::System.IEquatable<EditMovieDataResult>, IEditMovieDataResult
     {
         public EditMovieDataResult(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieData_EditMovie editMovie)
@@ -516,7 +516,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieData_EditMovie_AddMoviePayload : global::System.IEquatable<EditMovieData_EditMovie_AddMoviePayload>, IEditMovieData_EditMovie_AddMoviePayload
     {
         public EditMovieData_EditMovie_AddMoviePayload(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieData_EditMovie_Movie movie)
@@ -577,7 +577,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieData_EditMovie_Movie_Movie : global::System.IEquatable<EditMovieData_EditMovie_Movie_Movie>, IEditMovieData_EditMovie_Movie_Movie
     {
         public EditMovieData_EditMovie_Movie_Movie(global::System.String title)
@@ -638,8 +638,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IEditMovieDataResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IEditMovieDataResult
     {
         /// <summary>
         /// Edit an existing movie data.
@@ -647,29 +647,29 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieData_EditMovie EditMovie { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IEditMovieData_EditMovie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IEditMovieData_EditMovie
     {
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieData_EditMovie_Movie Movie { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IEditMovieData_EditMovie_AddMoviePayload : IEditMovieData_EditMovie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IEditMovieData_EditMovie_AddMoviePayload : IEditMovieData_EditMovie
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IEditMovieData_EditMovie_Movie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IEditMovieData_EditMovie_Movie
     {
         public global::System.String Title { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IEditMovieData_EditMovie_Movie_Movie : IEditMovieData_EditMovie_Movie
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IEditMovieData_EditMovie_Movie_Movie : IEditMovieData_EditMovie_Movie
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreListResult : global::System.IEquatable<FetchGenreListResult>, IFetchGenreListResult
     {
         public FetchGenreListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreList_GenreList> genreList)
@@ -737,7 +737,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreList_GenreList_Genre : global::System.IEquatable<FetchGenreList_GenreList_Genre>, IFetchGenreList_GenreList_Genre
     {
         public FetchGenreList_GenreList_Genre(global::System.Int32 genreId, global::System.String genreName)
@@ -802,8 +802,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchGenreListResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchGenreListResult
     {
         /// <summary>
         /// Gets the list of genres.
@@ -811,20 +811,20 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreList_GenreList> GenreList { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchGenreList_GenreList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchGenreList_GenreList
     {
         public global::System.Int32 GenreId { get; }
 
         public global::System.String GenreName { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchGenreList_GenreList_Genre : IFetchGenreList_GenreList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchGenreList_GenreList_Genre : IFetchGenreList_GenreList
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieListResult : global::System.IEquatable<FetchMovieListResult>, IFetchMovieListResult
     {
         public FetchMovieListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieList_MovieList> movieList)
@@ -892,7 +892,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieList_MovieList_Movie : global::System.IEquatable<FetchMovieList_MovieList_Movie>, IFetchMovieList_MovieList_Movie
     {
         public FetchMovieList_MovieList_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration)
@@ -981,8 +981,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieListResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchMovieListResult
     {
         /// <summary>
         /// Gets the list of movies.
@@ -990,8 +990,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieList_MovieList> MovieList { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieList_MovieList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchMovieList_MovieList
     {
         public global::System.Int32 MovieId { get; }
 
@@ -1008,12 +1008,12 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Int32 Duration { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieList_MovieList_Movie : IFetchMovieList_MovieList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchMovieList_MovieList_Movie : IFetchMovieList_MovieList
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchListResult : global::System.IEquatable<FetchWatchListResult>, IFetchWatchListResult
     {
         public FetchWatchListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchList_Watchlist> watchlist)
@@ -1081,7 +1081,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchList_Watchlist_Movie : global::System.IEquatable<FetchWatchList_Watchlist_Movie>, IFetchWatchList_Watchlist_Movie
     {
         public FetchWatchList_Watchlist_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration)
@@ -1170,8 +1170,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchWatchListResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchWatchListResult
     {
         /// <summary>
         /// Get the user Watchlist.
@@ -1179,8 +1179,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchList_Watchlist> Watchlist { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchWatchList_Watchlist
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchWatchList_Watchlist
     {
         public global::System.Int32 MovieId { get; }
 
@@ -1197,12 +1197,12 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Int32 Duration { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchWatchList_Watchlist_Movie : IFetchWatchList_Watchlist
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchWatchList_Watchlist_Movie : IFetchWatchList_Watchlist
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByIDResult : global::System.IEquatable<FilterMovieByIDResult>, IFilterMovieByIDResult
     {
         public FilterMovieByIDResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList> movieList)
@@ -1270,7 +1270,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByID_MovieList_Movie : global::System.IEquatable<FilterMovieByID_MovieList_Movie>, IFilterMovieByID_MovieList_Movie
     {
         public FilterMovieByID_MovieList_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration, global::System.String overview)
@@ -1363,8 +1363,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieByIDResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFilterMovieByIDResult
     {
         /// <summary>
         /// Gets the list of movies.
@@ -1372,8 +1372,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByID_MovieList> MovieList { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieByID_MovieList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFilterMovieByID_MovieList
     {
         public global::System.Int32 MovieId { get; }
 
@@ -1392,12 +1392,12 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.String Overview { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieByID_MovieList_Movie : IFilterMovieByID_MovieList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFilterMovieByID_MovieList_Movie : IFilterMovieByID_MovieList
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUserResult : global::System.IEquatable<RegisterUserResult>, IRegisterUserResult
     {
         public RegisterUserResult(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUser_UserRegistration userRegistration)
@@ -1461,7 +1461,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUser_UserRegistration_RegistrationResponse : global::System.IEquatable<RegisterUser_UserRegistration_RegistrationResponse>, IRegisterUser_UserRegistration_RegistrationResponse
     {
         public RegisterUser_UserRegistration_RegistrationResponse(global::System.Boolean isRegistrationSuccess, global::System.String? errorMessage)
@@ -1530,8 +1530,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IRegisterUserResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IRegisterUserResult
     {
         /// <summary>
         /// Register a new user.
@@ -1539,20 +1539,20 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUser_UserRegistration UserRegistration { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IRegisterUser_UserRegistration
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IRegisterUser_UserRegistration
     {
         public global::System.Boolean IsRegistrationSuccess { get; }
 
         public global::System.String? ErrorMessage { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IRegisterUser_UserRegistration_RegistrationResponse : IRegisterUser_UserRegistration
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IRegisterUser_UserRegistration_RegistrationResponse : IRegisterUser_UserRegistration
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieListResult : global::System.IEquatable<SortMovieListResult>, ISortMovieListResult
     {
         public SortMovieListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList> movieList)
@@ -1620,7 +1620,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieList_MovieList_Movie : global::System.IEquatable<SortMovieList_MovieList_Movie>, ISortMovieList_MovieList_Movie
     {
         public SortMovieList_MovieList_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration)
@@ -1709,8 +1709,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ISortMovieListResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ISortMovieListResult
     {
         /// <summary>
         /// Gets the list of movies.
@@ -1718,8 +1718,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieList_MovieList> MovieList { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ISortMovieList_MovieList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ISortMovieList_MovieList
     {
         public global::System.Int32 MovieId { get; }
 
@@ -1736,12 +1736,12 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Int32 Duration { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ISortMovieList_MovieList_Movie : ISortMovieList_MovieList
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ISortMovieList_MovieList_Movie : ISortMovieList_MovieList
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchListResult : global::System.IEquatable<ToggleWatchListResult>, IToggleWatchListResult
     {
         public ToggleWatchListResult(global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchList_ToggleWatchlist> toggleWatchlist)
@@ -1809,7 +1809,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchList_ToggleWatchlist_Movie : global::System.IEquatable<ToggleWatchList_ToggleWatchlist_Movie>, IToggleWatchList_ToggleWatchlist_Movie
     {
         public ToggleWatchList_ToggleWatchlist_Movie(global::System.Int32 movieId, global::System.String title, global::System.String? posterPath, global::System.String genre, global::System.Decimal rating, global::System.String language, global::System.Int32 duration)
@@ -1898,8 +1898,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IToggleWatchListResult
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IToggleWatchListResult
     {
         /// <summary>
         /// Toggle Watchlist item.
@@ -1907,8 +1907,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Collections.Generic.IReadOnlyList<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchList_ToggleWatchlist> ToggleWatchlist { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IToggleWatchList_ToggleWatchlist
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IToggleWatchList_ToggleWatchlist
     {
         public global::System.Int32 MovieId { get; }
 
@@ -1925,12 +1925,12 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         public global::System.Int32 Duration { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IToggleWatchList_ToggleWatchlist_Movie : IToggleWatchList_ToggleWatchlist
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IToggleWatchList_ToggleWatchlist_Movie : IToggleWatchList_ToggleWatchlist
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _intFormatter = default !;
@@ -2070,7 +2070,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieInputInfo, global::System.IEquatable<MovieInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2240,15 +2240,13 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieInputInfo.IsPosterPathSet => _set_posterPath;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class UserLoginInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
-        private global::StrawberryShake.Serialization.IInputValueFormatter _intFormatter = default !;
         private global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter = default !;
         public global::System.String TypeName => "UserLoginInput";
         public void Initialize(global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
         {
-            _intFormatter = serializerResolver.GetInputValueFormatter("Int");
             _stringFormatter = serializerResolver.GetInputValueFormatter("String");
         }
 
@@ -2267,11 +2265,6 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
             }
 
             var fields = new global::System.Collections.Generic.List<global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>>();
-            if (inputInfo.IsUserIdSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("userId", FormatUserId(input.UserId)));
-            }
-
             if (inputInfo.IsUsernameSet)
             {
                 fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("username", FormatUsername(input.Username)));
@@ -2282,24 +2275,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
                 fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("password", FormatPassword(input.Password)));
             }
 
-            if (inputInfo.IsUserTypeNameSet)
-            {
-                fields.Add(new global::System.Collections.Generic.KeyValuePair<global::System.String, global::System.Object?>("userTypeName", FormatUserTypeName(input.UserTypeName)));
-            }
-
             return fields;
-        }
-
-        private global::System.Object? FormatUserId(global::System.Int32? input)
-        {
-            if (input is null)
-            {
-                return input;
-            }
-            else
-            {
-                return _intFormatter.Format(input);
-            }
         }
 
         private global::System.Object? FormatUsername(global::System.String input)
@@ -2321,21 +2297,9 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 
             return _stringFormatter.Format(input);
         }
-
-        private global::System.Object? FormatUserTypeName(global::System.String? input)
-        {
-            if (input is null)
-            {
-                return input;
-            }
-            else
-            {
-                return _stringFormatter.Format(input);
-            }
-        }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class UserLoginInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserLoginInputInfo, global::System.IEquatable<UserLoginInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2375,7 +2339,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
                 return false;
             }
 
-            return (UserId == other.UserId) && Username.Equals(other.Username) && Password.Equals(other.Password) && ((UserTypeName is null && other.UserTypeName is null) || UserTypeName != null && UserTypeName.Equals(other.UserTypeName));
+            return (Username.Equals(other.Username)) && Password.Equals(other.Password);
         }
 
         public override global::System.Int32 GetHashCode()
@@ -2383,41 +2347,16 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
             unchecked
             {
                 int hash = 5;
-                if (UserId != null)
-                {
-                    hash ^= 397 * UserId.GetHashCode();
-                }
-
                 hash ^= 397 * Username.GetHashCode();
                 hash ^= 397 * Password.GetHashCode();
-                if (UserTypeName != null)
-                {
-                    hash ^= 397 * UserTypeName.GetHashCode();
-                }
-
                 return hash;
             }
         }
 
-        private global::System.Int32? _value_userId;
-        private global::System.Boolean _set_userId;
         private global::System.String _value_username = default !;
         private global::System.Boolean _set_username;
         private global::System.String _value_password = default !;
         private global::System.Boolean _set_password;
-        private global::System.String? _value_userTypeName;
-        private global::System.Boolean _set_userTypeName;
-        public global::System.Int32? UserId
-        {
-            get => _value_userId;
-            set
-            {
-                _set_userId = true;
-                _value_userId = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserLoginInputInfo.IsUserIdSet => _set_userId;
         public global::System.String Username
         {
             get => _value_username;
@@ -2440,20 +2379,9 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
 
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserLoginInputInfo.IsPasswordSet => _set_password;
-        public global::System.String? UserTypeName
-        {
-            get => _value_userTypeName;
-            set
-            {
-                _set_userTypeName = true;
-                _value_userTypeName = value;
-            }
-        }
-
-        global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserLoginInputInfo.IsUserTypeNameSet => _set_userTypeName;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _movieFilterInputFormatter = default !;
@@ -2680,7 +2608,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo, global::System.IEquatable<MovieFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2920,7 +2848,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieFilterInputInfo.IsPosterPathSet => _set_posterPath;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ComparableInt32OperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _intFormatter = default !;
@@ -3165,7 +3093,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ComparableInt32OperationFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo, global::System.IEquatable<ComparableInt32OperationFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -3441,7 +3369,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableInt32OperationFilterInputInfo.IsNlteSet => _set_nlte;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class StringOperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _stringOperationFilterInputFormatter = default !;
@@ -3724,7 +3652,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class StringOperationFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo, global::System.IEquatable<StringOperationFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -4012,7 +3940,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IStringOperationFilterInputInfo.IsNendsWithSet => _set_nendsWith;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ComparableDecimalOperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _decimalFormatter = default !;
@@ -4257,7 +4185,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ComparableDecimalOperationFilterInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo, global::System.IEquatable<ComparableDecimalOperationFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -4533,7 +4461,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IComparableDecimalOperationFilterInputInfo.IsNlteSet => _set_nlte;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class UserRegistrationInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter = default !;
@@ -4652,7 +4580,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class UserRegistrationInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo, global::System.IEquatable<UserRegistrationInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -4790,7 +4718,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IUserRegistrationInputInfo.IsGenderSet => _set_gender;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieSortInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _sortEnumTypeFormatter = default !;
@@ -4955,7 +4883,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieSortInput : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieSortInputInfo, global::System.IEquatable<MovieSortInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -5153,14 +5081,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
         global::System.Boolean global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.IMovieSortInputInfo.IsPosterPathSet => _set_posterPath;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public enum SortEnumType
     {
         Asc,
         Desc
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortEnumTypeSerializer : global::StrawberryShake.Serialization.IInputValueFormatter, global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, SortEnumType>
     {
         public global::System.String TypeName => "SortEnumType";
@@ -5197,7 +5125,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieDataMutationDocument : global::StrawberryShake.IDocument
     {
         private AddMovieDataMutationDocument()
@@ -5232,7 +5160,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieDataMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IAddMovieDataResult> _operationExecutor;
@@ -5298,8 +5226,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IAddMovieDataMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IAddMovieDataMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IAddMovieDataResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieInput movieData, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IAddMovieDataResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieInput movieData, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -5317,7 +5245,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class LoginMutationDocument : global::StrawberryShake.IDocument
     {
         private LoginMutationDocument()
@@ -5350,7 +5278,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class LoginMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<ILoginResult> _operationExecutor;
@@ -5414,8 +5342,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ILoginMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ILoginMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ILoginResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserLoginInput userData, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<ILoginResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserLoginInput userData, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -5429,7 +5357,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class DeleteMovieDataMutationDocument : global::StrawberryShake.IDocument
     {
         private DeleteMovieDataMutationDocument()
@@ -5458,7 +5386,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class DeleteMovieDataMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IDeleteMovieDataResult> _operationExecutor;
@@ -5513,8 +5441,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IDeleteMovieDataMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IDeleteMovieDataMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IDeleteMovieDataResult>> ExecuteAsync(global::System.Int32 movieId, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IDeleteMovieDataResult>> Watch(global::System.Int32 movieId, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -5534,7 +5462,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieDataMutationDocument : global::StrawberryShake.IDocument
     {
         private EditMovieDataMutationDocument()
@@ -5569,7 +5497,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieDataMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IEditMovieDataResult> _operationExecutor;
@@ -5635,8 +5563,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IEditMovieDataMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IEditMovieDataMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IEditMovieDataResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieInput movieData, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IEditMovieDataResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieInput movieData, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -5654,7 +5582,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreListQueryDocument : global::StrawberryShake.IDocument
     {
         private FetchGenreListQueryDocument()
@@ -5687,7 +5615,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreListQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListQuery
     {
         private readonly global::StrawberryShake.IOperationExecutor<IFetchGenreListResult> _operationExecutor;
@@ -5737,8 +5665,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchGenreListQuery : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchGenreListQuery : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFetchGenreListResult>> ExecuteAsync(global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IFetchGenreListResult>> Watch(global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -5761,7 +5689,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieListQueryDocument : global::StrawberryShake.IDocument
     {
         private FetchMovieListQueryDocument()
@@ -5799,7 +5727,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieListQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListQuery
     {
         private readonly global::StrawberryShake.IOperationExecutor<IFetchMovieListResult> _operationExecutor;
@@ -5854,8 +5782,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchMovieListQuery : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchMovieListQuery : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFetchMovieListResult>> ExecuteAsync(global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IFetchMovieListResult>> Watch(global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -5878,7 +5806,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchListMutationDocument : global::StrawberryShake.IDocument
     {
         private FetchWatchListMutationDocument()
@@ -5916,7 +5844,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchListMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IFetchWatchListResult> _operationExecutor;
@@ -5980,8 +5908,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFetchWatchListMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFetchWatchListMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFetchWatchListResult>> ExecuteAsync(global::System.Int32 userId, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IFetchWatchListResult>> Watch(global::System.Int32 userId, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -6005,7 +5933,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByIDQueryDocument : global::StrawberryShake.IDocument
     {
         private FilterMovieByIDQueryDocument()
@@ -6044,7 +5972,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByIDQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDQuery
     {
         private readonly global::StrawberryShake.IOperationExecutor<IFilterMovieByIDResult> _operationExecutor;
@@ -6116,8 +6044,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IFilterMovieByIDQuery : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IFilterMovieByIDQuery : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IFilterMovieByIDResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IFilterMovieByIDResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieFilterInput? filterInput, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -6135,7 +6063,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUserMutationDocument : global::StrawberryShake.IDocument
     {
         private RegisterUserMutationDocument()
@@ -6168,7 +6096,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUserMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IRegisterUserResult> _operationExecutor;
@@ -6232,8 +6160,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IRegisterUserMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IRegisterUserMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IRegisterUserResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInput userData, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IRegisterUserResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.UserRegistrationInput userData, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -6256,7 +6184,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieListQueryDocument : global::StrawberryShake.IDocument
     {
         private SortMovieListQueryDocument()
@@ -6294,7 +6222,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieListQuery : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListQuery
     {
         private readonly global::StrawberryShake.IOperationExecutor<ISortMovieListResult> _operationExecutor;
@@ -6363,8 +6291,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface ISortMovieListQuery : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface ISortMovieListQuery : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ISortMovieListResult>> ExecuteAsync(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<ISortMovieListResult>> Watch(global::BlazorWasmGraphQL.Client.GraphQLAPIClient.MovieSortInput sortInput, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -6387,7 +6315,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchListMutationDocument : global::StrawberryShake.IDocument
     {
         private ToggleWatchListMutationDocument()
@@ -6425,7 +6353,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchListMutation : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IToggleWatchListResult> _operationExecutor;
@@ -6495,8 +6423,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IToggleWatchListMutation : global::StrawberryShake.IOperationRequestFactory
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IToggleWatchListMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IToggleWatchListResult>> ExecuteAsync(global::System.Int32 userId, global::System.Int32 movieId, global::System.Threading.CancellationToken cancellationToken = default);
         global::System.IObservable<global::StrawberryShake.IOperationResult<IToggleWatchListResult>> Watch(global::System.Int32 userId, global::System.Int32 movieId, global::StrawberryShake.ExecutionStrategy? strategy = null);
@@ -6505,7 +6433,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// <summary>
     /// Represents the MovieClient GraphQL client
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieClient : global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IMovieClient
     {
         private readonly global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation _addMovieData;
@@ -6551,8 +6479,8 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
     /// <summary>
     /// Represents the MovieClient GraphQL client
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
-    public interface IMovieClient
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
+    public partial interface IMovieClient
     {
         global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataMutation AddMovieData { get; }
 
@@ -6580,7 +6508,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient
 
 namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieDataResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.AddMovieDataResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -6641,7 +6569,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieDataResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -6666,7 +6594,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class LoginResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.LoginResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -6712,7 +6640,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class LoginResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -6737,7 +6665,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class DeleteMovieDataResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.DeleteMovieDataResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -6768,7 +6696,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class DeleteMovieDataResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -6793,7 +6721,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieDataResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.EditMovieDataResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -6854,7 +6782,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieDataResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -6879,7 +6807,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchGenreListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -6941,7 +6869,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreListResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -6966,7 +6894,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchMovieListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7028,7 +6956,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieListResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -7053,7 +6981,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FetchWatchListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7115,7 +7043,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchListResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -7140,7 +7068,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByIDResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.FilterMovieByIDResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7202,7 +7130,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByIDResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -7227,7 +7155,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUserResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.RegisterUserResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7273,7 +7201,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUserResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -7298,7 +7226,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.SortMovieListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7360,7 +7288,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieListResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -7385,7 +7313,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchListResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ToggleWatchListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7447,7 +7375,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchListResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         private readonly global::System.Collections.Generic.IReadOnlyCollection<global::StrawberryShake.EntityId> _entityIds;
@@ -7472,7 +7400,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IMovieInputInfo
     {
         global::System.Boolean IsMovieIdSet { get; }
@@ -7492,19 +7420,15 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsPosterPathSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IUserLoginInputInfo
     {
-        global::System.Boolean IsUserIdSet { get; }
-
         global::System.Boolean IsUsernameSet { get; }
 
         global::System.Boolean IsPasswordSet { get; }
-
-        global::System.Boolean IsUserTypeNameSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IMovieFilterInputInfo
     {
         global::System.Boolean IsAndSet { get; }
@@ -7528,7 +7452,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsPosterPathSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IComparableInt32OperationFilterInputInfo
     {
         global::System.Boolean IsEqSet { get; }
@@ -7556,7 +7480,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsNlteSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IStringOperationFilterInputInfo
     {
         global::System.Boolean IsAndSet { get; }
@@ -7584,7 +7508,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsNendsWithSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IComparableDecimalOperationFilterInputInfo
     {
         global::System.Boolean IsEqSet { get; }
@@ -7612,7 +7536,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsNlteSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IUserRegistrationInputInfo
     {
         global::System.Boolean IsFirstNameSet { get; }
@@ -7628,7 +7552,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsGenderSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     internal interface IMovieSortInputInfo
     {
         global::System.Boolean IsMovieIdSet { get; }
@@ -7648,7 +7572,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         global::System.Boolean IsPosterPathSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMovieDataBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IAddMovieDataResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7695,7 +7619,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IAddMovieDataResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -7756,20 +7687,18 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class LoginBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
         private readonly global::StrawberryShake.IEntityIdSerializer _idSerializer;
         private readonly global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginResult> _resultDataFactory;
-        private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.Int32, global::System.Int32> _intParser;
         private readonly global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, global::System.String> _stringParser;
         public LoginBuilder(global::StrawberryShake.IEntityStore entityStore, global::StrawberryShake.IEntityIdSerializer idSerializer, global::StrawberryShake.IOperationResultDataFactory<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ILoginResult> resultDataFactory, global::StrawberryShake.Serialization.ISerializerResolver serializerResolver)
         {
             _entityStore = entityStore ?? throw new global::System.ArgumentNullException(nameof(entityStore));
             _idSerializer = idSerializer ?? throw new global::System.ArgumentNullException(nameof(idSerializer));
             _resultDataFactory = resultDataFactory ?? throw new global::System.ArgumentNullException(nameof(resultDataFactory));
-            _intParser = serializerResolver.GetLeafValueParser<global::System.Int32, global::System.Int32>("Int") ?? throw new global::System.ArgumentException("No serializer for type `Int` found.");
             _stringParser = serializerResolver.GetLeafValueParser<global::System.String, global::System.String>("String") ?? throw new global::System.ArgumentException("No serializer for type `String` found.");
         }
 
@@ -7801,7 +7730,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<ILoginResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -7846,7 +7782,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class DeleteMovieDataBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IDeleteMovieDataResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7889,7 +7825,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IDeleteMovieDataResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -7918,7 +7861,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class EditMovieDataBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IEditMovieDataResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -7965,7 +7908,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IEditMovieDataResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8026,7 +7976,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchGenreListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchGenreListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8071,7 +8021,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IFetchGenreListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8142,7 +8099,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchMovieListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchMovieListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8189,7 +8146,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IFetchMovieListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8280,7 +8244,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FetchWatchListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFetchWatchListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8327,7 +8291,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IFetchWatchListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8418,7 +8389,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class FilterMovieByIDBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IFilterMovieByIDResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8465,7 +8436,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IFilterMovieByIDResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8556,7 +8534,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegisterUserBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IRegisterUserResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8601,7 +8579,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IRegisterUserResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8656,7 +8641,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class SortMovieListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.ISortMovieListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8705,7 +8690,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<ISortMovieListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8796,7 +8788,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class ToggleWatchListBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.IToggleWatchListResult>
     {
         private readonly global::StrawberryShake.IEntityStore _entityStore;
@@ -8843,7 +8835,14 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
             }
             else
             {
-                errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                if (response.Body != null && response.Body.RootElement.TryGetProperty("errors", out global::System.Text.Json.JsonElement errorsElement))
+                {
+                    errors = global::StrawberryShake.Json.JsonErrorParser.ParseErrors(errorsElement);
+                }
+                else
+                {
+                    errors = new global::StrawberryShake.IClientError[]{new global::StrawberryShake.ClientError(response.Exception.Message, exception: response.Exception, extensions: new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object?>{{"body", response.Body?.RootElement.ToString()}})};
+                }
             }
 
             return new global::StrawberryShake.OperationResult<IToggleWatchListResult>(data?.Result, data?.Info, _resultDataFactory, errors);
@@ -8934,7 +8933,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AddMoviePayloadData
     {
         public AddMoviePayloadData(global::System.String __typename, global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData? movie = default !)
@@ -8948,7 +8947,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieData? Movie { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieData
     {
         public MovieData(global::System.String __typename, global::System.String? title = default !, global::System.Int32? movieId = default !, global::System.String? posterPath = default !, global::System.String? genre = default !, global::System.Decimal? rating = default !, global::System.String? language = default !, global::System.Int32? duration = default !, global::System.String? overview = default !)
@@ -8983,7 +8982,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::System.String? Overview { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class AuthResponseData
     {
         public AuthResponseData(global::System.String __typename, global::System.String? errorMessage = default !, global::System.String? token = default !)
@@ -9000,7 +8999,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::System.String? Token { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class GenreData
     {
         public GenreData(global::System.String __typename, global::System.Int32? genreId = default !, global::System.String? genreName = default !)
@@ -9017,7 +9016,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::System.String? GenreName { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class RegistrationResponseData
     {
         public RegistrationResponseData(global::System.String __typename, global::System.Boolean? isRegistrationSuccess = default !, global::System.String? errorMessage = default !)
@@ -9034,7 +9033,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         public global::System.String? ErrorMessage { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieClientEntityIdFactory : global::StrawberryShake.IEntityIdSerializer
     {
         private static readonly global::System.Text.Json.JsonWriterOptions _options = new global::System.Text.Json.JsonWriterOptions()
@@ -9055,7 +9054,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public partial class MovieClientStoreAccessor : global::StrawberryShake.StoreAccessor
     {
         public MovieClientStoreAccessor(global::StrawberryShake.IOperationStore operationStore, global::StrawberryShake.IEntityStore entityStore, global::StrawberryShake.IEntityIdSerializer entityIdSerializer, global::System.Collections.Generic.IEnumerable<global::StrawberryShake.IOperationRequestFactory> requestFactories, global::System.Collections.Generic.IEnumerable<global::StrawberryShake.IOperationResultDataFactory> resultDataFactories) : base(operationStore, entityStore, entityIdSerializer, requestFactories, resultDataFactories)
@@ -9066,7 +9065,7 @@ namespace BlazorWasmGraphQL.Client.GraphQLAPIClient.State
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.4.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.6.1.0")]
     public static partial class MovieClientServiceCollectionExtensions
     {
         public static global::StrawberryShake.IClientBuilder<global::BlazorWasmGraphQL.Client.GraphQLAPIClient.State.MovieClientStoreAccessor> AddMovieClient(this global::Microsoft.Extensions.DependencyInjection.IServiceCollection services, global::StrawberryShake.ExecutionStrategy strategy = global::StrawberryShake.ExecutionStrategy.NetworkOnly)

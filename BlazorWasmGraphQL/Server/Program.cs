@@ -39,11 +39,6 @@ builder.Services.AddAuthorization(config =>
     config.AddPolicy(UserRoles.User, Policies.UserPolicy());
 });
 
-//builder.Services.AddCors(o => o.AddDefaultPolicy(b =>
-//b.AllowAnyHeader()
-//.AllowAnyMethod()
-//.AllowAnyOrigin()));
-
 builder.Services.AddPooledDbContextFactory<MovieDBContext>
     (options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -54,8 +49,8 @@ builder.Services.AddScoped<IUser, UserDataAccessLayer>();
 builder.Services.AddScoped<IWatchlist, WatchlistDataAccessLayer>();
 
 builder.Services.AddGraphQLServer()
+    .AddDefaultTransactionScopeHandler()
     .AddAuthorization()
-    //.AddDefaultTransactionScopeHandler()
     .AddQueryType<MovieQueryResolver>()
     .AddMutationType<MovieMutationResolver>()
     .AddTypeExtension<AuthMutationResolver>()

@@ -48,7 +48,7 @@ namespace BlazorWasmGraphQL.Client.Pages
 
                     if (!RegistrationStatus.IsRegistrationSuccess)
                     {
-                        registerValidator.DisplayErrors("Username", RegistrationStatus.ErrorMessage);
+                        registerValidator.DisplayErrors(nameof(registration.Username), RegistrationStatus.ErrorMessage);
                         throw new HttpRequestException($"User registration failed. Status Code: 403 Forbidden");
                     }
                     else

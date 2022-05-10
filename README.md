@@ -15,6 +15,6 @@ Check the live demo at https://blazorwasmgraphql.azurewebsites.net/
 ## Steps to run the app
 
 - Clone the Repo
-- Scaffold and seed the intial data using the [DBScript](https://github.com/suresh-mohan/Blazor-WebAssembly-GraphQL/tree/main/DBScript)
+- Scaffold and seed the initial data using the [DBScript](https://github.com/suresh-mohan/Blazor-WebAssembly-GraphQL/tree/main/DBScript)
 - Put your own connection string in the [appsettings.json](https://github.com/suresh-mohan/Blazor-WebAssembly-GraphQL/blob/main/BlazorWasmGraphQL/Server/appsettings.json) file.
 - Build and launch the application from Visual Studio.

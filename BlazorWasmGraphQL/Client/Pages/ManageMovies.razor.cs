@@ -1,5 +1,4 @@
-﻿using Blazored.Toast.Services;
-using BlazorWasmGraphQL.Client.GraphQLAPIClient;
+﻿using BlazorWasmGraphQL.Client.GraphQLAPIClient;
 using BlazorWasmGraphQL.Server.Models;
 using BlazorWasmGraphQL.Shared.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -18,9 +17,6 @@ namespace BlazorWasmGraphQL.Client.Pages
 
         [Inject]
         public NavigationManager NavigationManager { get; set; } = default!;
-
-        [Inject]
-        IToastService ToastService { get; set; } = default!;
 
         [CascadingParameter]
         public Task<AuthenticationState> AuthenticationState { get; set; } = default!;
@@ -71,7 +67,7 @@ namespace BlazorWasmGraphQL.Client.Pages
             if (response.Data is not null)
             {
                 await GetMovieList();
-                ToastService.ShowSuccess("Movie data is deleted successfully");
+                AddToWatchlistBase.ToastObj.Show(AddToWatchlistBase.Toast[2]);
             }
         }
     }

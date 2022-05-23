@@ -1,4 +1,4 @@
-﻿using Blazored.Toast.Services;
+﻿using Syncfusion.Blazor.Notifications;
 using BlazorWasmGraphQL.Client.GraphQLAPIClient;
 using BlazorWasmGraphQL.Client.Shared;
 using BlazorWasmGraphQL.Server.Models;
@@ -13,8 +13,7 @@ namespace BlazorWasmGraphQL.Client.Pages
         [Inject]
         AppStateContainer AppStateContainer { get; set; } = default!;
 
-        [Inject]
-        IToastService ToastService { get; set; } = default!;
+        public static SfToast ToastObj;
 
         [Inject]
         MovieClient MovieClient { get; set; } = default!;
@@ -31,6 +30,13 @@ namespace BlazorWasmGraphQL.Client.Pages
         List<Movie> userWatchlist = new();
         protected bool toggle;
         protected string buttonText = string.Empty;
+
+        public static List<ToastModel> Toast = new List<ToastModel>
+        {
+            new ToastModel{  Title = "SUCCESS", Content="Movie added to your Watchlist", CssClass="e-toast-success", Timeout=3000, ShowCloseButton=true},
+            new ToastModel{ Title = "INFO", Content="Movie removed from your Watchlist", CssClass="e-toast-info", Timeout=3000, ShowCloseButton=true},
+            new ToastModel{  Title = "SUCCESS", Content="Movie data is deleted successfully", CssClass="e-toast-success", Timeout=3000, ShowCloseButton=true}
+        };
 
         int UserId { get; set; }
 
@@ -108,11 +114,11 @@ namespace BlazorWasmGraphQL.Client.Pages
 
                 if (toggle)
                 {
-                    ToastService.ShowSuccess("Movie added to your Watchlist");
+                    ToastObj.Show(Toast[0]);
                 }
                 else
                 {
-                    ToastService.ShowInfo("Movie removed from your Watchlist");
+                    ToastObj.Show(Toast[1]);
                 }
 
                 await WatchListClick.InvokeAsync();

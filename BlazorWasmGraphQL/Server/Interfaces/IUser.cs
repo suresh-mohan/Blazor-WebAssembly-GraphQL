@@ -9,6 +9,6 @@ namespace BlazorWasmGraphQL.Server.Interfaces
 
         Task<bool> RegisterUser(UserMaster user);
 
-        Task<bool> isUserExists(int userId);
+        Task<bool> IsUserExists(int userId);
     }
 }

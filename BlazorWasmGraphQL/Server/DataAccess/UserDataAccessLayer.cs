@@ -35,7 +35,7 @@ namespace BlazorWasmGraphQL.Server.DataAccess
             return authenticatedUser;
         }
 
-        public async Task<bool> isUserExists(int userId)
+        public async Task<bool> IsUserExists(int userId)
         {
             UserMaster? user = await _dbContext.UserMasters.FirstOrDefaultAsync(x => x.UserId == userId);
 

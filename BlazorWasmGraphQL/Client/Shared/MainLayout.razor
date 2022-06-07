@@ -1,9 +1,9 @@
 ﻿@inherits LayoutComponentBase
-@using Blazored.Toast.Configuration
+@using BlazorWasmGraphQL.Client.Pages
 
-<BlazoredToasts Position="ToastPosition.BottomCenter"
-                Timeout="3"
-                SuccessClass="success-toast-override" />
+<SfToast @ref="AddToWatchlistBase.ToastObj">
+        <ToastPosition X="Center" Y="Bottom"></ToastPosition>
+</SfToast>
 
 <div class="page">
     <div class="main">

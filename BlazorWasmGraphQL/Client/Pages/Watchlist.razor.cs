@@ -24,7 +24,8 @@ namespace BlazorWasmGraphQL.Client.Pages
 
             var authState = await AuthenticationState;
 
-            if (authState.User.Identity.IsAuthenticated)
+            if (authState.User.Identity is not null &&
+                authState.User.Identity.IsAuthenticated)
             {
                 GetUserWatchlist();
             }

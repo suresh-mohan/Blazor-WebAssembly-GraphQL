@@ -18,6 +18,7 @@ namespace BlazorWasmGraphQL.Client
             _anonymousUser = new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
             _appStateContainer = appStateContainer;
         }
+
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
             await _appStateContainer.GetAvailableGenre();
@@ -35,7 +36,6 @@ namespace BlazorWasmGraphQL.Client
             {
                 await _appStateContainer.GetUserWatchlist(UserId);
             }
-
             return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(userClaims, "BlazorClientAuth")));
         }
 

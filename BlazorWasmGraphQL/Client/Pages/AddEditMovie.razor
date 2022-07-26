@@ -30,7 +30,7 @@
                         <label for="Genre" class="form-label">Genre</label>
                         <div class="col-md-6">
                             <InputSelect class="form-control" @bind-Value="movie.Genre">
-                                <option value="-- Select Genre --">-- Select Genre --</option>
+                                <option value="">-- Select Genre --</option>
                                 @if (lstGenre is not null)
                                 {
                                     @foreach (var genre in lstGenre)

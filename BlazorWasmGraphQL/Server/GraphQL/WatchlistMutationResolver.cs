@@ -35,7 +35,7 @@ namespace BlazorWasmGraphQL.Server.GraphQL
 
         async Task<List<Movie>> GetUserWatchlist(int userId)
         {
-            bool user = await _userService.isUserExists(userId);
+            bool user = await _userService.IsUserExists(userId);
 
             if (user)
             {

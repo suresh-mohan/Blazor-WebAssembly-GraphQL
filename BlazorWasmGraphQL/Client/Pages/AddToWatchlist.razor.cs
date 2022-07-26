@@ -45,12 +45,10 @@ namespace BlazorWasmGraphQL.Client.Pages
             AppStateContainer.OnAppStateChange += StateHasChanged;
 
             var authState = await AuthenticationState;
-            if (authState.User is not null)
+            if (authState.User.Identity is not null &&
+                authState.User.Identity.IsAuthenticated)
             {
-                if (authState.User.Identity.IsAuthenticated)
-                {
-                    UserId = Convert.ToInt32(authState.User.FindFirst("userId").Value);
-                }
+                UserId = Convert.ToInt32(authState.User.FindFirst("userId").Value);
             }
         }
 

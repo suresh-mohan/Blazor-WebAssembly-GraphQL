@@ -34,7 +34,7 @@ namespace BlazorWasmGraphQL.Client.Pages
                 NavigationManager.NavigateTo($"login?returnUrl={Uri.EscapeDataString(NavigationManager.Uri)}");
             }
         }
-        protected void WatchListClickHandler()
+        protected void WatchlistClickHandler()
         {
             GetUserWatchlist();
         }

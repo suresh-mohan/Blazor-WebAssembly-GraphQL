@@ -49,7 +49,6 @@ builder.Services.AddScoped<IUser, UserDataAccessLayer>();
 builder.Services.AddScoped<IWatchlist, WatchlistDataAccessLayer>();
 
 builder.Services.AddGraphQLServer()
-    .AddDefaultTransactionScopeHandler()
     .AddAuthorization()
     .AddQueryType<MovieQueryResolver>()
     .AddMutationType<MovieMutationResolver>()
